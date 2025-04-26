@@ -1,0 +1,18 @@
+.collectionCard {
+  width: 300px;
+  margin: 0;
+}
+
+.collectionImage {
+  height: 220px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.collectionTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+  overflow-wrap: break-word;
+}

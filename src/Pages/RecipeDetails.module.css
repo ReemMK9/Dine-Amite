@@ -1,0 +1,23 @@
+*{
+  margin-inline: auto;
+  
+}
+.mainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  align-self: center;
+  width: 70%;
+  margin: auto;
+}
+
+.leftSection{
+  margin-left:0;
+}
+
+
+
+.rightSection{
+  margin-right:0;
+}

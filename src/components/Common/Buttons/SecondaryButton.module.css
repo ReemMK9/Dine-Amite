@@ -1,0 +1,18 @@
+.secondaryButton{
+  border: solid 2px #ff9100;
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.secondaryButton:hover{
+  background-color: #ff9100;
+  color: white;
+}
+.secondaryButton:active{
+  background-color: #ff9100;
+  box-shadow: inset 0px 0px 5px #202020ae;
+}

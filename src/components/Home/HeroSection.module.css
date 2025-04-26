@@ -1,0 +1,35 @@
+.container {
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+}
+
+.heroText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 200px;
+}
+
+.heroImg {
+  margin-left: 0%;
+  width: 100%;
+  display: inline;
+  height: 900px;
+}
+
+h1 {
+  padding-left: 0%;
+  margin-left: 0%;
+  font-size: 54px;
+  ;
+}
+
+h3 {
+  width: 100%;
+  margin-left: 0%;
+  text-decoration: none;
+  font-size: 30px;
+}

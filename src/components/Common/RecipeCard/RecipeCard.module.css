@@ -1,0 +1,26 @@
+/* .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px;
+} */
+
+.recipeCard {
+  width: 270px;
+  margin: 0;
+}
+
+.recipeImage {
+  height: 200px;
+  width: 270px;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.recipeTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+  overflow-wrap: break-word;
+}

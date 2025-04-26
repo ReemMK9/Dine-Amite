@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Mervale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+footer {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  margin-top: 60px;
+  
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.title{
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  font-family: "Mervale Script", sans-serif;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  padding: 20px;
+}
+
+p {
+align-self: center;
+}

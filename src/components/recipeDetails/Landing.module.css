@@ -1,0 +1,61 @@
+@import "@fontsource/roboto";
+@import url("https://fonts.cdnfonts.com/css/mervale-script");
+@import "../../vars.css";
+
+*{
+  /* display: flex; */
+  align-items: center;
+  align-content: center;
+}
+
+.landingInfo{
+  width: 70%;
+}
+
+.recipeTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  color: var(--color-primary);
+  text-align: left;
+  margin: 10px;
+  margin-left:0;
+  
+}
+
+.author {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+}
+
+.description{
+  margin-bottom: 30px;
+  margin-top: 10px;
+
+}
+
+.authorIconImage {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.recipeInfo{
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 60px;
+  gap: 60px;
+  
+}
+
+.recipeImage{
+  background-color: red;
+  width: 70%;
+  height: 620px;
+  border-radius: 20px;
+  margin-inline: auto;
+}

@@ -1,0 +1,9 @@
+.categoryImg{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: red;
+}
+.categoryTitle{
+  text-align: center;
+}

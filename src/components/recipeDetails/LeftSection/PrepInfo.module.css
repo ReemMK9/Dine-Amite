@@ -1,0 +1,15 @@
+.container {
+ padding: 30px;
+}
+
+.section {
+  border-right: solid 1px grey;
+  padding-inline: 10px;
+  padding-block: 0px;
+  display: inline-block;
+  height: 50px,
+}
+h5, p{
+  padding-block: 0px;
+  margin: 5px;
+} 

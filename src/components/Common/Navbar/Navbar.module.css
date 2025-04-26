@@ -1,0 +1,39 @@
+@import "../../../vars.css";
+@import url("https://fonts.cdnfonts.com/css/mervale-script");
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(
+    0deg,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(217, 217, 217, 0.20157068062827221) 12%,
+    rgba(115, 115, 115, 1) 100%
+  );
+}
+
+.title {
+  font-family: "Mervale Script", sans-serif;
+  font-size: 38px;
+  color: var(--color-primary);
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.menu {
+  display: flex;
+}
+.menuItems {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menuItems a {
+  font-size: 18px;
+  color: var(--color-text);
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+.primaryButton{
+  background-color: #ff9100;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.primaryButton:hover{
+  background-color: #cc7b02;
+}
+.primaryButton:active{
+  background-color: #b06e02;
+  box-shadow: inset 0px 0px 5px #202020ae;
+}
