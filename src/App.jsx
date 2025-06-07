@@ -1,30 +1,32 @@
 import styles from "./App.module.css";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "@fontsource/roboto";
-import Navbar from "./components/Common/Navbar/Navbar";
-import Footer from "./components/Common/Footer/Footer";
-import RecipeCard from "./components/Common/RecipeCard/RecipeCard";
 import Home from "./Pages/Home/Home";
-import RecipeDetails from "./Pages/RecipeDetails";
-// import LogIn from "./Pages/LogInSignUp/LogIn";
 import SearchResults from "./Pages/Search Results/SearchResults";
+import LogIn from "./Pages/LogInSignUp/LogIn";
+import RecipeDetails from "./Pages/RecipeDetails";
+import NotFound from "./Pages/NotFound";
+import Navbar from "./components/Common/Navbar/Navbar";
+import Layout from "./Pages/Layout";
 
 function App() {
+  const routes = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { path: "", element: <Home /> },
+        { path: "searchresults", element: <SearchResults /> },
+        { path: "login", element: <LogIn /> },
+        { path: "recipedetails", element: <RecipeDetails /> },
+        { path: "*", element: <NotFound /> },
+      ],
+    },
+  ]);
   return (
     <div className={styles.App}>
-      {/* <Navbar /> */}
-      <Router>
-        <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/" element={<RecipeDetails />} />
-          {/* <Route path="/Login" element={<LogIn />} /> */}
-          <Route path="/SearchResults" element={<SearchResults/>} />
-          
-        </Routes>
-
-      </Router>
-
-      {/* <Footer /> */}
+    
+      <RouterProvider router={routes}></RouterProvider>
     </div>
   );
 }

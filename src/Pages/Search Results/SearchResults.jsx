@@ -8,7 +8,7 @@ import SearchResultsHeader from "./SearchResultsHeader";
 const SearchResults = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <SearchResultsHeader />
       <div className={styles.results}>
         <RecipeCard />
