@@ -1,35 +1,45 @@
 .container {
-  background-color: aquamarine;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin-bottom: 10vh;
+}
+
+.heroImgContainer{
+  width: 70vw;
+  height: 90vh;
+  overflow: hidden;
 }
 
 .heroText {
-  width: 50%;
+    background-color: rgb(192, 250, 250);
+height: 90vh;
+  width: 30vw;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
-  padding: 200px;
 }
 
 .heroImg {
   margin-left: 0%;
   width: 100%;
   display: inline;
-  height: 900px;
+  height: 90vh;
+  /* position: relative; */
 }
 
 h1 {
   padding-left: 0%;
-  margin-left: 0%;
-  font-size: 54px;
-  ;
+  margin-left: 1em;
+  font-size: 3rem;
+  
 }
 
 h3 {
-  width: 100%;
-  margin-left: 0%;
+  /* width: 100%; */
+  margin-left: 2em;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.2rem;
 }

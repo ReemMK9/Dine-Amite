@@ -5,7 +5,7 @@ import RecipeCard from "../Common/RecipeCard/RecipeCard";
 const SliderCategories = () => {
   return (
     <div className={styles.container}>
-      <h1>Sweet Tooth</h1>
+      <h1 className={styles.sliderTitle}>Sweet Tooth</h1>
       <div className={styles.recipes}>
         <RecipeCard />
         <RecipeCard />

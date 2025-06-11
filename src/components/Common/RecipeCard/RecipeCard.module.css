@@ -7,15 +7,20 @@
 } */
 
 .recipeCard {
-  width: 270px;
-  margin: 0;
+  width: 18.1rem;
+  margin-inline: 0;
+  /* margin-left: 0%; */
+  display: inline-block;
+   /* width: calc(20% - clamp(0.5rem, 2vw, 2rem)); subtract the space between */
+  /* margin-bottom: clamp(0.5rem, 2vw, 2rem); */
 }
 
 .recipeImage {
-  height: 200px;
-  width: 270px;
+  height: 13rem;
+  width: 18.1rem;
   border-radius: 10px;
   background-color: blue;
+  margin:0;
 }
 
 .recipeTitle {

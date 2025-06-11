@@ -1,9 +1,12 @@
 .categoryImg{
-  height: 150px;
-  width: 150px;
+  height: 12rem;
+  width: 12rem;
   border-radius: 50%;
   background-color: red;
+  margin-bottom: 2rem;
 }
 .categoryTitle{
   text-align: center;
+  margin-left: 0%;
+  font-size: 2rem;
 }

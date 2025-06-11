@@ -2,6 +2,13 @@
   width: 80%;
   display: flex;
   flex-direction: column;
+    margin-bottom: 6rem;
+
+}
+.sectionTitle{
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
 }
 .categoriesCards{
   display: flex;

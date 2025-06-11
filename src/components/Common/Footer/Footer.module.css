@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mervale&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "../../../vars.css";
 
 footer {
-  background-color: #f9f9f9;
+  background-color: var(--color-secondary);
   display: flex;
   flex-direction: column;
   bottom: 0;
   margin-top: 60px;
+  width: 100%;
   
   
 }
@@ -17,10 +19,11 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  width: 100%;
 }
 
 .title{
-  font-size: 24px;
+  font-size: 3rem;
   color: #333;
   text-decoration: none;
   font-family: "Mervale Script", sans-serif;

@@ -1,18 +1,31 @@
+@import "../../vars.css";
+
+
 .collectionCard {
-  width: 300px;
+  width: 18rem;
   margin: 0;
 }
 
 .collectionImage {
-  height: 220px;
-  width: 300px;
+  height: 14rem;
+  width: 18rem;
   border-radius: 10px;
   background-color: blue;
 }
 
 .collectionTitle {
-  font-size: 22px;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 1rem 0;
   overflow-wrap: break-word;
+}
+
+.collectionBtn{
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1.2rem;
+  border: none;
 }

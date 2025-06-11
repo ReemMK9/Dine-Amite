@@ -5,7 +5,7 @@ import styles from "./PopularCategories.module.css";
 const PopularCategories = () => {
   return (
     <div className={styles.container}>
-      <h1>Popular Categories</h1>
+      <h1 className={styles.sectionTitle}>Popular Categories</h1>
     <div className={styles.categoriesCards}>
     <CircularCard />
       <CircularCard />

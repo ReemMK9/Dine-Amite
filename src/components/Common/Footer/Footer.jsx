@@ -5,14 +5,14 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles.container}>
-        <div className={styles.info}>
+        <div>
           <a className={styles.title} href="">
             Dine'Amite
           </a>
           <p>Description</p>
         </div>
-        <div className={styles.links}>
-          <div>
+        <div className={styles.socialLinks}>
+          
             <h2>Follow Us</h2>
             <ul>
               <li>
@@ -25,8 +25,10 @@ const Footer = () => {
                 <a href="#">Instagram</a>
               </li>
             </ul>
-          </div>
-          <div>
+          
+          
+        </div>
+        <div className={styles.contactLinks}>
             <h2>Contact Us</h2>
             <ul>
               <li>
@@ -37,7 +39,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
       </div>
 
       <p>All rights reserved &copy; 2025</p>
