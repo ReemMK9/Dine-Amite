@@ -8,6 +8,7 @@ const RecipeCard = () => {
         <img src="" alt="" />
       </div>
       <h2 className={styles.recipeTitle}>Decadent Raspberry and Cream Cake</h2>
+      <div className={styles.recipeDuration}>Recipe Duration</div>
     </div>
   );
 };
