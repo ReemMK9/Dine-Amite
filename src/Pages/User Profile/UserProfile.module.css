@@ -1,0 +1,76 @@
+.infoBox{
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.userInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  margin-inline: 2rem;
+  margin-bottom: 0%;
+  margin-top: 1rem;
+}
+.userSocials{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  margin-top: 0.5rem;
+  margin-left: 0%;
+}
+
+.userSocials span{
+  color: var(--color-text);
+  margin-right: 1rem;
+  align-self: end;
+  font-size: 1.2rem;
+}
+
+.userSocials button{
+  color: var(--color-bg);
+  font-size: 1.3rem;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: var(--color-primary);
+}
+
+.userimg{
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  background-color: orange;
+  margin-inline: 2rem;
+}
+
+.userBio{
+  font-size: 1rem;
+  margin-top:0;
+  margin-bottom: 1.2rem;
+}
+
+.userProfileTabs button{
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.userProfileTabs button:hover {
+  background-color: var(--color-secondary);
+  /* color: var(--color-bg); */
+}
+.userProfileTabs button.active {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+}
