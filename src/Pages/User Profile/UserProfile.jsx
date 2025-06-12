@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./UserProfile.module.css";
+import RecipeCard from "../../components/Common/RecipeCard/RecipeCard";
 
 
 const UserProfile = () => {
@@ -27,6 +28,17 @@ const UserProfile = () => {
         <hr />
       </div>
       <div className={styles.userProfItems}>
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
 
       </div>
     </>
