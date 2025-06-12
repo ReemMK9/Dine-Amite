@@ -9,6 +9,7 @@ import NotFound from "./Pages/NotFound";
 import Layout from "./Pages/Layout";
 import Recipes from "./Pages/Recipes/Recipes";
 import UserProfile from "./Pages/User Profile/UserProfile";
+import AdminDashboard from "./Pages/AdminView/AdminDashboard";
 
 function App() {
   const routes = createBrowserRouter([
@@ -20,7 +21,8 @@ function App() {
         { path: "searchresults", element: <SearchResults /> },
         { path: "recipes", element: <Recipes /> },
         { path: "recipedetails", element: <RecipeDetails /> },
-        {path: "userprofile", element: <UserProfile/>},
+        {path: "userprofile/:username", element: <UserProfile/>},
+        {path: "admindashboard", element: <AdminDashboard/>},
     
         { path: "*", element: <NotFound /> },
       ],

@@ -5,7 +5,7 @@ const RecipeCard = () => {
   return (
     <div className={styles.recipeCard}>
       <div className={styles.recipeImage}>
-        <img src="" alt="" />
+        <img src="/" alt="" />
       </div>
       <h2 className={styles.recipeTitle}>Decadent Raspberry and Cream Cake</h2>
       <div className={styles.recipeDuration}>Recipe Duration</div>

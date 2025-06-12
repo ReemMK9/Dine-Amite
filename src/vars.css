@@ -12,6 +12,6 @@
   );
 
   /* fonts */
-  --font-roboto: "Roboto", sans-serif;
-  --font-logo: "Mervale Script", sans-serif;
+  --font-normalText: "Roboto", sans-serif;
+  --font-logo: "Mervale Script", sans-serif; 
 }

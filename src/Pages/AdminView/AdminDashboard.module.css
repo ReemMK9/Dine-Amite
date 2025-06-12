@@ -1,0 +1,37 @@
+.adminDashboardBody{
+  background-color: white;
+
+}
+#sidebar{
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-bg);
+  color: var(--color-bg);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  
+}
+
+
+#sidebar .brand{
+  font-family: var(--font-logo);
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: flex;
+  height: 6rem;
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+  /* justify-content: center; */
+}
+
+#sidebar .sideMenu{
+  width: 100%;
+  margin: 0rem;
+}
