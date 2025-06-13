@@ -22,9 +22,9 @@ function App() {
         { path: "searchresults", element: <SearchResults /> },
         { path: "recipes", element: <Recipes /> },
         { path: "recipedetails", element: <RecipeDetails /> },
-        {path: "userprofile/:username", element: <UserProfile/>},
-        {path: "admindashboard", element: <AdminDashboard/>},
-        {path: "grocerylist", element: <GroceryList/>},
+        { path: "userprofile/:username", element: <UserProfile/> },
+        { path: "admindashboard", element: <AdminDashboard/> },
+        { path: "grocerylist", element: <GroceryList/> },
     
         { path: "*", element: <NotFound /> },
       ],
