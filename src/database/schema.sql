@@ -32,8 +32,12 @@ CREATE TABLE recipe (
     title VARCHAR(100) NOT NULL,
     image VARCHAR(255),
     preparation_time INT,
-	cooking_time INT,
-	ready_in INT,
+    cooking_time INT,
+    ready_in INT,
+    servings INT,
+    summary TEXT,
+    instructions TEXT,
+    steps JSONB,
     synced_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
