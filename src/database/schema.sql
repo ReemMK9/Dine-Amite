@@ -16,6 +16,7 @@ DROP TABLE IF EXISTS app_user;
 CREATE TABLE app_user (
     user_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     username VARCHAR(50) NOT NULL,
+    display_name VARCHAR(100),
     FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE
 );
 
@@ -31,13 +32,15 @@ CREATE TABLE recipe (
     title VARCHAR(100) NOT NULL,
     image VARCHAR(255),
     preparation_time INT,
-    difficulty VARCHAR(20),
+	cooking_time INT,
+	ready_in INT,
     synced_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE ingredient (
     ingredient_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
+    image VARCHAR(255),
     calories INT,
     fat FLOAT,
     saturated_fat FLOAT,
@@ -55,16 +58,17 @@ CREATE TABLE recipe_ingredient (
     recipe_id INT,
     ingredient_id INT,
     amount FLOAT,
+    unit VARCHAR(20),
     PRIMARY KEY (recipe_id, ingredient_id),
-    FOREIGN KEY (recipe_id) REFERENCES recipe(recipe_id),
-    FOREIGN KEY (ingredient_id) REFERENCES ingredient(ingredient_id)
+    FOREIGN KEY (recipe_id) REFERENCES recipe(recipe_id) ON DELETE CASCADE,
+    FOREIGN KEY (ingredient_id) REFERENCES ingredient(ingredient_id) ON DELETE CASCADE
 );
 
 CREATE TABLE recipe_dietary_tags (
     recipe_id INT,
     dietary_tag VARCHAR(50),
     PRIMARY KEY (recipe_id, dietary_tag),
-    FOREIGN KEY (recipe_id) REFERENCES recipe(recipe_id)
+    FOREIGN KEY (recipe_id) REFERENCES recipe(recipe_id) ON DELETE CASCADE
 );
 
 CREATE TABLE review (
@@ -75,7 +79,7 @@ CREATE TABLE review (
     comment TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (recipe_id) REFERENCES recipe(recipe_id),
+    FOREIGN KEY (recipe_id) REFERENCES recipe(recipe_id) ON DELETE CASCADE,
     FOREIGN KEY (user_id) REFERENCES app_user(user_id) ON DELETE CASCADE
 );
 
@@ -93,8 +97,8 @@ CREATE TABLE grocery_list_items (
     amount FLOAT,
     checked BOOLEAN DEFAULT FALSE,
     PRIMARY KEY (list_id, ingredient_id),
-    FOREIGN KEY (list_id) REFERENCES grocery_list(list_id),
-    FOREIGN KEY (ingredient_id) REFERENCES ingredient(ingredient_id)
+    FOREIGN KEY (list_id) REFERENCES grocery_list(list_id) ON DELETE CASCADE,
+    FOREIGN KEY (ingredient_id) REFERENCES ingredient(ingredient_id) ON DELETE CASCADE
 );
 
 CREATE TABLE recipe_saved (
@@ -109,6 +113,6 @@ CREATE TABLE recipe_saved_items (
     recipe_saved_id INT,
     recipe_id INT,
     PRIMARY KEY (recipe_saved_id, recipe_id),
-    FOREIGN KEY (recipe_saved_id) REFERENCES recipe_saved(recipe_saved_id),
-    FOREIGN KEY (recipe_id) REFERENCES recipe(recipe_id)
+    FOREIGN KEY (recipe_saved_id) REFERENCES recipe_saved(recipe_saved_id) ON DELETE CASCADE,
+    FOREIGN KEY (recipe_id) REFERENCES recipe(recipe_id) ON DELETE CASCADE
 );
