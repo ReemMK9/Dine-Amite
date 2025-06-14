@@ -11,6 +11,7 @@ import Recipes from "./Pages/Recipes/Recipes";
 import UserProfile from "./Pages/User Profile/UserProfile";
 import AdminDashboard from "./Pages/AdminView/AdminDashboard";
 import GroceryList from "./Pages/GroceryList";
+import AuthForm from "./Pages/LogInSignUp/AuthForm";
 
 function App() {
   const routes = createBrowserRouter([
@@ -25,6 +26,7 @@ function App() {
         {path: "userprofile", element: <UserProfile/>},
         {path: "admindashboard", element: <AdminDashboard/>},
         {path: "grocerylist", element: <GroceryList/>},
+        {path: "login", element: <AuthForm/>},
         
     
         { path: "*", element: <NotFound /> },

@@ -79,7 +79,6 @@
   flex-grow: 1;
 }
 
-
 .headerSection {
   display: flex;
   width: 100%;
@@ -87,9 +86,7 @@
   margin-bottom: 1.5rem;
 }
 
-
-
-.headerActions{
+.headerActions {
   display: flex;
   /* align-items: end; */
   gap: 0.5rem;
@@ -132,7 +129,7 @@
   background-color: #f1f1f1;
 }
 
-.tableContainer{
+.tableContainer {
   width: 100%;
   margin-left: 1.5rem;
   /* border-radius: 0.5rem; */
