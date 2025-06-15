@@ -41,11 +41,10 @@ const Home = () => {
     <div>
       <HeroSection/>
       <SliderCategories recipes={recipes}/>
-      <SliderCategories/>
+      <SliderCategories recipes={recipes}/>
       <PopularCategories/>
       <FullSubscriptionSection/>
       <Collections/>
-      <Footer/>
     </div>
     );
   };
