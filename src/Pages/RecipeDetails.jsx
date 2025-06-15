@@ -20,26 +20,28 @@ const RecipeDetails = () => {
   useEffect(() => {
     const fetchRecipe = async () => {
       const { data, error } = await supabase
-        .from('recipe')
+        .from("recipe")
         .select("*")
         .eq("recipe_id", id)
         .single();
       setRecipe(data);
     };
+
     const fetchIngredients = async () => {
-    const { data, error } = await supabase
-      .from('recipe_ingredient')
-      .select(`
-        amount,
-        unit,
-        ingredient:ingredient_id (name)
-      `)
-      .eq("recipe_id", id);
+      const { data, error } = await supabase
+        .from("recipe_ingredient")
+        .select(`
+          amount,
+          unit,
+          ingredient:ingredient_id (name)
+        `)
+        .eq("recipe_id", id);
 
       if (data) {
-        setIngredients(data); // Each item: { amount, unit, ingredient: { name } }
+        setIngredients(data);
       }
     };
+
     fetchIngredients();
     fetchRecipe();
   }, [id]);
@@ -48,15 +50,15 @@ const RecipeDetails = () => {
 
   return (
     <>
-      <Landing recipe={recipe}/>
+      <Landing recipe={recipe} />
       <div className={styles.mainContainer}>
         <div className={styles.leftSection}>
           <PrepInfo recipe={recipe} />
-          <Ingredients ingredients={ingredients}/>
-          <Instructions summary={recipe.summary} steps={recipe.steps}/>
+          <Ingredients ingredients={ingredients} />
+          <Instructions summary={recipe.summary} steps={recipe.steps} />
         </div>
         <div className={styles.rightSection}>
-          <NutritionFacts />
+          <NutritionFacts recipeId={id} /> {/* 🔹 Pass recipeId */}
           <SimilarRecipes />
         </div>
       </div>
