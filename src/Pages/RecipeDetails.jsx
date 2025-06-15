@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./RecipeDetails.module.css";
 import Landing from "../components/recipeDetails/Landing";
 import PrepInfo from "../components/recipeDetails/LeftSection/PrepInfo";
@@ -9,15 +9,52 @@ import SimilarRecipes from "../components/recipeDetails/RightSection/SimilarReci
 import Feedback from "../components/recipeDetails/Feedback";
 import PrevComments from "../components/recipeDetails/PrevComments";
 import Collections from "../components/Home/Collections";
+import supabase from "../config/supabaseClient";
+import { useParams } from "react-router-dom";
 
 const RecipeDetails = () => {
+  const { id } = useParams();
+  const [recipe, setRecipe] = useState(null);
+  const [ingredients, setIngredients] = useState([]);
+
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      const { data, error } = await supabase
+        .from("recipe")
+        .select("*")
+        .eq("recipe_id", id)
+        .single();
+      setRecipe(data);
+    };
+    const fetchIngredients = async () => {
+    const { data, error } = await supabase
+      .from("recipe_ingredient")
+      .select(`
+        amount,
+        unit,
+        ingredient:ingredient_id (
+          name
+        )
+      `)
+      .eq("recipe_id", id);
+
+      if (data) {
+        setIngredients(data); // Each item: { amount, unit, ingredient: { name } }
+      }
+    };
+    fetchIngredients();
+    fetchRecipe();
+  }, [id]);
+
+  if (!recipe) return <p>Loading recipe...</p>;
+
   return (
     <>
-      <Landing />
+      <Landing recipe={recipe}/>
       <div className={styles.mainContainer}>
         <div className={styles.leftSection}>
-          <PrepInfo />
-          <Ingredients />
+          <PrepInfo recipe={recipe} />
+          <Ingredients ingredients={ingredients}/>
           <Instructions />
         </div>
         <div className={styles.rightSection}>

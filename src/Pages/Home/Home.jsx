@@ -6,20 +6,48 @@ import PopularCategories from "../../components/Home/PopularCategories";
 import FullSubscriptionSection from "../../components/Common/Subscription/FullSubscriptionSection";
 import Footer from "../../components/Common/Footer/Footer";
 import Collections from "../../components/Home/Collections";
-import supabase from "../../config/supabaseClient"; 
+import supabase from "../../config/supabaseClient";
+import { useState, useEffect } from "react";
 
 const Home = () => {
-  console.log(supabase);
+  const [error, setError] = useState(null);
+  const [recipes, setRecipes] = useState(null);
 
-  return <div>
-    <HeroSection/>
-    <SliderCategories/>
-    <SliderCategories/>
-    <PopularCategories/>
-    <FullSubscriptionSection/>
-    <Collections/>
-    <Footer/>
-  </div>;
-};
+  useEffect(() => {
+    const fetchRecipes = async () => {
+        const { data, error } = await supabase
+          .from('recipe')
+          .select('*')
+
+          if (error) {
+            setError('Could not fetch recipes');
+            setRecipes(null);
+            console.log(error);
+          }
+          if (data) {
+            setRecipes(data);
+            setError(null);
+          }
+    }
+
+    fetchRecipes(); 
+  }, []);
+
+
+
+    console.log(supabase);
+
+    return (
+    <div>
+      <HeroSection/>
+      <SliderCategories recipes={recipes}/>
+      <SliderCategories/>
+      <PopularCategories/>
+      <FullSubscriptionSection/>
+      <Collections/>
+      <Footer/>
+    </div>
+    );
+  };
 
 export default Home;

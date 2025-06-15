@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./Landing.module.css";
 
-const Landing = () => {
+const Landing = ({ recipe }) => {
+  if (!recipe) return <p>Loading...</p>
   return (
     <div>
       <div className={styles.landingInfo}>
-        <h1 className={styles.recipeTitle}>Recipe Details</h1>
+        {/* <h1 className={styles.recipeTitle}>Recipe Details</h1>
         <div className={styles.author}>
           <div className={styles.authorIcon}>
             <img
@@ -21,7 +22,7 @@ const Landing = () => {
           <p>Date</p>
           <p>No. of Comments</p>
           <div>Ratings</div>
-        </div>
+        </div> */}
         <hr />
         <p className={styles.description}>
           Details about the selected recipe will be displayed here.
@@ -29,7 +30,7 @@ const Landing = () => {
       </div>
 
       <div className={styles.recipeImage}>
-        <img src="https://via.placeholder.com/300" alt="Recipe"></img>
+        <img src={recipe.image} alt={recipe.title}></img>
       </div>
     </div>
   );

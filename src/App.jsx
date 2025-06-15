@@ -21,7 +21,7 @@ function App() {
         { path: "", element: <Home /> },
         { path: "searchresults", element: <SearchResults /> },
         { path: "recipes", element: <Recipes /> },
-        { path: "recipedetails", element: <RecipeDetails /> },
+        { path: "recipedetails/:id", element: <RecipeDetails /> },
         { path: "userprofile/:username", element: <UserProfile/> },
         { path: "admindashboard", element: <AdminDashboard/> },
         { path: "grocerylist", element: <GroceryList/> },
