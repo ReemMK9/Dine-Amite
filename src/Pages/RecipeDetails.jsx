@@ -20,7 +20,7 @@ const RecipeDetails = () => {
   useEffect(() => {
     const fetchRecipe = async () => {
       const { data, error } = await supabase
-        .from("recipe")
+        .from('recipe')
         .select("*")
         .eq("recipe_id", id)
         .single();
@@ -28,13 +28,11 @@ const RecipeDetails = () => {
     };
     const fetchIngredients = async () => {
     const { data, error } = await supabase
-      .from("recipe_ingredient")
+      .from('recipe_ingredient')
       .select(`
         amount,
         unit,
-        ingredient:ingredient_id (
-          name
-        )
+        ingredient:ingredient_id (name)
       `)
       .eq("recipe_id", id);
 
@@ -55,7 +53,7 @@ const RecipeDetails = () => {
         <div className={styles.leftSection}>
           <PrepInfo recipe={recipe} />
           <Ingredients ingredients={ingredients}/>
-          <Instructions />
+          <Instructions summary={recipe.summary} steps={recipe.steps}/>
         </div>
         <div className={styles.rightSection}>
           <NutritionFacts />

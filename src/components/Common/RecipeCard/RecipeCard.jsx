@@ -9,8 +9,8 @@ const RecipeCard = ({ recipe }) => {
       <div className={styles.recipeImage}>
          <img src={recipe.image} alt={recipe.title} />
       </div>
-      <h2 className={styles.recipeTitle}>{recipe.title}</h2>
-      <div className={styles.recipeDuration}>{recipe.ready_in}</div>
+      <h2 className={styles.recipeTitle}> {recipe.title} </h2>
+      <div className={styles.recipeDuration}> {recipe.ready_in} </div>
     </div>
     );
 };

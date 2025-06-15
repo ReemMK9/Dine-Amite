@@ -24,9 +24,7 @@ const Landing = ({ recipe }) => {
           <div>Ratings</div>
         </div> */}
         <hr />
-        <p className={styles.description}>
-          Details about the selected recipe will be displayed here.
-        </p>
+        <h1 className={styles.recipeTitle}>{recipe.title}</h1>
       </div>
 
       <div className={styles.recipeImage}>
