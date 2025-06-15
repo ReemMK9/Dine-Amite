@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const SUPABASE_URL = 'https://kxeogsfnfwlncyachcxm.supabase.co/';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4ZW9nc2ZuZndsbmN5YWNoY3htIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ5OTQ0MTcsImV4cCI6MjA2MDU3MDQxN30.ZG5a-IUm9HTML0tFOXGG-DnBANips7T1DVniHyvetEs';
-const SPOONACULAR_KEY = 'e3c9e8915f1942cc8d0547bef1c355ff'; // Store API key in .env
+const SPOONACULAR_KEY = '89035776f6114b1bb319dc1f93a24933'; // Store API key in .env
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
