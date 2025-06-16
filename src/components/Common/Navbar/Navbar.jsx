@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
+      <div className={styles.navContainer}>
       <Link to="/" className={styles.title}>
         Dine'Amite
       </Link>
@@ -33,6 +34,7 @@ const Navbar = () => {
           alt="User Icon"
           className={styles.userIconImage}
         />
+      </div>
       </div>
     </nav>
   );

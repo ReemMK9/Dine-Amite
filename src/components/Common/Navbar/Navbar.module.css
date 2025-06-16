@@ -18,23 +18,34 @@
   
 }
 
+.navContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .title {
   font-family: var(--font-logo);
   font-size: 3rem;
   color: var(--color-primary);
   text-decoration: none;
+  margin-left: 0;
 }
 
 .menu {
   display: flex;
+  align-items: center; 
+  width: auto;
 }
 .menuItems {
   display: flex;
+  align-items: center;
   list-style: none;
-  gap: 80%;
+  gap: 2rem;
   color: var(--color-text);
-
-
+  padding: 0px;
+  margin: 0px;
 }
 
 .menuItems a {

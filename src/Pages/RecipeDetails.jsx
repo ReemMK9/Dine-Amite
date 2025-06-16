@@ -58,7 +58,7 @@ const RecipeDetails = () => {
           <Instructions summary={recipe.summary} steps={recipe.steps} />
         </div>
         <div className={styles.rightSection}>
-          <NutritionFacts recipeId={id} /> {/* 🔹 Pass recipeId */}
+          <NutritionFacts recipeId={id} servings={recipe.servings} />
           <SimilarRecipes />
         </div>
       </div>
