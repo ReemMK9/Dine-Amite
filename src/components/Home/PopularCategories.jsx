@@ -7,7 +7,7 @@ const PopularCategories = () => {
     <div className={styles.container}>
       <h1 className={styles.sectionTitle}>Popular Categories</h1>
     <div className={styles.categoriesCards}>
-    <CircularCard />
+      <CircularCard />
       <CircularCard />
       <CircularCard />
       <CircularCard />

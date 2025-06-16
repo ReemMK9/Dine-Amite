@@ -20,14 +20,14 @@ function App() {
       element: <Layout />,
       children: [
         { path: "", element: <Home /> },
-        { path: "searchresults", element: <SearchResults /> },
+        { path: "searchresults/:query", element: <SearchResults /> },
         { path: "recipes", element: <Recipes /> },
         { path: "recipedetails", element: <RecipeDetails /> },
         {path: "userprofile", element: <UserProfile/>},
         {path: "admindashboard", element: <AdminDashboard/>},
         {path: "grocerylist", element: <GroceryList/>},
         {path: "login", element: <AuthForm/>},
-        
+
     
         { path: "*", element: <NotFound /> },
       ],
