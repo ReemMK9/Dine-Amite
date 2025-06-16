@@ -28,4 +28,5 @@ hr {
   gap: 2.7rem;
   margin-inline: auto;
   padding: auto;
+  flex-grow: 1;
 }

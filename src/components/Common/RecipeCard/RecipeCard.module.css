@@ -7,17 +7,23 @@
 } */
 
 .recipeCard {
-  width: 18.1rem;
+  width: 15rem;
   margin-inline: 0;
   /* margin-left: 0%; */
   display: inline-block;
    /* width: calc(20% - clamp(0.5rem, 2vw, 2rem)); subtract the space between */
   /* margin-bottom: clamp(0.5rem, 2vw, 2rem); */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.recipeCard:hover {
+  transform: scale(1.02);
 }
 
 .recipeImage {
-  height: 13rem;
-  width: 18.1rem;
+  height: 10rem;
+  width: 15rem;
   border-radius: 10px;
   background-color: blue;
   margin:0;
