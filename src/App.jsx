@@ -19,7 +19,7 @@ function App() {
       element: <Layout />,
       children: [
         { path: "", element: <Home /> },
-        { path: "searchresults", element: <SearchResults /> },
+        { path: "searchresults/:query", element: <SearchResults /> },
         { path: "recipes", element: <Recipes /> },
         { path: "recipedetails/:id", element: <RecipeDetails /> },
         { path: "userprofile/:username", element: <UserProfile/> },
