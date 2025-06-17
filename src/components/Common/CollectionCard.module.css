@@ -3,6 +3,11 @@
   width: 18rem;
   height: 20rem;
 }
+.collectionCard:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
 
 .collectionImage {
   height: 12rem;
