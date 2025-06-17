@@ -21,7 +21,7 @@
   color: var(--color-primary);
   text-decoration: none;
   margin: 0 auto;
-  margin-left: 5.5rem;
+  /* margin-left: -1.5rem; */
 }
 
 .title:hover {
