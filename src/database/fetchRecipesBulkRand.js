@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const SUPABASE_URL = 'https://kxeogsfnfwlncyachcxm.supabase.co/';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4ZW9nc2ZuZndsbmN5YWNoY3htIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ5OTQ0MTcsImV4cCI6MjA2MDU3MDQxN30.ZG5a-IUm9HTML0tFOXGG-DnBANips7T1DVniHyvetEs';
-const SPOONACULAR_KEY = '89035776f6114b1bb319dc1f93a24933'; // Store API key in .env
+const SPOONACULAR_KEY = 'e6c5f053d1d04f9ca91f75dd6c4d341f'; // Store API key in .env
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -73,14 +73,17 @@ async function insertRecipe(recipe) {
 
 async function insertIngredients(recipe) {
   for (const ingredient of recipe.extendedIngredients) {
-    const { data, error } = await supabase.from('ingredient').upsert({
+    const { error } = await supabase.from('ingredient').upsert({
       ingredient_id: ingredient.id,
-      name: ingredient.name,
-      synced_at: new Date().toISOString(),
+      name_alt: ingredient.name,
+      synced_at: new Date().toISOString()
     });
 
-    if (error) console.error(`❌ Error inserting ingredient (${ingredient.name}):`, error);
-    else console.log(`✅ Ingredient inserted/updated: ${ingredient.name}`);
+    if (error) {
+      console.error(`❌ Error inserting ingredient (${ingredient.name}):`, error);
+    } else {
+      console.log(`✅ Ingredient inserted/updated: ${ingredient.name}`);
+    }
   }
 }
 

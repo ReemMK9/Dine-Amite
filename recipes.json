@@ -1,577 +1,630 @@
 [
   {
-    "id": 631747,
-    "image": "https://img.spoonacular.com/recipes/631747-556x370.jpg",
+    "id": 661059,
+    "image": "https://img.spoonacular.com/recipes/661059-556x370.jpg",
     "imageType": "jpg",
-    "title": "Dutch Oven Paella",
+    "title": "Spicy Chicken with Salsa Verde",
     "readyInMinutes": 45,
     "servings": 6,
-    "sourceUrl": "https://www.foodista.com/recipe/HD6HS3BD/dutch-oven-paella",
+    "sourceUrl": "https://www.foodista.com/recipe/J2MM37RF/spicy-chicken-with-salsa-verde",
     "vegetarian": false,
     "vegan": false,
     "glutenFree": false,
-    "dairyFree": true,
+    "dairyFree": false,
     "veryHealthy": false,
     "cheap": false,
     "veryPopular": false,
     "sustainable": false,
     "lowFodmap": false,
-    "weightWatcherSmartPoints": 16,
+    "weightWatcherSmartPoints": 12,
     "gaps": "no",
     "preparationMinutes": null,
     "cookingMinutes": null,
-    "aggregateLikes": 6,
-    "healthScore": 27,
+    "aggregateLikes": 2,
+    "healthScore": 28,
     "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
     "license": "CC BY 3.0",
     "sourceName": "Foodista",
-    "pricePerServing": 473.54,
+    "pricePerServing": 181.48,
     "extendedIngredients": [
       {
-        "id": 15270,
-        "aisle": "Seafood",
-        "image": "shrimp.png",
+        "id": 9037,
+        "aisle": "Produce",
+        "image": "avocado.jpg",
         "consistency": "SOLID",
-        "name": "shrimp",
-        "nameClean": "shrimp",
-        "original": "1 lb. large shrimp (21/25), peeled and deveined",
-        "originalName": "shrimp (21/25), peeled and deveined",
+        "name": "avocado",
+        "nameClean": "avocado",
+        "original": "1 medium avocado, mashed",
+        "originalName": "avocado, mashed",
         "amount": 1,
-        "unit": "lb",
+        "unit": "medium",
         "meta": [
-          "deveined",
-          "peeled",
-          "()"
+          "mashed"
         ],
         "measures": {
           "us": {
             "amount": 1,
-            "unitShort": "lb",
-            "unitLong": "pound"
+            "unitShort": "medium",
+            "unitLong": "medium"
           },
           "metric": {
-            "amount": 453.592,
+            "amount": 1,
+            "unitShort": "medium",
+            "unitLong": "medium"
+          }
+        }
+      },
+      {
+        "id": 5091,
+        "aisle": "Meat",
+        "image": "chicken-thighs.png",
+        "consistency": "SOLID",
+        "name": "chicken thigh fillets",
+        "nameClean": "chicken thigh fillets",
+        "original": "200g chicken thigh fillets, trimmed",
+        "originalName": "chicken thigh fillets, trimmed",
+        "amount": 200,
+        "unit": "g",
+        "meta": [
+          "trimmed"
+        ],
+        "measures": {
+          "us": {
+            "amount": 7.055,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 200,
             "unitShort": "g",
             "unitLong": "grams"
           }
         }
       },
       {
-        "id": 1102047,
+        "id": 2009,
         "aisle": "Spices and Seasonings",
-        "image": "salt-and-pepper.jpg",
+        "image": "chili-powder.jpg",
         "consistency": "SOLID",
-        "name": "salt and pepper",
-        "nameClean": "salt and pepper",
-        "original": "salt and pepper",
-        "originalName": "salt and pepper",
-        "amount": 6,
-        "unit": "servings",
+        "name": "chili powder",
+        "nameClean": "chili powder",
+        "original": "1 teaspoon chili powder",
+        "originalName": "chili powder",
+        "amount": 1,
+        "unit": "teaspoon",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 6,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
           },
           "metric": {
-            "amount": 6,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
           }
         }
       },
       {
-        "id": 1034053,
-        "aisle": "Oil, Vinegar, Salad Dressing",
-        "image": "olive-oil.jpg",
-        "consistency": "LIQUID",
-        "name": "extra virgin olive oil",
-        "nameClean": "extra virgin olive oil",
-        "original": "extra virgin olive oil",
-        "originalName": "extra virgin olive oil",
-        "amount": 6,
-        "unit": "servings",
+        "id": 10218364,
+        "aisle": "Pasta and Rice",
+        "image": "flour-tortilla.jpg",
+        "consistency": "SOLID",
+        "name": "flour tortilla wraps",
+        "nameClean": "flour tortilla wraps",
+        "original": "1 package of Flour Tortilla wraps",
+        "originalName": "Flour Tortilla wraps",
+        "amount": 1,
+        "unit": "package",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 6,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 1,
+            "unitShort": "pkg",
+            "unitLong": "package"
           },
           "metric": {
-            "amount": 6,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 1,
+            "unitShort": "pkg",
+            "unitLong": "package"
           }
         }
       },
       {
-        "id": 10211215,
+        "id": 2012,
+        "aisle": "Spices and Seasonings",
+        "image": "ground-coriander.jpg",
+        "consistency": "SOLID",
+        "name": "coriander leaves",
+        "nameClean": "coriander leaves",
+        "original": "1/4 cup Coriander leaves",
+        "originalName": "Coriander leaves",
+        "amount": 0.25,
+        "unit": "cup",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 0.25,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 59.147,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.jpg",
+        "image": "garlic.png",
         "consistency": "SOLID",
-        "name": "garlic cloves",
-        "nameClean": "garlic cloves",
-        "original": "8-9 garlic cloves, minced",
-        "originalName": "garlic cloves, minced",
-        "amount": 8,
-        "unit": "",
+        "name": "garlic",
+        "nameClean": "garlic",
+        "original": "2 cloves garlic, minced",
+        "originalName": "garlic, minced",
+        "amount": 2,
+        "unit": "cloves",
         "meta": [
           "minced"
         ],
         "measures": {
           "us": {
-            "amount": 8,
-            "unitShort": "",
-            "unitLong": ""
+            "amount": 2,
+            "unitShort": "cloves",
+            "unitLong": "cloves"
           },
           "metric": {
-            "amount": 8,
-            "unitShort": "",
-            "unitLong": ""
+            "amount": 2,
+            "unitShort": "cloves",
+            "unitLong": "cloves"
           }
         }
       },
       {
-        "id": 5096,
-        "aisle": "Meat",
-        "image": "chicken-thighs.png",
-        "consistency": "SOLID",
-        "name": "chicken thighs",
-        "nameClean": "chicken thighs",
-        "original": "1 lb. boneless, skinless chicken thighs, trimmed of excess fat, cut crosswise in half",
-        "originalName": "boneless, skinless chicken thighs, trimmed of excess fat, cut crosswise in half",
-        "amount": 1,
-        "unit": "lb",
-        "meta": [
-          "boneless",
-          "skinless",
-          "trimmed"
-        ],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "lb",
-            "unitLong": "pound"
-          },
-          "metric": {
-            "amount": 453.592,
-            "unitShort": "g",
-            "unitLong": "grams"
-          }
-        }
-      },
-      {
-        "id": 99231,
-        "aisle": "Meat",
-        "image": "chorizo-sausages.png",
-        "consistency": "SOLID",
-        "name": "chorizo sausage",
-        "nameClean": "chorizo sausage",
-        "original": "8 oz. Spanish chorizo sausage, sliced 1/2 inch thick",
-        "originalName": "Spanish chorizo sausage, sliced 1/2 inch thick",
-        "amount": 8,
-        "unit": "oz",
-        "meta": [
-          "spanish",
-          "sliced"
-        ],
-        "measures": {
-          "us": {
-            "amount": 8,
-            "unitShort": "oz",
-            "unitLong": "ounces"
-          },
-          "metric": {
-            "amount": 226.796,
-            "unitShort": "g",
-            "unitLong": "grams"
-          }
-        }
-      },
-      {
-        "id": 11821,
+        "id": 11291,
         "aisle": "Produce",
-        "image": "red-pepper.jpg",
+        "image": "spring-onions.jpg",
         "consistency": "SOLID",
-        "name": "bell pepper",
-        "nameClean": "bell pepper",
-        "original": "1 red bell pepper, seeded and cut into 1/2 inch wide strips",
-        "originalName": "red bell pepper, seeded and cut into 1/2 inch wide strips",
-        "amount": 1,
-        "unit": "",
-        "meta": [
-          "red",
-          "seeded",
-          "cut into 1/2 inch wide strips"
-        ],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "",
-            "unitLong": ""
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "",
-            "unitLong": ""
-          }
-        }
-      },
-      {
-        "id": 11282,
-        "aisle": "Produce",
-        "image": "brown-onion.png",
-        "consistency": "SOLID",
-        "name": "onion",
-        "nameClean": "onion",
-        "original": "1 . onion, chopped fine",
-        "originalName": "onion, chopped fine",
-        "amount": 1,
-        "unit": "",
-        "meta": [
-          "chopped",
-          "fine"
-        ],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "",
-            "unitLong": ""
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "",
-            "unitLong": ""
-          }
-        }
-      },
-      {
-        "id": 10011693,
-        "aisle": "Canned and Jarred",
-        "image": "tomatoes-canned.png",
-        "consistency": "SOLID",
-        "name": "canned tomatoes",
-        "nameClean": "canned tomatoes",
-        "original": "1 (14 1/2 oz.) can diced tomatoes, drained, finely chopped, then drained again",
-        "originalName": "diced tomatoes, drained, finely chopped, then drained again",
-        "amount": 14.5,
-        "unit": "oz",
-        "meta": [
-          "diced",
-          "drained",
-          "finely chopped",
-          "canned"
-        ],
-        "measures": {
-          "us": {
-            "amount": 14.5,
-            "unitShort": "oz",
-            "unitLong": "ounces"
-          },
-          "metric": {
-            "amount": 411.068,
-            "unitShort": "g",
-            "unitLong": "grams"
-          }
-        }
-      },
-      {
-        "id": 10020052,
-        "aisle": "Pasta and Rice",
-        "image": "uncooked-white-rice.png",
-        "consistency": "SOLID",
-        "name": "arborio rice",
-        "nameClean": "arborio rice",
-        "original": "2 c. Valencia or Arborio rice",
-        "originalName": "Valencia or Arborio rice",
+        "name": "green onions",
+        "nameClean": "green onions",
+        "original": "2 green onions roughly chopped",
+        "originalName": "green onions roughly chopped",
         "amount": 2,
-        "unit": "c",
-        "meta": [],
+        "unit": "",
+        "meta": [
+          "roughly chopped"
+        ],
         "measures": {
           "us": {
             "amount": 2,
-            "unitShort": "cups",
-            "unitLong": "cups"
+            "unitShort": "",
+            "unitLong": ""
           },
           "metric": {
-            "amount": 400,
-            "unitShort": "g",
-            "unitLong": "grams"
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
           }
         }
       },
       {
-        "id": 6970,
-        "aisle": "Canned and Jarred",
-        "image": "chicken-broth.png",
-        "consistency": "LIQUID",
-        "name": "chicken broth",
-        "nameClean": "chicken broth",
-        "original": "3 c. low-sodium chicken broth",
-        "originalName": "low-sodium chicken broth",
-        "amount": 3,
-        "unit": "c",
-        "meta": [
-          "low-sodium"
-        ],
-        "measures": {
-          "us": {
-            "amount": 3,
-            "unitShort": "cups",
-            "unitLong": "cups"
-          },
-          "metric": {
-            "amount": 708,
-            "unitShort": "ml",
-            "unitLong": "milliliters"
-          }
-        }
-      },
-      {
-        "id": 14106,
-        "aisle": "Alcoholic Beverages",
-        "image": "white-wine.jpg",
-        "consistency": "LIQUID",
-        "name": "wine",
-        "nameClean": "wine",
-        "original": "1/3 c. dry white wine",
-        "originalName": "dry white wine",
-        "amount": 0.33333334,
-        "unit": "c",
-        "meta": [
-          "dry white"
-        ],
-        "measures": {
-          "us": {
-            "amount": 0.33333334,
-            "unitShort": "cups",
-            "unitLong": "cups"
-          },
-          "metric": {
-            "amount": 80,
-            "unitShort": "ml",
-            "unitLong": "milliliters"
-          }
-        }
-      },
-      {
-        "id": 2037,
-        "aisle": "Spices and Seasonings",
-        "image": "saffron.jpg",
+        "id": 11979,
+        "aisle": "Ethnic Foods",
+        "image": "jalapeno-pepper.png",
         "consistency": "SOLID",
-        "name": "saffron threads",
-        "nameClean": "saffron threads",
-        "original": "1/2 t. saffron threads, crumbled",
-        "originalName": "saffron threads, crumbled",
-        "amount": 0.5,
-        "unit": "t",
-        "meta": [
-          "crumbled"
-        ],
-        "measures": {
-          "us": {
-            "amount": 0.175,
-            "unitShort": "tsps",
-            "unitLong": "teaspoons"
-          },
-          "metric": {
-            "amount": 0.175,
-            "unitShort": "tsps",
-            "unitLong": "teaspoons"
-          }
-        }
-      },
-      {
-        "id": 2004,
-        "aisle": "Produce",
-        "image": "bay-leaves.jpg",
-        "consistency": "SOLID",
-        "name": "bay leaf",
-        "nameClean": "bay leaf",
-        "original": "1 bay leaf",
-        "originalName": "bay leaf",
-        "amount": 1,
+        "name": "jalapeño peppers",
+        "nameClean": "jalapeño peppers",
+        "original": "2 jalapeño peppers, chopped",
+        "originalName": "jalapeño peppers, chopped",
+        "amount": 2,
         "unit": "",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "",
-            "unitLong": ""
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "",
-            "unitLong": ""
-          }
-        }
-      },
-      {
-        "id": 11009,
-        "aisle": "Frozen",
-        "image": "artichoke-hearts.png",
-        "consistency": "SOLID",
-        "name": "artichoke hearts",
-        "nameClean": "artichoke hearts",
-        "original": "3/4 c. frozen artichoke hearts, thawed",
-        "originalName": "frozen artichoke hearts, thawed",
-        "amount": 0.75,
-        "unit": "c",
         "meta": [
-          "frozen",
-          "thawed"
-        ],
-        "measures": {
-          "us": {
-            "amount": 0.75,
-            "unitShort": "cups",
-            "unitLong": "cups"
-          },
-          "metric": {
-            "amount": 177.441,
-            "unitShort": "g",
-            "unitLong": "grams"
-          }
-        }
-      },
-      {
-        "id": 11304,
-        "aisle": "Produce",
-        "image": "peas.jpg",
-        "consistency": "SOLID",
-        "name": "peas",
-        "nameClean": "peas",
-        "original": "1/2 c. frozen peas, thawed",
-        "originalName": "frozen peas, thawed",
-        "amount": 0.5,
-        "unit": "c",
-        "meta": [
-          "frozen",
-          "thawed"
-        ],
-        "measures": {
-          "us": {
-            "amount": 0.5,
-            "unitShort": "cups",
-            "unitLong": "cups"
-          },
-          "metric": {
-            "amount": 72.5,
-            "unitShort": "g",
-            "unitLong": "grams"
-          }
-        }
-      },
-      {
-        "id": 10018413,
-        "aisle": "Bakery/Bread",
-        "image": "pita-bread.jpg",
-        "consistency": "SOLID",
-        "name": "flat parsely",
-        "nameClean": "flat parsely",
-        "original": "chopped fresh flat-leaf parsely",
-        "originalName": "chopped fresh flat parsely",
-        "amount": 1,
-        "unit": "leaf",
-        "meta": [
-          "fresh",
           "chopped"
         ],
         "measures": {
           "us": {
-            "amount": 1,
-            "unitShort": "leaf",
-            "unitLong": "leave"
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
           },
           "metric": {
-            "amount": 1,
-            "unitShort": "leaf",
-            "unitLong": "leave"
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
           }
         }
       },
       {
-        "id": 1029150,
+        "id": 9159,
         "aisle": "Produce",
-        "image": "lemon-wedge.png",
+        "image": "lime.jpg",
         "consistency": "SOLID",
-        "name": "lemon wedges",
-        "nameClean": "lemon wedges",
-        "original": "lemon wedges",
-        "originalName": "lemon wedges",
-        "amount": 6,
-        "unit": "servings",
+        "name": "limes",
+        "nameClean": "limes",
+        "original": "2 limes",
+        "originalName": "limes",
+        "amount": 2,
+        "unit": "",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 6,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
           },
           "metric": {
-            "amount": 6,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 2,
+            "unitShort": "",
+            "unitLong": ""
+          }
+        }
+      },
+      {
+        "id": 2064,
+        "aisle": "Produce",
+        "image": "mint.jpg",
+        "consistency": "SOLID",
+        "name": "mint leaves",
+        "nameClean": "mint leaves",
+        "original": "1/4 cup mint leaves",
+        "originalName": "mint leaves",
+        "amount": 0.25,
+        "unit": "cup",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 0.25,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 11.25,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 1072047,
+        "aisle": "Spices and Seasonings",
+        "image": "garlic-salt.jpg",
+        "consistency": "SOLID",
+        "name": "onion salt",
+        "nameClean": "onion salt",
+        "original": "1 teaspoon onion salt",
+        "originalName": "onion salt",
+        "amount": 1,
+        "unit": "teaspoon",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
+          }
+        }
+      },
+      {
+        "id": 2027,
+        "aisle": "Spices and Seasonings",
+        "image": "oregano.jpg",
+        "consistency": "SOLID",
+        "name": "oregano",
+        "nameClean": "oregano",
+        "original": "1 teaspoon dried oregano",
+        "originalName": "dried oregano",
+        "amount": 1,
+        "unit": "teaspoon",
+        "meta": [
+          "dried"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
+          }
+        }
+      },
+      {
+        "id": 2028,
+        "aisle": "Spices and Seasonings",
+        "image": "paprika.jpg",
+        "consistency": "SOLID",
+        "name": "paprika",
+        "nameClean": "paprika",
+        "original": "1 tsp. paprika",
+        "originalName": "paprika",
+        "amount": 1,
+        "unit": "tsp",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
+          }
+        }
+      },
+      {
+        "id": 10511819,
+        "aisle": "Produce",
+        "image": "red-chili.jpg",
+        "consistency": "SOLID",
+        "name": "chilli",
+        "nameClean": "chilli",
+        "original": "1 red Chilli",
+        "originalName": "red Chilli",
+        "amount": 1,
+        "unit": "",
+        "meta": [
+          "red"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "",
+            "unitLong": ""
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "",
+            "unitLong": ""
+          }
+        }
+      },
+      {
+        "id": 1056,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "sour-cream.jpg",
+        "consistency": "SOLID",
+        "name": "cream",
+        "nameClean": "cream",
+        "original": "1 small tub of Sour Cream.",
+        "originalName": "Sour Cream",
+        "amount": 1,
+        "unit": "small tub",
+        "meta": [
+          "sour"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "small tub",
+            "unitLong": "small tub"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "small tub",
+            "unitLong": "small tub"
+          }
+        }
+      },
+      {
+        "id": 4669,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "vegetable-oil.jpg",
+        "consistency": "LIQUID",
+        "name": "vegetable oil",
+        "nameClean": "vegetable oil",
+        "original": "1 Teaspoon Vegetable Oil",
+        "originalName": "Vegetable Oil",
+        "amount": 1,
+        "unit": "Teaspoon",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "tsp",
+            "unitLong": "teaspoon"
           }
         }
       }
     ],
-    "summary": "Dutch Oven Paellan is a main course that serves 6. For <b>$4.74 per serving</b>, this recipe <b>covers 31%</b> of your daily requirements of vitamins and minerals. One serving contains <b>670 calories</b>, <b>43g of protein</b>, and <b>24g of fat</b>. 6 people found this recipe to be yummy and satisfying. If you have garlic cloves, flat parsely, chicken thighs, and a few other ingredients on hand, you can make it. It is brought to you by Foodista. This recipe is typical of European cuisine. From preparation to the plate, this recipe takes around <b>45 minutes</b>. It is a good option if you're following a <b>dairy free</b> diet. Taking all factors into account, this recipe <b>earns a spoonacular score of 78%</b>, which is good. <a href=\"https://spoonacular.com/recipes/dutch-oven-paella-1438817\">Dutch Oven Paella</a>, <a href=\"https://spoonacular.com/recipes/dutch-oven-paella-1479225\">Dutch Oven Paella</a>, and <a href=\"https://spoonacular.com/recipes/dutch-oven-cobbler-423365\">Dutch Oven Cobbler</a> are very similar to this recipe.",
+    "summary": "Forget going out to eat or ordering takeout every time you crave Mexican food. Try making Spicy Chicken with Salsa Verde at home. This recipe makes 6 servings with <b>398 calories</b>, <b>14g of protein</b>, and <b>23g of fat</b> each. For <b>$1.81 per serving</b>, this recipe <b>covers 28%</b> of your daily requirements of vitamins and minerals. Only a few people made this recipe, and 2 would say it hit the spot. From preparation to the plate, this recipe takes approximately <b>45 minutes</b>. It is brought to you by Foodista. Head to the store and pick up jalapeño peppers, oregano, mint leaves, and a few other things to make it today. It works well as an affordable side dish. Taking all factors into account, this recipe <b>earns a spoonacular score of 46%</b>, which is solid. Try <a href=\"https://spoonacular.com/recipes/spicy-salsa-verde-chicken-588221\">Spicy salsa verde chicken</a>, <a href=\"https://spoonacular.com/recipes/skillet-nachos-with-spicy-salsa-verde-chicken-603500\">Skillet Nachos with Spicy Salsa Verde Chicken</a>, and <a href=\"https://spoonacular.com/recipes/spicy-chicken-empanadas-with-orange-salsa-verde-320791\">Spicy Chicken Empanadas with Orange Salsa Verde</a> for similar recipes.",
     "cuisines": [
-      "Spanish",
-      "European"
+      "Mexican"
     ],
     "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
+      "side dish"
     ],
-    "diets": [
-      "dairy free"
-    ],
+    "diets": [],
     "occasions": [],
-    "instructions": "Adjust oven rack to lower middle position and heat oven to 350. In a med bowl, toss shrimp with 1 t. minced garlic, 1 T. olive oil, 1/4 t. salt & 1/4 t. pepper. Refrigerate until needed. Season chicken with salt & pepper, set aside.\nHeat 2 t. oil in a large Dutch oven over med-high heat until oil shimmers, add bell pepper and cook, stirring occasionally until skins blister and brown about 3-4 minutes. Remove to a plate and set aside. Add 1 T. more oil to the pot, add chicken thighs and brown well, flipping once, about 3 minutes per side. Remove chicken to a bowl, reduce heat to medium, add sausage and cook 4-5 minutes, stirring frequently, until browned and fat starts to render. Add to bowl with the browned chicken.\n3. At medium heat, add enough oil to the pot to equal 2 T., add onion and cook, stirring frequently, until tender, about 3 minutes, add remaining garlic, cook for 1 minute, add tomatoes, cook and stir until tomatoes thicken and darken slightly about 3 minutes. Add rice, cook and stir for about 2 minutes, making sure everything is evenly mixed. Add broth, wine, saffron, bay leaf and 1/2 t. salt. Add the browned chicken and sausage. Increase heat to med-high, bring to a boil, stirring often. Cover pot and place in the oven. Bake for 15 minutes (liquid should be mostly absorbed). Remove pot from the oven (keep oven door closed to retain heat), remove the lid, nestle the artichoke hearts down in the rice a bit. Sprinkle the shrimp over the top of the rice, then, sprinkle with the peas and bell pepper strips. Replace the led, add back to the oven for another 10 minutes or until the shrimp are opaque.\nTurn stove burner to med-high heat. Remove the pot from the oven, place on the stove cook for 5 minutes to get the browned portion on the bottom of the rice (called Soccarat), rotating the pot 180 degrees halfway through to ensure even browning. Remove pot from heat and let the paella rest, covered, for 5 minutes. Sprinkle with fresh chopped parsley and lemon wedges.",
+    "instructions": "<ol><li>Turn oven on to lowest setting and place your plates inside.</li><li>Prepare your pre bought flour tortilla wraps by sprinkling each tortilla with a little water then stacking them together, wrap in tin foil and place in the oven alongside the plates.</li><li>Prepare the chicken, cut chicken thighs into strips and mix with onion salt, chilli power, oregano, paprika and oil in a bowl and toss to coat.  set aside.</li><li>Salsa Verde:  Place the chili, garlic, green onion, coriander, mint and vegetable oil in a food processor and pulse until combined. Set aside later for serving. Makes 1 cup (250ml).</li><li>Guacamole: Scoop out flesh of 1 ripe Avocado, Chop and de-seed 1 red chilli and add to the Avocado, Squeeze in juice of 1/2 lime and mix to combine. Set aside later for serving</li><li>Sour Cream: Turn out tub of sour cream into a serving bowl, sprinkle lightly over the top with course black pepper. set aside.</li><li>Preheat a char-grill pan or barbecue over high heat. Char-grill or barbecue the chicken for 4-5 minutes each side or until cooked through.</li><li>Chop 1 red bell pepper into lengthy strips and toss on the hot griddle for 1 min.</li><li>Place the Chicken in a serving bowl, with pepper and bring the Salsa Verde, Guacamole and sour cream to the table along with hot plates and the tortilla wraps.  Serve with extra fresh bowl of coriander leaves and lime wedges. .</li><li>Serves 6</li></ol>",
     "analyzedInstructions": [
       {
-        "name": "",
+        "name": "Turn oven on to lowest setting and place your plates inside.Prepare your pre bought flour tortilla wraps by sprinkling each tortilla with a little water then stacking them together, wrap in tin foil and place in the oven alongside the plates.Prepare the chicken, cut chicken thighs into strips and mix with onion salt, chilli power, oregano, paprika and oil in a bowl and toss to coat.  set aside.Salsa Verde",
         "steps": [
           {
             "number": 1,
-            "step": "Adjust oven rack to lower middle position and heat oven to 35",
-            "ingredients": [],
+            "step": "Place the chili, garlic, green onion, coriander, mint and vegetable oil in a food processor and pulse until combined. Set aside later for serving. Makes 1 cup (250ml).Guacamole: Scoop out flesh of 1 ripe Avocado, Chop and de-seed 1 red chilli and add to the Avocado, Squeeze in juice of 1/2 lime and mix to combine. Set aside later for serving",
+            "ingredients": [
+              {
+                "id": 4669,
+                "name": "vegetable oil",
+                "localizedName": "vegetable oil",
+                "image": "vegetable-oil.jpg"
+              },
+              {
+                "id": 11291,
+                "name": "green onions",
+                "localizedName": "green onions",
+                "image": "spring-onions.jpg"
+              },
+              {
+                "id": 10511819,
+                "name": "red chili pepper",
+                "localizedName": "red chili pepper",
+                "image": "red-chili.jpg"
+              },
+              {
+                "id": 1012013,
+                "name": "coriander",
+                "localizedName": "coriander",
+                "image": "ground-coriander.jpg"
+              },
+              {
+                "id": 1009037,
+                "name": "guacamole",
+                "localizedName": "guacamole",
+                "image": "guacamole.jpg"
+              },
+              {
+                "id": 9037,
+                "name": "avocado",
+                "localizedName": "avocado",
+                "image": "avocado.jpg"
+              },
+              {
+                "id": 11215,
+                "name": "garlic",
+                "localizedName": "garlic",
+                "image": "garlic.png"
+              },
+              {
+                "id": 11819,
+                "name": "chili pepper",
+                "localizedName": "chili pepper",
+                "image": "red-chili.jpg"
+              },
+              {
+                "id": 1019016,
+                "name": "juice",
+                "localizedName": "juice",
+                "image": "apple-juice.jpg"
+              },
+              {
+                "id": 9159,
+                "name": "lime",
+                "localizedName": "lime",
+                "image": "lime.jpg"
+              },
+              {
+                "id": 2064,
+                "name": "mint",
+                "localizedName": "mint",
+                "image": "mint.jpg"
+              }
+            ],
             "equipment": [
               {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+                "id": 404771,
+                "name": "food processor",
+                "localizedName": "food processor",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/food-processor.png"
               }
             ]
           },
           {
             "number": 2,
-            "step": "In a med bowl, toss shrimp with 1 t. minced garlic, 1 T. olive oil, 1/4 t. salt & 1/4 t. pepper. Refrigerate until needed. Season chicken with salt & pepper, set aside.",
+            "step": "Sour Cream: Turn out tub of sour cream into a serving bowl, sprinkle lightly over the top with course black pepper. set aside.Preheat a char-grill pan or barbecue over high heat. Char-grill or barbecue the chicken for 4-5 minutes each side or until cooked through.Chop 1 red bell pepper into lengthy strips and toss on the hot griddle for 1 min.",
             "ingredients": [
               {
+                "id": 11821,
+                "name": "red pepper",
+                "localizedName": "red pepper",
+                "image": "red-pepper.jpg"
+              },
+              {
+                "id": 1002030,
+                "name": "black pepper",
+                "localizedName": "black pepper",
+                "image": "pepper.jpg"
+              },
+              {
+                "id": 1056,
+                "name": "sour cream",
+                "localizedName": "sour cream",
+                "image": "sour-cream.jpg"
+              },
+              {
                 "id": 0,
-                "name": "minced garlic",
-                "localizedName": "minced garlic",
-                "image": "garlic.png"
+                "name": "chicken",
+                "localizedName": "chicken",
+                "image": "whole-chicken.jpg"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404648,
+                "name": "grill pan",
+                "localizedName": "grill pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/grill-pan.jpg"
               },
               {
-                "id": 1102047,
-                "name": "salt and pepper",
-                "localizedName": "salt and pepper",
-                "image": "salt-and-pepper.jpg"
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
               },
               {
-                "id": 4053,
-                "name": "olive oil",
-                "localizedName": "olive oil",
-                "image": "olive-oil.jpg"
+                "id": 404706,
+                "name": "grill",
+                "localizedName": "grill",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/grill.jpg"
+              },
+              {
+                "id": 404783,
+                "name": "bowl",
+                "localizedName": "bowl",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
+              }
+            ],
+            "length": {
+              "number": 6,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 3,
+            "step": "Place the Chicken in a serving bowl, with pepper and bring the Salsa Verde, Guacamole and sour cream to the table along with hot plates and the tortilla wraps.",
+            "ingredients": [
+              {
+                "id": 18364,
+                "name": "tortilla",
+                "localizedName": "tortilla",
+                "image": "flour-tortilla.jpg"
+              },
+              {
+                "id": 27028,
+                "name": "salsa verde",
+                "localizedName": "salsa verde",
+                "image": "salsa-verde.png"
+              },
+              {
+                "id": 1056,
+                "name": "sour cream",
+                "localizedName": "sour cream",
+                "image": "sour-cream.jpg"
+              },
+              {
+                "id": 1009037,
+                "name": "guacamole",
+                "localizedName": "guacamole",
+                "image": "guacamole.jpg"
               },
               {
                 "id": 0,
@@ -584,18 +637,6 @@
                 "name": "pepper",
                 "localizedName": "pepper",
                 "image": "pepper.jpg"
-              },
-              {
-                "id": 15270,
-                "name": "shrimp",
-                "localizedName": "shrimp",
-                "image": "shrimp.png"
-              },
-              {
-                "id": 2047,
-                "name": "salt",
-                "localizedName": "salt",
-                "image": "salt.jpg"
               }
             ],
             "equipment": [
@@ -608,59 +649,430 @@
             ]
           },
           {
-            "number": 3,
-            "step": "Heat 2 t. oil in a large Dutch oven over med-high heat until oil shimmers, add bell pepper and cook, stirring occasionally until skins blister and brown about 3-4 minutes.",
+            "number": 4,
+            "step": "Serve with extra fresh bowl of coriander leaves and lime wedges. .",
             "ingredients": [
               {
-                "id": 10211821,
-                "name": "bell pepper",
-                "localizedName": "bell pepper",
-                "image": "bell-pepper-orange.png"
+                "id": 1029159,
+                "name": "lime wedge",
+                "localizedName": "lime wedge",
+                "image": "lime-wedge.jpg"
               },
               {
-                "id": 4582,
-                "name": "cooking oil",
-                "localizedName": "cooking oil",
-                "image": "vegetable-oil.jpg"
+                "id": 1012013,
+                "name": "coriander",
+                "localizedName": "coriander",
+                "image": "ground-coriander.jpg"
               }
             ],
             "equipment": [
               {
-                "id": 404667,
-                "name": "dutch oven",
-                "localizedName": "dutch oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/dutch-oven.jpg"
+                "id": 404783,
+                "name": "bowl",
+                "localizedName": "bowl",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
               }
-            ],
-            "length": {
-              "number": 4,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 4,
-            "step": "Remove to a plate and set aside.",
-            "ingredients": [],
-            "equipment": []
+            ]
           },
           {
             "number": 5,
-            "step": "Add 1 T. more oil to the pot, add chicken thighs and brown well, flipping once, about 3 minutes per side.",
-            "ingredients": [
-              {
-                "id": 5091,
-                "name": "chicken thighs",
-                "localizedName": "chicken thighs",
-                "image": "chicken-thigh.jpg"
-              },
-              {
-                "id": 4582,
-                "name": "cooking oil",
-                "localizedName": "cooking oil",
-                "image": "vegetable-oil.jpg"
-              }
-            ],
+            "step": "Serves 6",
+            "ingredients": [],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "originalId": null,
+    "spoonacularScore": 77.12033081054688,
+    "spoonacularSourceUrl": "https://spoonacular.com/spicy-chicken-with-salsa-verde-661059"
+  },
+  {
+    "id": 735820,
+    "image": "https://img.spoonacular.com/recipes/735820-556x370.jpg",
+    "imageType": "jpg",
+    "title": "Crock-Pot: Asian-Style Country Ribs with Black Bean Garlic Sauce",
+    "readyInMinutes": 45,
+    "servings": 4,
+    "sourceUrl": "http://oneperfectbite.blogspot.com/2008/10/crock-pot-asian-style-country-ribs-with.html",
+    "vegetarian": false,
+    "vegan": false,
+    "glutenFree": false,
+    "dairyFree": true,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": true,
+    "sustainable": false,
+    "lowFodmap": false,
+    "weightWatcherSmartPoints": 24,
+    "gaps": "no",
+    "preparationMinutes": null,
+    "cookingMinutes": null,
+    "aggregateLikes": 912,
+    "healthScore": 12,
+    "creditsText": "blogspot.com",
+    "license": null,
+    "sourceName": "blogspot.com",
+    "pricePerServing": 234.99,
+    "extendedIngredients": [
+      {
+        "id": 99210,
+        "aisle": "Ethnic Foods",
+        "image": "douchi.jpg",
+        "consistency": "SOLID",
+        "name": "black bean garlic sauce from a jar",
+        "nameClean": "black bean garlic sauce from a jar",
+        "original": "3 tablespoons prepared black bean garlic sauce from a jar (i.e. Lee Kum Kee)",
+        "originalName": "prepared black bean garlic sauce from a jar (i.e. Lee Kum Kee)",
+        "amount": 3,
+        "unit": "tablespoons",
+        "meta": [
+          "prepared",
+          "(i.e. Lee Kum Kee)"
+        ],
+        "measures": {
+          "us": {
+            "amount": 3,
+            "unitShort": "Tbsps",
+            "unitLong": "Tbsps"
+          },
+          "metric": {
+            "amount": 3,
+            "unitShort": "Tbsps",
+            "unitLong": "Tbsps"
+          }
+        }
+      },
+      {
+        "id": 6172,
+        "aisle": "Canned and Jarred",
+        "image": "chicken-broth.png",
+        "consistency": "LIQUID",
+        "name": "chicken stock",
+        "nameClean": "chicken stock",
+        "original": "1/4 cup mirin or chicken stock",
+        "originalName": "mirin or chicken stock",
+        "amount": 0.25,
+        "unit": "cup",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 0.25,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 60,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 20027,
+        "aisle": "Baking",
+        "image": "white-powder.jpg",
+        "consistency": "SOLID",
+        "name": "cornstarch",
+        "nameClean": "cornstarch",
+        "original": "1 tablespoon cornstarch",
+        "originalName": "cornstarch",
+        "amount": 1,
+        "unit": "tablespoon",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          }
+        }
+      },
+      {
+        "id": 11215,
+        "aisle": "Produce",
+        "image": "garlic.png",
+        "consistency": "SOLID",
+        "name": "country",
+        "nameClean": "country",
+        "original": "Asian-Style Country Ribs with Black Bean Garlic Sauce",
+        "originalName": "Asian-Style Country Ribs with Black Bean Garlic Sauce",
+        "amount": 4,
+        "unit": "servings",
+        "meta": [
+          "with black bean garlic sauce",
+          "asian-style"
+        ],
+        "measures": {
+          "us": {
+            "amount": 4,
+            "unitShort": "servings",
+            "unitLong": "servings"
+          },
+          "metric": {
+            "amount": 4,
+            "unitShort": "servings",
+            "unitLong": "servings"
+          }
+        }
+      },
+      {
+        "id": 1004058,
+        "aisle": "Ethnic Foods",
+        "image": "sesame-oil.png",
+        "consistency": "LIQUID",
+        "name": "sesame oil",
+        "nameClean": "sesame oil",
+        "original": "2 teaspoons dark sesame oil",
+        "originalName": "dark sesame oil",
+        "amount": 2,
+        "unit": "teaspoons",
+        "meta": [
+          "dark"
+        ],
+        "measures": {
+          "us": {
+            "amount": 2,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
+          },
+          "metric": {
+            "amount": 2,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
+          }
+        }
+      },
+      {
+        "id": 11215,
+        "aisle": "Produce",
+        "image": "garlic.png",
+        "consistency": "SOLID",
+        "name": "garlic",
+        "nameClean": "garlic",
+        "original": "1 tablespoon coarsely chopped fresh garlic",
+        "originalName": "coarsely chopped fresh garlic",
+        "amount": 1,
+        "unit": "tablespoon",
+        "meta": [
+          "fresh",
+          "coarsely chopped"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          }
+        }
+      },
+      {
+        "id": 11216,
+        "aisle": "Produce",
+        "image": "ginger.png",
+        "consistency": "SOLID",
+        "name": "ginger root",
+        "nameClean": "ginger root",
+        "original": "1 tablespoon freshly grated ginger root",
+        "originalName": "freshly grated ginger root",
+        "amount": 1,
+        "unit": "tablespoon",
+        "meta": [
+          "freshly grated"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          }
+        }
+      },
+      {
+        "id": 19296,
+        "aisle": "Nut butters, Jams, and Honey",
+        "image": "honey.png",
+        "consistency": "LIQUID",
+        "name": "honey",
+        "nameClean": "honey",
+        "original": "1 tablespoon honey",
+        "originalName": "honey",
+        "amount": 1,
+        "unit": "tablespoon",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "Tbsp",
+            "unitLong": "Tbsp"
+          }
+        }
+      },
+      {
+        "id": 1002030,
+        "aisle": "Spices and Seasonings",
+        "image": "pepper.jpg",
+        "consistency": "SOLID",
+        "name": "coarsely cracked pepper",
+        "nameClean": "coarsely cracked pepper",
+        "original": "1/2 teaspoon coarsely cracked black pepper",
+        "originalName": "coarsely cracked black pepper",
+        "amount": 0.5,
+        "unit": "teaspoon",
+        "meta": [
+          "black"
+        ],
+        "measures": {
+          "us": {
+            "amount": 0.5,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
+          },
+          "metric": {
+            "amount": 0.5,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
+          }
+        }
+      },
+      {
+        "id": 10110088,
+        "aisle": "Meat",
+        "image": "raw-pork-ribs.jpg",
+        "consistency": "SOLID",
+        "name": "pork ribs",
+        "nameClean": "pork ribs",
+        "original": "3 to 4 pounds boneless country-style pork ribs, cross cut in 1-1/2-inch pieces",
+        "originalName": "boneless country-style pork ribs, cross cut in 1-1/2-inch pieces",
+        "amount": 3,
+        "unit": "pounds",
+        "meta": [
+          "boneless",
+          "country-style",
+          "cut in 1-1/2-inch pieces"
+        ],
+        "measures": {
+          "us": {
+            "amount": 3,
+            "unitShort": "lb",
+            "unitLong": "pounds"
+          },
+          "metric": {
+            "amount": 952.544,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "SOLID",
+        "name": "soy salt",
+        "nameClean": "soy salt",
+        "original": "1/4 cup low-sodium soy salt",
+        "originalName": "low-sodium soy salt",
+        "amount": 0.25,
+        "unit": "cup",
+        "meta": [
+          "low-sodium"
+        ],
+        "measures": {
+          "us": {
+            "amount": 0.25,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 73,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 11291,
+        "aisle": "Produce",
+        "image": "spring-onions.jpg",
+        "consistency": "SOLID",
+        "name": "tablespoons scallions",
+        "nameClean": "tablespoons scallions",
+        "original": "1/4 cup + 2 tablespoons chopped scallions (white and tender green)",
+        "originalName": "2 tablespoons chopped scallions (white and tender green)",
+        "amount": 0.25,
+        "unit": "cup",
+        "meta": [
+          "white",
+          "green",
+          "chopped",
+          "( and tender )"
+        ],
+        "measures": {
+          "us": {
+            "amount": 0.25,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 25,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      }
+    ],
+    "summary": "Crock-Pot: Asian-Style Country Ribs with Black Bean Garlic Sauce could be just the <b>dairy free and ketogenic</b> recipe you've been looking for. One serving contains <b>732 calories</b>, <b>39g of protein</b>, and <b>58g of fat</b>. This recipe serves 4. For <b>$2.35 per serving</b>, this recipe <b>covers 25%</b> of your daily requirements of vitamins and minerals. Many people really liked this main course. If you have soy salt, country, ginger root, and a few other ingredients on hand, you can make it. 912 people have made this recipe and would make it again. It is a <b>rather inexpensive</b> recipe for fans of Asian food. It is brought to you by oneperfectbite.blogspot.com. From preparation to the plate, this recipe takes roughly <b>45 minutes</b>. Overall, this recipe earns a <b>good spoonacular score of 75%</b>. Users who liked this recipe also liked <a href=\"https://spoonacular.com/recipes/crock-pot-asian-style-country-ribs-with-black-bean-garlic-sauce-1242665\">Crock-Pot: Asian-Style Country Ribs with Black Bean Garlic Sauce</a>, <a href=\"https://spoonacular.com/recipes/crock-pot-indonesian-style-country-ribs-114372\">Crock Pot Indonesian Style Country Ribs</a>, and <a href=\"https://spoonacular.com/recipes/crock-pot-bbq-country-style-ribs-484544\">Crock Pot BBQ Country Style Ribs</a>.",
+    "cuisines": [
+      "Asian"
+    ],
+    "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+    ],
+    "diets": [
+      "dairy free",
+      "ketogenic"
+    ],
+    "occasions": [],
+    "instructions": "This crock-pot entre is really, really good. It takes 10 minutes to prepare, is made from ingredients that are readily available and is a bargain when you consider the number of servings it provides.  One caution -  you'll have mush with  Asian flavor if you cook this for more than 5 to 6 hours. The recipe is adapted from \"Slow Cooker Recipes for All Occasions\",  a Rival Crock-Pot publication.  Served with rice and snow peas you have the makings of a minor feast that you'll repeat often. My family loves this dish. I think yours will, too. This, by the way, is a wonderful recipe for novice cooks. If you have a willing teen, let them have a go at it.Asian-Style Country Ribs with Black Bean Garlic SauceIngredients:3 to 4 pounds boneless country-style pork ribs, cross cut in 1-1/2-inch pieces3 tablespoons prepared black bean garlic sauce from a jar (i.e. Lee Kum Kee)1/4 cup low-sodium soy salt1/4 cup mirin or chicken stock1 tablespoon honey1 tablespoon freshly grated ginger root1 tablespoon coarsely chopped fresh garlic1/2 teaspoon coarsely cracked black pepper1 tablespoon cornstarch2 teaspoons dark sesame oil1/4 cup + 2 tablespoons chopped scallions (white and tender green)Directions:1) Spray interior of slow cooker with nonstick cooking spray. Place pork cubes in slow cooker. Combine black bean garlic sauce, soy sauce, mirin, honey, ginger, garlic, pepper and cornstarch in a small bowl; stir to dissolve cornstarch. Pour over ribs.2) Cook, covered, on LOW setting for 5 to 6 hours until ribs are tender but still hold their shape. Transfer ribs to a rimmed serving platter; tent with foil to keep warm. Strain liquid into a small pan. Bring liquid to a boil over medium-high heat; cook until mixture begins to thicken and is reduced by half. Stir in sesame oil. Add sauce and 1/4 cup scallions to pork cubes.  Mix well. Garnish with reserved 2 tablespoons scallions. Yield: 6 to 8 servings.",
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "This crock-pot entre is really, really good. It takes 10 minutes to prepare, is made from ingredients that are readily available and is a bargain when you consider the number of servings it provides.  One caution -  you'll have mush with  Asian flavor if you cook this for more than 5 to 6 hours. The recipe is adapted from \"Slow Cooker Recipes for All Occasions\",  a Rival Crock-Pot publication.",
+            "ingredients": [],
             "equipment": [
+              {
+                "id": 404718,
+                "name": "slow cooker",
+                "localizedName": "slow cooker",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg"
+              },
               {
                 "id": 404752,
                 "name": "pot",
@@ -669,69 +1081,19 @@
               }
             ],
             "length": {
-              "number": 3,
+              "number": 370,
               "unit": "minutes"
             }
           },
           {
-            "number": 6,
-            "step": "Remove chicken to a bowl, reduce heat to medium, add sausage and cook 4-5 minutes, stirring frequently, until browned and fat starts to render.",
+            "number": 2,
+            "step": "Served with rice and snow peas you have the makings of a minor feast that you'll repeat often. My family loves this dish. I think yours will, too. This, by the way, is a wonderful recipe for novice cooks. If you have a willing teen, let them have a go at it.Asian-Style Country Ribs with Black Bean Garlic Sauce",
             "ingredients": [
               {
-                "id": 0,
-                "name": "chicken",
-                "localizedName": "chicken",
-                "image": "whole-chicken.jpg"
-              },
-              {
-                "id": 1017063,
-                "name": "sausage",
-                "localizedName": "sausage",
-                "image": "raw-pork-sausage.png"
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404783,
-                "name": "bowl",
-                "localizedName": "bowl",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
-              }
-            ],
-            "length": {
-              "number": 5,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 7,
-            "step": "Add to bowl with the browned chicken.",
-            "ingredients": [
-              {
-                "id": 0,
-                "name": "chicken",
-                "localizedName": "chicken",
-                "image": "whole-chicken.jpg"
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404783,
-                "name": "bowl",
-                "localizedName": "bowl",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
-              }
-            ]
-          },
-          {
-            "number": 8,
-            "step": "At medium heat, add enough oil to the pot to equal 2 T., add onion and cook, stirring frequently, until tender, about 3 minutes, add remaining garlic, cook for 1 minute, add tomatoes, cook and stir until tomatoes thicken and darken slightly about 3 minutes.",
-            "ingredients": [
-              {
-                "id": 11529,
-                "name": "tomato",
-                "localizedName": "tomato",
-                "image": "tomato.png"
+                "id": 11300,
+                "name": "snow peas",
+                "localizedName": "snow peas",
+                "image": "snow-peas.jpg"
               },
               {
                 "id": 11215,
@@ -740,35 +1102,17 @@
                 "image": "garlic.png"
               },
               {
-                "id": 11282,
-                "name": "onion",
-                "localizedName": "onion",
-                "image": "brown-onion.png"
+                "id": 0,
+                "name": "sauce",
+                "localizedName": "sauce",
+                "image": ""
               },
               {
-                "id": 4582,
-                "name": "cooking oil",
-                "localizedName": "cooking oil",
-                "image": "vegetable-oil.jpg"
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404752,
-                "name": "pot",
-                "localizedName": "pot",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
-              }
-            ],
-            "length": {
-              "number": 7,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 9,
-            "step": "Add rice, cook and stir for about 2 minutes, making sure everything is evenly mixed.",
-            "ingredients": [
+                "id": 23236,
+                "name": "ribs",
+                "localizedName": "ribs",
+                "image": "ribs.png"
+              },
               {
                 "id": 20444,
                 "name": "rice",
@@ -776,253 +1120,217 @@
                 "image": "uncooked-white-rice.png"
               }
             ],
-            "equipment": [],
-            "length": {
-              "number": 2,
-              "unit": "minutes"
-            }
-          },
+            "equipment": []
+          }
+        ]
+      },
+      {
+        "name": "Ingredients3 to 4 pounds boneless country-style pork ribs, cross cut in 1-1/2-inch pieces3 tablespoons prepared black bean garlic sauce from a jar (i.e. Lee Kum Kee)1/4 cup low-sodium soy salt1/4 cup mirin or chicken stock1 tablespoon honey1 tablespoon freshly grated ginger root1 tablespoon coarsely chopped fresh garlic1/2 teaspoon coarsely cracked black pepper1 tablespoon cornstarch2 teaspoons dark sesame oil1/4 cup + 2 tablespoons chopped scallions (white and tender green)Directions",
+        "steps": [
           {
-            "number": 10,
-            "step": "Add broth, wine, saffron, bay leaf and 1/2 t. salt.",
+            "number": 1,
+            "step": "Spray interior of slow cooker with nonstick cooking spray.",
             "ingredients": [
               {
-                "id": 2004,
-                "name": "bay leaves",
-                "localizedName": "bay leaves",
-                "image": "bay-leaves.jpg"
+                "id": 4679,
+                "name": "cooking spray",
+                "localizedName": "cooking spray",
+                "image": "cooking-spray.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404718,
+                "name": "slow cooker",
+                "localizedName": "slow cooker",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg"
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "step": "Place pork cubes in slow cooker.",
+            "ingredients": [
+              {
+                "id": 10010219,
+                "name": "pork",
+                "localizedName": "pork",
+                "image": "pork-tenderloin-raw.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404718,
+                "name": "slow cooker",
+                "localizedName": "slow cooker",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "step": "Combine black bean garlic sauce, soy sauce, mirin, honey, ginger, garlic, pepper and cornstarch in a small bowl; stir to dissolve cornstarch.",
+            "ingredients": [
+              {
+                "id": 20027,
+                "name": "corn starch",
+                "localizedName": "corn starch",
+                "image": "white-powder.jpg"
               },
               {
-                "id": 2037,
-                "name": "saffron",
-                "localizedName": "saffron",
-                "image": "saffron.jpg"
+                "id": 16124,
+                "name": "soy sauce",
+                "localizedName": "soy sauce",
+                "image": "soy-sauce.jpg"
               },
               {
-                "id": 1006615,
-                "name": "broth",
-                "localizedName": "broth",
-                "image": "chicken-broth.png"
+                "id": 11215,
+                "name": "garlic",
+                "localizedName": "garlic",
+                "image": "garlic.png"
               },
               {
-                "id": 2047,
-                "name": "salt",
-                "localizedName": "salt",
-                "image": "salt.jpg"
+                "id": 11216,
+                "name": "ginger",
+                "localizedName": "ginger",
+                "image": "ginger.png"
               },
               {
-                "id": 14084,
-                "name": "wine",
-                "localizedName": "wine",
-                "image": "red-wine.jpg"
+                "id": 1002030,
+                "name": "pepper",
+                "localizedName": "pepper",
+                "image": "pepper.jpg"
+              },
+              {
+                "id": 19296,
+                "name": "honey",
+                "localizedName": "honey",
+                "image": "honey.png"
+              },
+              {
+                "id": 93830,
+                "name": "mirin",
+                "localizedName": "mirin",
+                "image": "mirin.jpg"
+              },
+              {
+                "id": 0,
+                "name": "sauce",
+                "localizedName": "sauce",
+                "image": ""
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404783,
+                "name": "bowl",
+                "localizedName": "bowl",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "step": "Pour over ribs.",
+            "ingredients": [
+              {
+                "id": 23236,
+                "name": "ribs",
+                "localizedName": "ribs",
+                "image": "ribs.png"
               }
             ],
             "equipment": []
           },
           {
-            "number": 11,
-            "step": "Add the browned chicken and sausage. Increase heat to med-high, bring to a boil, stirring often. Cover pot and place in the oven.",
+            "number": 5,
+            "step": "Cook, covered, on LOW setting for 5 to 6 hours until ribs are tender but still hold their shape.",
             "ingredients": [
+              {
+                "id": 23236,
+                "name": "ribs",
+                "localizedName": "ribs",
+                "image": "ribs.png"
+              }
+            ],
+            "equipment": [],
+            "length": {
+              "number": 360,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 6,
+            "step": "Transfer ribs to a rimmed serving platter; tent with foil to keep warm. Strain liquid into a small pan. Bring liquid to a boil over medium-high heat; cook until mixture begins to thicken and is reduced by half. Stir in sesame oil.",
+            "ingredients": [
+              {
+                "id": 4058,
+                "name": "sesame oil",
+                "localizedName": "sesame oil",
+                "image": "sesame-oil.png"
+              },
+              {
+                "id": 23236,
+                "name": "ribs",
+                "localizedName": "ribs",
+                "image": "ribs.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404765,
+                "name": "aluminum foil",
+                "localizedName": "aluminum foil",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/aluminum-foil.png"
+              },
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "step": "Add sauce and 1/4 cup scallions to pork cubes.",
+            "ingredients": [
+              {
+                "id": 11291,
+                "name": "green onions",
+                "localizedName": "green onions",
+                "image": "spring-onions.jpg"
+              },
               {
                 "id": 0,
-                "name": "chicken",
-                "localizedName": "chicken",
-                "image": "whole-chicken.jpg"
+                "name": "sauce",
+                "localizedName": "sauce",
+                "image": ""
               },
               {
-                "id": 1017063,
-                "name": "sausage",
-                "localizedName": "sausage",
-                "image": "raw-pork-sausage.png"
+                "id": 10010219,
+                "name": "pork",
+                "localizedName": "pork",
+                "image": "pork-tenderloin-raw.png"
               }
             ],
-            "equipment": [
-              {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-              },
-              {
-                "id": 404752,
-                "name": "pot",
-                "localizedName": "pot",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
-              }
-            ]
+            "equipment": []
           },
           {
-            "number": 12,
-            "step": "Bake for 15 minutes (liquid should be mostly absorbed).",
+            "number": 8,
+            "step": "Mix well.",
             "ingredients": [],
-            "equipment": [
-              {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-              }
-            ],
-            "length": {
-              "number": 15,
-              "unit": "minutes"
-            }
+            "equipment": []
           },
           {
-            "number": 13,
-            "step": "Remove pot from the oven (keep oven door closed to retain heat), remove the lid, nestle the artichoke hearts down in the rice a bit.",
+            "number": 9,
+            "step": "Garnish with reserved 2 tablespoons scallions.",
             "ingredients": [
               {
-                "id": 99242,
-                "name": "artichoke hearts",
-                "localizedName": "artichoke hearts",
-                "image": "artichoke-hearts.png"
-              },
-              {
-                "id": 20444,
-                "name": "rice",
-                "localizedName": "rice",
-                "image": "uncooked-white-rice.png"
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-              },
-              {
-                "id": 404752,
-                "name": "pot",
-                "localizedName": "pot",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
-              }
-            ]
-          },
-          {
-            "number": 14,
-            "step": "Sprinkle the shrimp over the top of the rice, then, sprinkle with the peas and bell pepper strips. Replace the led, add back to the oven for another 10 minutes or until the shrimp are opaque.",
-            "ingredients": [
-              {
-                "id": 10211821,
-                "name": "bell pepper",
-                "localizedName": "bell pepper",
-                "image": "bell-pepper-orange.png"
-              },
-              {
-                "id": 15270,
-                "name": "shrimp",
-                "localizedName": "shrimp",
-                "image": "shrimp.png"
-              },
-              {
-                "id": 11304,
-                "name": "peas",
-                "localizedName": "peas",
-                "image": "peas.jpg"
-              },
-              {
-                "id": 20444,
-                "name": "rice",
-                "localizedName": "rice",
-                "image": "uncooked-white-rice.png"
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-              }
-            ],
-            "length": {
-              "number": 10,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 15,
-            "step": "Turn stove burner to med-high heat.",
-            "ingredients": [],
-            "equipment": [
-              {
-                "id": 404794,
-                "name": "stove",
-                "localizedName": "stove",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-              }
-            ]
-          },
-          {
-            "number": 16,
-            "step": "Remove the pot from the oven, place on the stove cook for 5 minutes to get the browned portion on the bottom of the rice (called Soccarat), rotating the pot 180 degrees halfway through to ensure even browning.",
-            "ingredients": [
-              {
-                "id": 20444,
-                "name": "rice",
-                "localizedName": "rice",
-                "image": "uncooked-white-rice.png"
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404794,
-                "name": "stove",
-                "localizedName": "stove",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-              },
-              {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-              },
-              {
-                "id": 404752,
-                "name": "pot",
-                "localizedName": "pot",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
-              }
-            ],
-            "length": {
-              "number": 5,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 17,
-            "step": "Remove pot from heat and let the paella rest, covered, for 5 minutes.",
-            "ingredients": [],
-            "equipment": [
-              {
-                "id": 404752,
-                "name": "pot",
-                "localizedName": "pot",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
-              }
-            ],
-            "length": {
-              "number": 5,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 18,
-            "step": "Sprinkle with fresh chopped parsley and lemon wedges.",
-            "ingredients": [
-              {
-                "id": 1029150,
-                "name": "lemon wedge",
-                "localizedName": "lemon wedge",
-                "image": "lemon-wedge.png"
-              },
-              {
-                "id": 11297,
-                "name": "parsley",
-                "localizedName": "parsley",
-                "image": "parsley.jpg"
+                "id": 11291,
+                "name": "green onions",
+                "localizedName": "green onions",
+                "image": "spring-onions.jpg"
               }
             ],
             "equipment": []
@@ -1031,17 +1339,17 @@
       }
     ],
     "originalId": null,
-    "spoonacularScore": 79.5162124633789,
-    "spoonacularSourceUrl": "https://spoonacular.com/dutch-oven-paella-631747"
+    "spoonacularScore": 72.26270294189453,
+    "spoonacularSourceUrl": "https://spoonacular.com/crock-pot-asian-style-country-ribs-with-black-bean-garlic-sauce-735820"
   },
   {
-    "id": 641720,
-    "image": "https://img.spoonacular.com/recipes/641720-556x370.jpg",
+    "id": 656548,
+    "image": "https://img.spoonacular.com/recipes/656548-556x370.jpg",
     "imageType": "jpg",
-    "title": "Duck with Dried Cranberries, Tangerines and Mascarpone Sauce",
+    "title": "Polenta Pie With Italian Toppings",
     "readyInMinutes": 45,
-    "servings": 2,
-    "sourceUrl": "https://www.foodista.com/recipe/DMCN64B3/duck-with-dried-cranberries-tangerines-and-mascarpone-sauce",
+    "servings": 6,
+    "sourceUrl": "https://www.foodista.com/recipe/SS2Y4VYB/polenta-pie-with-italian-toppings",
     "vegetarian": false,
     "vegan": false,
     "glutenFree": true,
@@ -1051,76 +1359,908 @@
     "veryPopular": false,
     "sustainable": false,
     "lowFodmap": false,
-    "weightWatcherSmartPoints": 3,
+    "weightWatcherSmartPoints": 11,
     "gaps": "no",
     "preparationMinutes": null,
     "cookingMinutes": null,
-    "aggregateLikes": 2,
-    "healthScore": 0,
+    "aggregateLikes": 4,
+    "healthScore": 19,
     "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
     "license": "CC BY 3.0",
     "sourceName": "Foodista",
-    "pricePerServing": 11,
+    "pricePerServing": 163.45,
     "extendedIngredients": [
       {
-        "id": 98912,
-        "aisle": "Meat",
-        "image": "duck-breast.png",
-        "consistency": "SOLID",
-        "name": "duck breast",
-        "nameClean": "duck breast",
-        "original": "duck breast, skin scored",
-        "originalName": "duck breast, skin scored",
-        "amount": 2,
-        "unit": "servings",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 2,
-            "unitShort": "servings",
-            "unitLong": "servings"
-          },
-          "metric": {
-            "amount": 2,
-            "unitShort": "servings",
-            "unitLong": "servings"
-          }
-        }
-      },
-      {
-        "id": 1019016,
+        "id": 14412,
         "aisle": "Beverages",
-        "image": "apple-juice.jpg",
+        "image": "water.png",
         "consistency": "LIQUID",
-        "name": "juice of 6 tangerines",
-        "nameClean": "juice of 6 tangerines",
-        "original": "Juice of 6 tangerines",
-        "originalName": "Juice of tangerines",
-        "amount": 6,
-        "unit": "",
+        "name": "water",
+        "nameClean": "water",
+        "original": "2 cups water",
+        "originalName": "water",
+        "amount": 2,
+        "unit": "cups",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 6,
+            "amount": 2,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 473.176,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 1077,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "milk.png",
+        "consistency": "LIQUID",
+        "name": "milk",
+        "nameClean": "milk",
+        "original": "1 cup milk",
+        "originalName": "milk",
+        "amount": 1,
+        "unit": "cup",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "cup",
+            "unitLong": "cup"
+          },
+          "metric": {
+            "amount": 244,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 4053,
+        "aisle": "Oil, Vinegar, Salad Dressing",
+        "image": "olive-oil.jpg",
+        "consistency": "LIQUID",
+        "name": "olive oil",
+        "nameClean": "olive oil",
+        "original": "1/4 cup olive oil, plus a bit more for sauteing and drizzling the baking sheet",
+        "originalName": "olive oil, plus a bit more for sauteing and drizzling the baking sheet",
+        "amount": 0.25,
+        "unit": "cup",
+        "meta": [
+          "for sauteing and drizzling the baking sheet",
+          "plus a bit more "
+        ],
+        "measures": {
+          "us": {
+            "amount": 0.25,
+            "unitShort": "cups",
+            "unitLong": "cups"
+          },
+          "metric": {
+            "amount": 54,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
+        "consistency": "SOLID",
+        "name": "salt",
+        "nameClean": "salt",
+        "original": "1/2 tsp salt",
+        "originalName": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 0.5,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
+          },
+          "metric": {
+            "amount": 0.5,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
+          }
+        }
+      },
+      {
+        "id": 35137,
+        "aisle": "Baking",
+        "image": "cornmeal.png",
+        "consistency": "SOLID",
+        "name": "corn meal",
+        "nameClean": "corn meal",
+        "original": "1 cup yellow corn meal, coarse grind",
+        "originalName": "yellow corn meal, coarse grind",
+        "amount": 1,
+        "unit": "cup",
+        "meta": [
+          "yellow"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "cup",
+            "unitLong": "cup"
+          },
+          "metric": {
+            "amount": 159,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 10410123,
+        "aisle": "Meat",
+        "image": "pancetta.png",
+        "consistency": "SOLID",
+        "name": "pancetta",
+        "nameClean": "pancetta",
+        "original": "3-4 oz pancetta, diced",
+        "originalName": "pancetta, diced",
+        "amount": 3,
+        "unit": "oz",
+        "meta": [
+          "diced"
+        ],
+        "measures": {
+          "us": {
+            "amount": 3,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 85.049,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 11677,
+        "aisle": "Produce",
+        "image": "shallots.jpg",
+        "consistency": "SOLID",
+        "name": "shallot",
+        "nameClean": "shallot",
+        "original": "1 large shallot, finely chopped",
+        "originalName": "shallot, finely chopped",
+        "amount": 1,
+        "unit": "large",
+        "meta": [
+          "finely chopped"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "large",
+            "unitLong": "large"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "large",
+            "unitLong": "large"
+          }
+        }
+      },
+      {
+        "id": 11215,
+        "aisle": "Produce",
+        "image": "garlic.png",
+        "consistency": "SOLID",
+        "name": "garlic",
+        "nameClean": "garlic",
+        "original": "2-3 cloves of garlic, slivered",
+        "originalName": "garlic, slivered",
+        "amount": 2,
+        "unit": "cloves",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 2,
+            "unitShort": "cloves",
+            "unitLong": "cloves"
+          },
+          "metric": {
+            "amount": 2,
+            "unitShort": "cloves",
+            "unitLong": "cloves"
+          }
+        }
+      },
+      {
+        "id": 1011004,
+        "aisle": "Cheese",
+        "image": "gorgonzola.jpg",
+        "consistency": "SOLID",
+        "name": "cheese such as gorgonzola",
+        "nameClean": "cheese such as gorgonzola",
+        "original": "3 oz (or more if you are a fan) crumbled blue cheese such as gorgonzola, can be substituted with goat cheese or fresh baby mozzarella",
+        "originalName": "(or more if you are a fan) crumbled blue cheese such as gorgonzola, can be substituted with goat cheese or fresh baby mozzarella",
+        "amount": 3,
+        "unit": "oz",
+        "meta": [
+          "fresh",
+          "blue",
+          "with goat cheese or  baby mozzarella",
+          "crumbled",
+          "canned",
+          "( if you are a fan)"
+        ],
+        "measures": {
+          "us": {
+            "amount": 3,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 85.049,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 11457,
+        "aisle": "Produce",
+        "image": "spinach.jpg",
+        "consistency": "SOLID",
+        "name": "baby spinach",
+        "nameClean": "baby spinach",
+        "original": "1/2 lbs baby spinach",
+        "originalName": "baby spinach",
+        "amount": 0.5,
+        "unit": "lbs",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 0.5,
+            "unitShort": "lb",
+            "unitLong": "pounds"
+          },
+          "metric": {
+            "amount": 226.796,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 10211821,
+        "aisle": "Produce",
+        "image": "bell-pepper-orange.png",
+        "consistency": "SOLID",
+        "name": "bright colored bell pepper",
+        "nameClean": "bright colored bell pepper",
+        "original": "1 bright colored sweet bell pepper, cut in half, seeded and sliced not too thin",
+        "originalName": "bright colored sweet bell pepper, cut in half, seeded and sliced not too thin",
+        "amount": 1,
+        "unit": "",
+        "meta": [
+          "sweet",
+          "seeded",
+          "sliced",
+          "cut in half,  and  not too thin"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
             "unitShort": "",
             "unitLong": ""
           },
           "metric": {
-            "amount": 6,
+            "amount": 1,
             "unitShort": "",
             "unitLong": ""
           }
         }
       },
       {
-        "id": 93820,
-        "aisle": "Cheese",
-        "image": "white-cream-fluffy.jpg",
+        "id": 12147,
+        "aisle": "Produce",
+        "image": "pine-nuts.png",
         "consistency": "SOLID",
-        "name": "mascarpone",
-        "nameClean": "mascarpone",
-        "original": "2 tablespoons Mascarpone",
-        "originalName": "Mascarpone",
+        "name": "pignoli",
+        "nameClean": "pignoli",
+        "original": "a handful of pignoli (pine nuts)",
+        "originalName": "pignoli (pine nuts)",
+        "amount": 1,
+        "unit": "handful",
+        "meta": [
+          "(pine nuts)"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "handful",
+            "unitLong": "handful"
+          },
+          "metric": {
+            "amount": 1,
+            "unitShort": "handful",
+            "unitLong": "handful"
+          }
+        }
+      }
+    ],
+    "summary": "Polenta Pie With Italian Toppings is a <b>gluten free</b> recipe with 6 servings. One portion of this dish contains around <b>10g of protein</b>, <b>22g of fat</b>, and a total of <b>334 calories</b>. For <b>$1.63 per serving</b>, this recipe <b>covers 21%</b> of your daily requirements of vitamins and minerals. If you have garlic, milk, corn meal, and a few other ingredients on hand, you can make it. 4 people have made this recipe and would make it again. This recipe is typical of Mediterranean cuisine. From preparation to the plate, this recipe takes around <b>45 minutes</b>. It is brought to you by Foodista. Overall, this recipe earns a <b>solid spoonacular score of 63%</b>. <a href=\"https://spoonacular.com/recipes/polenta-with-italian-sausage-388939\">Polenta with Italian Sausage</a>, <a href=\"https://spoonacular.com/recipes/italian-sausage-with-polenta-373159\">Italian Sausage with Polenta</a>, and <a href=\"https://spoonacular.com/recipes/italian-polenta-casserole-103725\">Italian Polenta Casserole</a> are very similar to this recipe.",
+    "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+    ],
+    "dishTypes": [],
+    "diets": [
+      "gluten free"
+    ],
+    "occasions": [],
+    "instructions": "Make polenta first. In a saucepan, bring water, milk, 1/4 olive oil and salt to a boil. Reduce heat immediately, and pour in the corn. Stirring very frequently, simmer corn for about 15 minutes, until very thick.\nLine a baking sheet with foil or parchment, and drizzle a bit of olive oil on it. Spread polenta on the sheet evenly, to about 1/2 thickness, and shape into a circle, just like a pizza crust. Let cool until nicely set.\nHeat the oven to 425F. Sprinkle polenta crust with freshly ground pepper, and bake for 30 minutes, until nicely browned around the edges. Keep the oven on.\nWhile crust is baking, prepare the toppings.  In a skillet, heat 1 tbsp olive oil. Saute pancetta, shallots and garlic for about 7-8 minutes, until nicely golden and very fragrant. Dont overcook.\nRemove the pancetta topping into a bowl and set aside.\nHeat a bit more oil in the same skillet and saute baby spinach until wilted and dark green, for about 3 minutes or so. Again, remove the spinach and set aside.\nAdd pepper slices and saute for a couple of minutes until they are nicely wilted, for about 3-4 minutes.\nLayer your toppings atop polenta crust, starting with cheese crumbs, followed by pancetta mix, spinach, peppers, and finally pine nuts. Arrange everything in a pretty way. Drizzle just a few drops more of olive oil, and put back in the oven for 4-5 minutes.\nSlice like a pizza or cut into 3 inch squares. Serve immediately.",
+    "analyzedInstructions": [
+      {
+        "name": "",
+        "steps": [
+          {
+            "number": 1,
+            "step": "Make polenta first. In a saucepan, bring water, milk, 1/4 olive oil and salt to a boil. Reduce heat immediately, and pour in the corn. Stirring very frequently, simmer corn for about 15 minutes, until very thick.",
+            "ingredients": [
+              {
+                "id": 4053,
+                "name": "olive oil",
+                "localizedName": "olive oil",
+                "image": "olive-oil.jpg"
+              },
+              {
+                "id": 10035137,
+                "name": "polenta",
+                "localizedName": "polenta",
+                "image": "cornmeal.png"
+              },
+              {
+                "id": 14412,
+                "name": "water",
+                "localizedName": "water",
+                "image": "water.png"
+              },
+              {
+                "id": 11168,
+                "name": "corn",
+                "localizedName": "corn",
+                "image": "corn.png"
+              },
+              {
+                "id": 1077,
+                "name": "milk",
+                "localizedName": "milk",
+                "image": "milk.png"
+              },
+              {
+                "id": 2047,
+                "name": "salt",
+                "localizedName": "salt",
+                "image": "salt.jpg"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404669,
+                "name": "sauce pan",
+                "localizedName": "sauce pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg"
+              }
+            ],
+            "length": {
+              "number": 15,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 2,
+            "step": "Line a baking sheet with foil or parchment, and drizzle a bit of olive oil on it.",
+            "ingredients": [
+              {
+                "id": 4053,
+                "name": "olive oil",
+                "localizedName": "olive oil",
+                "image": "olive-oil.jpg"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404727,
+                "name": "baking sheet",
+                "localizedName": "baking sheet",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/baking-sheet.jpg"
+              },
+              {
+                "id": 404765,
+                "name": "aluminum foil",
+                "localizedName": "aluminum foil",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/aluminum-foil.png"
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "step": "Spread polenta on the sheet evenly, to about 1/2 thickness, and shape into a circle, just like a pizza crust.",
+            "ingredients": [
+              {
+                "id": 93770,
+                "name": "prepared pizza crust",
+                "localizedName": "prepared pizza crust",
+                "image": "pizza-dough.jpg"
+              },
+              {
+                "id": 10035137,
+                "name": "polenta",
+                "localizedName": "polenta",
+                "image": "cornmeal.png"
+              },
+              {
+                "id": 0,
+                "name": "spread",
+                "localizedName": "spread",
+                "image": ""
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 4,
+            "step": "Let cool until nicely set.",
+            "ingredients": [],
+            "equipment": []
+          },
+          {
+            "number": 5,
+            "step": "Heat the oven to 425F.",
+            "ingredients": [],
+            "equipment": [
+              {
+                "id": 404784,
+                "name": "oven",
+                "localizedName": "oven",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg",
+                "temperature": {
+                  "number": 425,
+                  "unit": "Fahrenheit"
+                }
+              }
+            ]
+          },
+          {
+            "number": 6,
+            "step": "Sprinkle polenta crust with freshly ground pepper, and bake for 30 minutes, until nicely browned around the edges. Keep the oven on.",
+            "ingredients": [
+              {
+                "id": 1002030,
+                "name": "ground black pepper",
+                "localizedName": "ground black pepper",
+                "image": "pepper.jpg"
+              },
+              {
+                "id": 10035137,
+                "name": "polenta",
+                "localizedName": "polenta",
+                "image": "cornmeal.png"
+              },
+              {
+                "id": 0,
+                "name": "crust",
+                "localizedName": "crust",
+                "image": ""
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404784,
+                "name": "oven",
+                "localizedName": "oven",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+              }
+            ],
+            "length": {
+              "number": 30,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 7,
+            "step": "While crust is baking, prepare the toppings.  In a skillet, heat 1 tbsp olive oil.",
+            "ingredients": [
+              {
+                "id": 4053,
+                "name": "olive oil",
+                "localizedName": "olive oil",
+                "image": "olive-oil.jpg"
+              },
+              {
+                "id": 0,
+                "name": "crust",
+                "localizedName": "crust",
+                "image": ""
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              }
+            ]
+          },
+          {
+            "number": 8,
+            "step": "Saute pancetta, shallots and garlic for about 7-8 minutes, until nicely golden and very fragrant. Dont overcook.",
+            "ingredients": [
+              {
+                "id": 10410123,
+                "name": "pancetta",
+                "localizedName": "pancetta",
+                "image": "pancetta.png"
+              },
+              {
+                "id": 11677,
+                "name": "shallot",
+                "localizedName": "shallot",
+                "image": "shallots.jpg"
+              },
+              {
+                "id": 11215,
+                "name": "garlic",
+                "localizedName": "garlic",
+                "image": "garlic.png"
+              }
+            ],
+            "equipment": [],
+            "length": {
+              "number": 8,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 9,
+            "step": "Remove the pancetta topping into a bowl and set aside.",
+            "ingredients": [
+              {
+                "id": 10410123,
+                "name": "pancetta",
+                "localizedName": "pancetta",
+                "image": "pancetta.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404783,
+                "name": "bowl",
+                "localizedName": "bowl",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
+              }
+            ]
+          },
+          {
+            "number": 10,
+            "step": "Heat a bit more oil in the same skillet and saute baby spinach until wilted and dark green, for about 3 minutes or so. Again, remove the spinach and set aside.",
+            "ingredients": [
+              {
+                "id": 11457,
+                "name": "baby spinach",
+                "localizedName": "baby spinach",
+                "image": "spinach.jpg"
+              },
+              {
+                "id": 10011457,
+                "name": "spinach",
+                "localizedName": "spinach",
+                "image": "https://spoonacular.com/cdn/ingredients_100x100/spinach.jpg"
+              },
+              {
+                "id": 4582,
+                "name": "cooking oil",
+                "localizedName": "cooking oil",
+                "image": "vegetable-oil.jpg"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              }
+            ],
+            "length": {
+              "number": 3,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 11,
+            "step": "Add pepper slices and saute for a couple of minutes until they are nicely wilted, for about 3-4 minutes.",
+            "ingredients": [
+              {
+                "id": 1002030,
+                "name": "pepper",
+                "localizedName": "pepper",
+                "image": "pepper.jpg"
+              }
+            ],
+            "equipment": [],
+            "length": {
+              "number": 4,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 12,
+            "step": "Layer your toppings atop polenta crust, starting with cheese crumbs, followed by pancetta mix, spinach, peppers, and finally pine nuts. Arrange everything in a pretty way.",
+            "ingredients": [
+              {
+                "id": 12147,
+                "name": "pine nuts",
+                "localizedName": "pine nuts",
+                "image": "pine-nuts.png"
+              },
+              {
+                "id": 10410123,
+                "name": "pancetta",
+                "localizedName": "pancetta",
+                "image": "pancetta.png"
+              },
+              {
+                "id": 10111333,
+                "name": "peppers",
+                "localizedName": "peppers",
+                "image": "green-pepper.jpg"
+              },
+              {
+                "id": 10035137,
+                "name": "polenta",
+                "localizedName": "polenta",
+                "image": "cornmeal.png"
+              },
+              {
+                "id": 10011457,
+                "name": "spinach",
+                "localizedName": "spinach",
+                "image": "https://spoonacular.com/cdn/ingredients_100x100/spinach.jpg"
+              },
+              {
+                "id": 1041009,
+                "name": "cheese",
+                "localizedName": "cheese",
+                "image": "https://spoonacular.com/cdn/ingredients_100x100/cheddar-cheese.png"
+              },
+              {
+                "id": 0,
+                "name": "crust",
+                "localizedName": "crust",
+                "image": ""
+              }
+            ],
+            "equipment": []
+          },
+          {
+            "number": 13,
+            "step": "Drizzle just a few drops more of olive oil, and put back in the oven for 4-5 minutes.",
+            "ingredients": [
+              {
+                "id": 4053,
+                "name": "olive oil",
+                "localizedName": "olive oil",
+                "image": "olive-oil.jpg"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404784,
+                "name": "oven",
+                "localizedName": "oven",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+              }
+            ],
+            "length": {
+              "number": 5,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 14,
+            "step": "Slice like a pizza or cut into 3 inch squares.",
+            "ingredients": [],
+            "equipment": []
+          },
+          {
+            "number": 15,
+            "step": "Serve immediately.",
+            "ingredients": [],
+            "equipment": []
+          }
+        ]
+      }
+    ],
+    "originalId": null,
+    "spoonacularScore": 70.38810729980469,
+    "spoonacularSourceUrl": "https://spoonacular.com/polenta-pie-with-italian-toppings-656548"
+  },
+  {
+    "id": 654032,
+    "image": "https://img.spoonacular.com/recipes/654032-556x370.jpg",
+    "imageType": "jpg",
+    "title": "Oreo Hazelnut and Banana Cheesecake",
+    "readyInMinutes": 300,
+    "servings": 10,
+    "sourceUrl": "http://www.foodista.com/recipe/FGN6S8VQ/oreo-hazelnut-and-banana-cheesecake",
+    "vegetarian": false,
+    "vegan": false,
+    "glutenFree": false,
+    "dairyFree": false,
+    "veryHealthy": false,
+    "cheap": false,
+    "veryPopular": false,
+    "sustainable": false,
+    "lowFodmap": false,
+    "weightWatcherSmartPoints": 18,
+    "gaps": "no",
+    "preparationMinutes": null,
+    "cookingMinutes": null,
+    "aggregateLikes": 20,
+    "healthScore": 1,
+    "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+    "license": "CC BY 3.0",
+    "sourceName": "Foodista",
+    "pricePerServing": 101.68,
+    "extendedIngredients": [
+      {
+        "id": 9040,
+        "aisle": "Produce",
+        "image": "bananas.jpg",
+        "consistency": "SOLID",
+        "name": "bananas",
+        "nameClean": "bananas",
+        "original": "2 Bananas (120g skinless), mashed",
+        "originalName": "Bananas skinless), mashed",
+        "amount": 120,
+        "unit": "g",
+        "meta": [
+          "skinless",
+          "mashed"
+        ],
+        "measures": {
+          "us": {
+            "amount": 4.233,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 120,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 1001,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "butter-sliced.jpg",
+        "consistency": "SOLID",
+        "name": "butter",
+        "nameClean": "butter",
+        "original": "60g Melted butter",
+        "originalName": "Melted butter",
+        "amount": 60,
+        "unit": "g",
+        "meta": [
+          "melted"
+        ],
+        "measures": {
+          "us": {
+            "amount": 2.116,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 60,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 1017,
+        "aisle": "Cheese",
+        "image": "cream-cheese.jpg",
+        "consistency": "SOLID",
+        "name": "cream cheese",
+        "nameClean": "cream cheese",
+        "original": "250g Cream cheese",
+        "originalName": "Cream cheese",
+        "amount": 250,
+        "unit": "g",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 8.818,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 250,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 19177,
+        "aisle": "Baking",
+        "image": "gelatin-powder.jpg",
+        "consistency": "SOLID",
+        "name": "gelatin powder",
+        "nameClean": "gelatin powder",
+        "original": "20g Gelatin powder",
+        "originalName": "Gelatin powder",
+        "amount": 20,
+        "unit": "g",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 0.705,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 20,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 9152,
+        "aisle": "Produce",
+        "image": "lemon-juice.jpg",
+        "consistency": "LIQUID",
+        "name": "lemon juice",
+        "nameClean": "lemon juice",
+        "original": "1/2 tbsp Lemon juice",
+        "originalName": "Lemon juice",
+        "amount": 0.5,
+        "unit": "tbsp",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 0.5,
+            "unitShort": "Tbsps",
+            "unitLong": "Tbsps"
+          },
+          "metric": {
+            "amount": 0.5,
+            "unitShort": "Tbsps",
+            "unitLong": "Tbsps"
+          }
+        }
+      },
+      {
+        "id": 1077,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "milk.png",
+        "consistency": "LIQUID",
+        "name": "milk",
+        "nameClean": "milk",
+        "original": "2 tablespoons Milk",
+        "originalName": "Milk",
         "amount": 2,
         "unit": "tablespoons",
         "meta": [],
@@ -1138,475 +2278,508 @@
         }
       },
       {
-        "id": 1102047,
-        "aisle": "Spices and Seasonings",
-        "image": "salt-and-pepper.jpg",
+        "id": 19125,
+        "aisle": "Nut butters, Jams, and Honey",
+        "image": "hazelnut-chocolate-spread.jpg",
         "consistency": "SOLID",
-        "name": "salt and pepper",
-        "nameClean": "salt and pepper",
-        "original": "Salt and pepper",
-        "originalName": "Salt and pepper",
-        "amount": 2,
-        "unit": "servings",
+        "name": "nutella",
+        "nameClean": "nutella",
+        "original": "70g Nutella",
+        "originalName": "Nutella",
+        "amount": 70,
+        "unit": "g",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 2,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 2.469,
+            "unitShort": "oz",
+            "unitLong": "ounces"
           },
           "metric": {
-            "amount": 2,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 70,
+            "unitShort": "g",
+            "unitLong": "grams"
           }
         }
       },
       {
-        "id": 9079,
-        "aisle": "Produce",
-        "image": "dried-cranberries.jpg",
+        "id": 10018166,
+        "aisle": "Sweet Snacks",
+        "image": "oreos.png",
         "consistency": "SOLID",
-        "name": "to",
-        "nameClean": "to",
-        "original": "¼ to ½ cup of dried cranberries",
-        "originalName": "to ½ cup of dried cranberries",
-        "amount": 0.25,
-        "unit": "",
+        "name": "oreo cookies",
+        "nameClean": "oreo cookies",
+        "original": "270g Oreo cookies",
+        "originalName": "Oreo cookies",
+        "amount": 270,
+        "unit": "g",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 9.524,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 270,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 14412,
+        "aisle": "Beverages",
+        "image": "water.png",
+        "consistency": "LIQUID",
+        "name": "water",
+        "nameClean": "water",
+        "original": "50g Water",
+        "originalName": "Water",
+        "amount": 50,
+        "unit": "g",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 1.764,
+            "unitShort": "oz",
+            "unitLong": "ounces"
+          },
+          "metric": {
+            "amount": 50,
+            "unitShort": "g",
+            "unitLong": "grams"
+          }
+        }
+      },
+      {
+        "id": 1001053,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "fluid-cream.jpg",
+        "consistency": "LIQUID",
+        "name": "whipping cream",
+        "nameClean": "whipping cream",
+        "original": "300g Fresh whipping cream",
+        "originalName": "Fresh whipping cream",
+        "amount": 300,
+        "unit": "g",
         "meta": [
-          "dried"
+          "fresh"
         ],
         "measures": {
           "us": {
-            "amount": 0.25,
-            "unitShort": "",
-            "unitLong": ""
+            "amount": 10.582,
+            "unitShort": "oz",
+            "unitLong": "ounces"
           },
           "metric": {
-            "amount": 0.25,
-            "unitShort": "",
-            "unitLong": ""
+            "amount": 300,
+            "unitShort": "g",
+            "unitLong": "grams"
           }
         }
       }
     ],
-    "summary": "Duck with Dried Cranberries, Tangerines and Mascarpone Sauce is a <b>gluten free and primal</b> side dish. This recipe serves 2 and costs 11 cents per serving. One portion of this dish contains around <b>1g of protein</b>, <b>7g of fat</b>, and a total of <b>70 calories</b>. 2 people have made this recipe and would make it again. It is brought to you by Foodista. Head to the store and pick up to, juice of 6 tangerines, salt and pepper, and a few other things to make it today. <b>Christmas</b> will be even more special with this recipe. From preparation to the plate, this recipe takes around <b>45 minutes</b>. With a spoonacular <b>score of 8%</b>, this dish is improvable. Similar recipes include <a href=\"https://spoonacular.com/recipes/duck-breasts-with-cranberries-honey-sauce-116588\">Duck Breasts With Cranberries & Honey Sauce</a>, <a href=\"https://spoonacular.com/recipes/crispy-duck-breasts-with-balsamic-glazed-tangerines-217263\">Crispy Duck Breasts with Balsamic-Glazed Tangerines</a>, and <a href=\"https://spoonacular.com/recipes/chunky-apple-rhubarb-sauce-with-dried-cranberries-697602\">Chunky Apple-Rhubarb Sauce with Dried Cranberries</a>.",
+    "summary": "Oreo Hazelnut and Banana Cheesecake requires around <b>5 hours</b> from start to finish. For <b>$1.02 per serving</b>, this recipe <b>covers 7%</b> of your daily requirements of vitamins and minerals. One serving contains <b>415 calories</b>, <b>6g of protein</b>, and <b>32g of fat</b>. This recipe serves 10. 20 people have tried and liked this recipe. This recipe from Foodista requires lemon juice, oreo cookies, cream cheese, and whipping cream. With a spoonacular <b>score of 24%</b>, this dish is rather bad. Similar recipes are <a href=\"https://spoonacular.com/recipes/banana-cheesecake-bars-with-golden-oreo-crust-540591\">Banana Cheesecake Bars with Golden Oreo Crust</a>, <a href=\"https://spoonacular.com/recipes/copycat-cheesecake-factory-oreo-cheesecake-552762\">Copycat Cheesecake Factory Oreo Cheesecake</a>, and <a href=\"https://spoonacular.com/recipes/copycat-cheesecake-factory-oreo-cheesecake-1252381\">Copycat Cheesecake Factory Oreo Cheesecake</a>.",
     "cuisines": [],
-    "dishTypes": [
-      "side dish"
-    ],
-    "diets": [
-      "gluten free",
-      "primal"
-    ],
-    "occasions": [
-      "christmas"
-    ],
-    "instructions": "<ol><li>Preheat oven at 350. In an ovenproof skillet heat a shadow of oil on high heat. Generously salt and pepper both sides of the duck breast. When the skillet is hot, add the duck skin side down. Cook until the skin is golden brown, about 5 minutes, turn to the other side and cook for 3 minutes. Turn again, skin side up, discard all of the fat from the pan and place in the hot oven. Cook for another 10 to 15 minutes.</li><li>Remove from the oven and cover with aluminum foil to keep warm.</li><li>Meanwhile in a separate small sauce pan place the dried cranberries and the tangerine juice. Cook over medium heat until the cranberries have softened and the juice is reduced. Lower the heat and add the mascarpone. When the mascarpone is melted and the juice starts to thickens, remove from the heat. With an immersion hand held mixer, puree the mascarpone, tangerine-cranberries sauce until nice and smooth. Add less than a tablespoon of the juices from the duck. Mix well. Return the pan to the heat and warm for a minute or so.</li><li>Spread the sauce on the bottom of the plate and serve the duck sliced over it.</li></ol>",
+    "dishTypes": [],
+    "diets": [],
+    "occasions": [],
+    "instructions": "<ol><li>Mix crushed Oreo cookies with butter and press them firmly into a  9 inch cake pan. Put in  refrigerator and chill until firm.</li><li>Whisk fresh whipping cream until soft peaks form, set aside</li><li>Put gelatin and water in a bowl and soak for a while. Then place the bowl in a double boiler and heat until gelatin dissolves. Set aside.</li><li>Beat cream cheese at medium speed with 3 tablespoon of fresh milk until smooth.</li><li>Add in hazelnut spread, continue to beat for about 1 minute.</li><li>Mash bananas and mix well with 1/2 tbsp lemon juice then add into the cream cheese mixture, mix well again and transfer to a large bowl.</li><li>Add whipped cream to the cream cheese mixture with a hand whisk, mix well and add dissolved gelatin into it. </li><li>Lastly fold in 20g crushed Oreo cookies with a rubber spatula.</li><li>Pour cream cheese mixture into prepared cake pan and refrigerator for at least 4 hours or overnight.</li><li>Remove chilled cheesecake from cake pan and sprinkle extra crushed Oreo biscuits over it.</li></ol>",
     "analyzedInstructions": [
       {
         "name": "",
         "steps": [
           {
             "number": 1,
-            "step": "Preheat oven at 35",
-            "ingredients": [],
+            "step": "Mix crushed Oreo cookies with butter and press them firmly into a  9 inch cake pan. Put in  refrigerator and chill until firm.",
+            "ingredients": [
+              {
+                "id": 10018166,
+                "name": "oreo cookies",
+                "localizedName": "oreo cookies",
+                "image": "https://spoonacular.com/cdn/ingredients_100x100/oreos.png"
+              },
+              {
+                "id": 1001,
+                "name": "butter",
+                "localizedName": "butter",
+                "image": "butter-sliced.jpg"
+              }
+            ],
             "equipment": [
               {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+                "id": 404747,
+                "name": "cake form",
+                "localizedName": "cake form",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/cake-pan.png"
               }
             ]
           },
           {
             "number": 2,
-            "step": "In an ovenproof skillet heat a shadow of oil on high heat. Generously salt and pepper both sides of the duck breast. When the skillet is hot, add the duck skin side down. Cook until the skin is golden brown, about 5 minutes, turn to the other side and cook for 3 minutes. Turn again, skin side up, discard all of the fat from the pan and place in the hot oven. Cook for another 10 to 15 minutes.",
+            "step": "Whisk fresh whipping cream until soft peaks form, set aside",
             "ingredients": [
               {
-                "id": 1102047,
-                "name": "salt and pepper",
-                "localizedName": "salt and pepper",
-                "image": "salt-and-pepper.jpg"
-              },
-              {
-                "id": 98912,
-                "name": "duck breast",
-                "localizedName": "duck breast",
-                "image": "duck-breast.png"
-              },
-              {
-                "id": 5139,
-                "name": "duck",
-                "localizedName": "duck",
-                "image": "duck.png"
-              },
-              {
-                "id": 4582,
-                "name": "cooking oil",
-                "localizedName": "cooking oil",
-                "image": "vegetable-oil.jpg"
+                "id": 1001053,
+                "name": "whipping cream",
+                "localizedName": "whipping cream",
+                "image": "fluid-cream.jpg"
               }
             ],
             "equipment": [
               {
-                "id": 404645,
-                "name": "frying pan",
-                "localizedName": "frying pan",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
-              },
-              {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+                "id": 404661,
+                "name": "whisk",
+                "localizedName": "whisk",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/whisk.png"
               }
-            ],
-            "length": {
-              "number": 18,
-              "unit": "minutes"
-            }
+            ]
           },
           {
             "number": 3,
-            "step": "Remove from the oven and cover with aluminum foil to keep warm.Meanwhile in a separate small sauce pan place the dried cranberries and the tangerine juice. Cook over medium heat until the cranberries have softened and the juice is reduced. Lower the heat and add the mascarpone. When the mascarpone is melted and the juice starts to thickens, remove from the heat. With an immersion hand held mixer, puree the mascarpone, tangerine-cranberries sauce until nice and smooth.",
+            "step": "Put gelatin and water in a bowl and soak for a while. Then place the bowl in a double boiler and heat until gelatin dissolves. Set aside.Beat cream cheese at medium speed with 3 tablespoon of fresh milk until smooth.",
             "ingredients": [
               {
-                "id": 9079,
-                "name": "dried cranberries",
-                "localizedName": "dried cranberries",
-                "image": "dried-cranberries.jpg"
+                "id": 1017,
+                "name": "cream cheese",
+                "localizedName": "cream cheese",
+                "image": "cream-cheese.jpg"
               },
               {
-                "id": 9221,
-                "name": "tangerine juice",
-                "localizedName": "tangerine juice",
-                "image": "tangerine-juice.jpg"
+                "id": 19177,
+                "name": "gelatin",
+                "localizedName": "gelatin",
+                "image": "gelatin-powder.jpg"
               },
               {
-                "id": 9078,
-                "name": "cranberries",
-                "localizedName": "cranberries",
-                "image": "cranberries.jpg"
+                "id": 14412,
+                "name": "water",
+                "localizedName": "water",
+                "image": "water.png"
               },
               {
-                "id": 93820,
-                "name": "mascarpone",
-                "localizedName": "mascarpone",
-                "image": "white-cream-fluffy.jpg"
-              },
-              {
-                "id": 1019218,
-                "name": "tangerine",
-                "localizedName": "tangerine",
-                "image": "mandarin-or-tangerines-or-clementines.jpg"
-              },
-              {
-                "id": 1019016,
-                "name": "juice",
-                "localizedName": "juice",
-                "image": "apple-juice.jpg"
-              },
-              {
-                "id": 0,
-                "name": "sauce",
-                "localizedName": "sauce",
-                "image": ""
+                "id": 1077,
+                "name": "milk",
+                "localizedName": "milk",
+                "image": "milk.png"
               }
             ],
             "equipment": [
               {
-                "id": 404765,
-                "name": "aluminum foil",
-                "localizedName": "aluminum foil",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/aluminum-foil.png"
+                "id": 404699,
+                "name": "double boiler",
+                "localizedName": "double boiler",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/double-boiler.jpg"
               },
               {
-                "id": 404669,
-                "name": "sauce pan",
-                "localizedName": "sauce pan",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg"
-              },
-              {
-                "id": 404726,
-                "name": "blender",
-                "localizedName": "blender",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/blender.png"
-              },
-              {
-                "id": 404784,
-                "name": "oven",
-                "localizedName": "oven",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+                "id": 404783,
+                "name": "bowl",
+                "localizedName": "bowl",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
               }
             ]
           },
           {
             "number": 4,
-            "step": "Add less than a tablespoon of the juices from the duck.",
+            "step": "Add in hazelnut spread, continue to beat for about 1 minute.Mash bananas and mix well with 1/2 tbsp lemon juice then add into the cream cheese mixture, mix well again and transfer to a large bowl.",
             "ingredients": [
               {
-                "id": 5139,
-                "name": "duck",
-                "localizedName": "duck",
-                "image": "duck.png"
+                "id": 0,
+                "name": "hazelnut spread",
+                "localizedName": "hazelnut spread",
+                "image": "nut-butter.png"
+              },
+              {
+                "id": 1017,
+                "name": "cream cheese",
+                "localizedName": "cream cheese",
+                "image": "cream-cheese.jpg"
+              },
+              {
+                "id": 9152,
+                "name": "lemon juice",
+                "localizedName": "lemon juice",
+                "image": "lemon-juice.jpg"
+              },
+              {
+                "id": 9040,
+                "name": "banana",
+                "localizedName": "banana",
+                "image": "bananas.jpg"
               }
             ],
-            "equipment": []
+            "equipment": [
+              {
+                "id": 404783,
+                "name": "bowl",
+                "localizedName": "bowl",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
+              }
+            ],
+            "length": {
+              "number": 1,
+              "unit": "minutes"
+            }
           },
           {
             "number": 5,
-            "step": "Mix well. Return the pan to the heat and warm for a minute or so.",
-            "ingredients": [],
+            "step": "Add whipped cream to the cream cheese mixture with a hand whisk, mix well and add dissolved gelatin into it. Lastly fold in 20g crushed Oreo cookies with a rubber spatula.",
+            "ingredients": [
+              {
+                "id": 1054,
+                "name": "whipped cream",
+                "localizedName": "whipped cream",
+                "image": "whipped-cream.jpg"
+              },
+              {
+                "id": 1017,
+                "name": "cream cheese",
+                "localizedName": "cream cheese",
+                "image": "cream-cheese.jpg"
+              },
+              {
+                "id": 10018166,
+                "name": "oreo cookies",
+                "localizedName": "oreo cookies",
+                "image": "https://spoonacular.com/cdn/ingredients_100x100/oreos.png"
+              },
+              {
+                "id": 19177,
+                "name": "gelatin",
+                "localizedName": "gelatin",
+                "image": "gelatin-powder.jpg"
+              }
+            ],
             "equipment": [
               {
-                "id": 404645,
-                "name": "frying pan",
-                "localizedName": "frying pan",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+                "id": 404642,
+                "name": "spatula",
+                "localizedName": "spatula",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/spatula-or-turner.jpg"
+              },
+              {
+                "id": 404661,
+                "name": "whisk",
+                "localizedName": "whisk",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/whisk.png"
               }
             ]
           },
           {
             "number": 6,
-            "step": "Spread the sauce on the bottom of the plate and serve the duck sliced over it.",
+            "step": "Pour cream cheese mixture into prepared cake pan and refrigerator for at least 4 hours or overnight.",
             "ingredients": [
               {
-                "id": 0,
-                "name": "spread",
-                "localizedName": "spread",
-                "image": ""
-              },
-              {
-                "id": 0,
-                "name": "sauce",
-                "localizedName": "sauce",
-                "image": ""
-              },
-              {
-                "id": 5139,
-                "name": "duck",
-                "localizedName": "duck",
-                "image": "duck.png"
+                "id": 1017,
+                "name": "cream cheese",
+                "localizedName": "cream cheese",
+                "image": "cream-cheese.jpg"
               }
             ],
-            "equipment": []
+            "equipment": [
+              {
+                "id": 404747,
+                "name": "cake form",
+                "localizedName": "cake form",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/cake-pan.png"
+              }
+            ],
+            "length": {
+              "number": 240,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 7,
+            "step": "Remove chilled cheesecake from cake pan and sprinkle extra crushed Oreo biscuits over it.",
+            "ingredients": [
+              {
+                "id": 18009,
+                "name": "biscuits",
+                "localizedName": "biscuits",
+                "image": "buttermilk-biscuits.jpg"
+              },
+              {
+                "id": 10018166,
+                "name": "oreo cookies",
+                "localizedName": "oreo cookies",
+                "image": "https://spoonacular.com/cdn/ingredients_100x100/oreos.png"
+              }
+            ],
+            "equipment": [
+              {
+                "id": 404747,
+                "name": "cake form",
+                "localizedName": "cake form",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/cake-pan.png"
+              }
+            ]
           }
         ]
       }
     ],
     "originalId": null,
-    "spoonacularScore": 16.69370460510254,
-    "spoonacularSourceUrl": "https://spoonacular.com/duck-with-dried-cranberries-tangerines-and-mascarpone-sauce-641720"
+    "spoonacularScore": 30.943960189819336,
+    "spoonacularSourceUrl": "https://spoonacular.com/oreo-hazelnut-and-banana-cheesecake-654032"
   },
   {
-    "id": 661186,
-    "image": "https://img.spoonacular.com/recipes/661186-556x370.jpg",
+    "id": 664533,
+    "image": "https://img.spoonacular.com/recipes/664533-556x370.jpg",
     "imageType": "jpg",
-    "title": "Spicy Salmon Patties",
-    "readyInMinutes": 45,
-    "servings": 4,
-    "sourceUrl": "https://www.foodista.com/recipe/VRGPZNK4/spicy-salmon-patties",
+    "title": "Vegetable Cheddar Quiche",
+    "readyInMinutes": 75,
+    "servings": 8,
+    "sourceUrl": "http://www.foodista.com/recipe/KH7DRH22/vegetable-cheddar-quiche",
     "vegetarian": false,
     "vegan": false,
     "glutenFree": false,
-    "dairyFree": true,
+    "dairyFree": false,
     "veryHealthy": false,
     "cheap": false,
     "veryPopular": false,
     "sustainable": false,
     "lowFodmap": false,
-    "weightWatcherSmartPoints": 6,
+    "weightWatcherSmartPoints": 9,
     "gaps": "no",
     "preparationMinutes": null,
     "cookingMinutes": null,
-    "aggregateLikes": 4,
-    "healthScore": 22,
+    "aggregateLikes": 2,
+    "healthScore": 3,
     "creditsText": "foodista.com",
     "license": null,
     "sourceName": "foodista.com",
-    "pricePerServing": 301.78,
+    "pricePerServing": 71.8,
     "extendedIngredients": [
       {
-        "id": 15076,
-        "aisle": "Seafood",
-        "image": "salmon.png",
-        "consistency": "SOLID",
-        "name": "pink salmon",
-        "nameClean": "pink salmon",
-        "original": "16 oz pink salmon",
-        "originalName": "pink salmon",
-        "amount": 16,
-        "unit": "oz",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 16,
-            "unitShort": "oz",
-            "unitLong": "ounces"
-          },
-          "metric": {
-            "amount": 453.592,
-            "unitShort": "g",
-            "unitLong": "grams"
-          }
-        }
-      },
-      {
-        "id": 1123,
-        "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
-        "consistency": "SOLID",
-        "name": "eggs",
-        "nameClean": "eggs",
-        "original": "2 eggs",
-        "originalName": "eggs",
-        "amount": 2,
-        "unit": "",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 2,
-            "unitShort": "",
-            "unitLong": ""
-          },
-          "metric": {
-            "amount": 2,
-            "unitShort": "",
-            "unitLong": ""
-          }
-        }
-      },
-      {
-        "id": 2029,
-        "aisle": "Spices and Seasonings",
-        "image": "dried-parsley.png",
-        "consistency": "SOLID",
-        "name": "parsley flakes",
-        "nameClean": "parsley flakes",
-        "original": "1/4 cup fresh or dried parsley flakes",
-        "originalName": "fresh or dried parsley flakes",
-        "amount": 0.25,
-        "unit": "cup",
-        "meta": [
-          "fresh"
-        ],
-        "measures": {
-          "us": {
-            "amount": 0.25,
-            "unitShort": "cups",
-            "unitLong": "cups"
-          },
-          "metric": {
-            "amount": 6.25,
-            "unitShort": "g",
-            "unitLong": "grams"
-          }
-        }
-      },
-      {
-        "id": 11291,
+        "id": 10011090,
         "aisle": "Produce",
-        "image": "spring-onions.jpg",
+        "image": "broccoli.jpg",
         "consistency": "SOLID",
-        "name": "scallions",
-        "nameClean": "scallions",
-        "original": "2 tbsp scallions",
-        "originalName": "scallions",
-        "amount": 2,
-        "unit": "tbsp",
+        "name": "broccoli florets",
+        "nameClean": "broccoli florets",
+        "original": "1 cup Broccoli florets",
+        "originalName": "Broccoli florets",
+        "amount": 1,
+        "unit": "cup",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 2,
-            "unitShort": "Tbsps",
-            "unitLong": "Tbsps"
+            "amount": 1,
+            "unitShort": "cup",
+            "unitLong": "cup"
           },
           "metric": {
-            "amount": 2,
-            "unitShort": "Tbsps",
-            "unitLong": "Tbsps"
-          }
-        }
-      },
-      {
-        "id": 10028033,
-        "aisle": "Bakery/Bread",
-        "image": "italian-bread.jpg",
-        "consistency": "SOLID",
-        "name": "bread crumbs",
-        "nameClean": "bread crumbs",
-        "original": "1/4 cup italian bread crumbs",
-        "originalName": "italian bread crumbs",
-        "amount": 0.25,
-        "unit": "cup",
-        "meta": [
-          "italian"
-        ],
-        "measures": {
-          "us": {
-            "amount": 0.25,
-            "unitShort": "cups",
-            "unitLong": "cups"
-          },
-          "metric": {
-            "amount": 7,
+            "amount": 91,
             "unitShort": "g",
             "unitLong": "grams"
           }
         }
       },
       {
-        "id": 9152,
-        "aisle": "Produce",
-        "image": "lemon-juice.jpg",
-        "consistency": "LIQUID",
-        "name": "juice of lemon",
-        "nameClean": "juice of lemon",
-        "original": "Juice from 1/2 of lemon",
-        "originalName": "Juice from lemon",
-        "amount": 0.5,
-        "unit": "",
+        "id": 2031,
+        "aisle": "Spices and Seasonings",
+        "image": "chili-powder.jpg",
+        "consistency": "SOLID",
+        "name": "cayenne pepper",
+        "nameClean": "cayenne pepper",
+        "original": "⅛ tsp cayenne pepper",
+        "originalName": "cayenne pepper",
+        "amount": 0.125,
+        "unit": "tsp",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 0.5,
-            "unitShort": "",
-            "unitLong": ""
+            "amount": 0.125,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
           },
           "metric": {
-            "amount": 0.5,
-            "unitShort": "",
-            "unitLong": ""
+            "amount": 0.125,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
           }
         }
       },
       {
-        "id": 1032009,
-        "aisle": "Spices and Seasonings",
-        "image": "red-pepper-flakes.jpg",
+        "id": 11165,
+        "aisle": "Produce",
+        "image": "cilantro.png",
         "consistency": "SOLID",
-        "name": "pepper flakes",
-        "nameClean": "pepper flakes",
-        "original": "Red pepper flakes to taste",
-        "originalName": "Red pepper flakes to taste",
-        "amount": 4,
+        "name": "cilantro",
+        "nameClean": "cilantro",
+        "original": "Cilantro for garnish",
+        "originalName": "Cilantro for garnish",
+        "amount": 8,
         "unit": "servings",
         "meta": [
-          "red",
-          "to taste"
+          "for garnish"
         ],
         "measures": {
           "us": {
-            "amount": 4,
+            "amount": 8,
             "unitShort": "servings",
             "unitLong": "servings"
           },
           "metric": {
-            "amount": 4,
+            "amount": 8,
             "unitShort": "servings",
             "unitLong": "servings"
+          }
+        }
+      },
+      {
+        "id": 11260,
+        "aisle": "Produce",
+        "image": "mushrooms.png",
+        "consistency": "SOLID",
+        "name": "mushrooms",
+        "nameClean": "mushrooms",
+        "original": "1 cup sliced fresh mushrooms",
+        "originalName": "sliced fresh mushrooms",
+        "amount": 1,
+        "unit": "cup",
+        "meta": [
+          "fresh",
+          "sliced"
+        ],
+        "measures": {
+          "us": {
+            "amount": 1,
+            "unitShort": "cup",
+            "unitLong": "cup"
+          },
+          "metric": {
+            "amount": 96,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
+          }
+        }
+      },
+      {
+        "id": 11215,
+        "aisle": "Produce",
+        "image": "garlic.png",
+        "consistency": "SOLID",
+        "name": "garlic",
+        "nameClean": "garlic",
+        "original": "2 cloves minced garlic",
+        "originalName": "minced garlic",
+        "amount": 2,
+        "unit": "cloves",
+        "meta": [
+          "minced"
+        ],
+        "measures": {
+          "us": {
+            "amount": 2,
+            "unitShort": "cloves",
+            "unitLong": "cloves"
+          },
+          "metric": {
+            "amount": 2,
+            "unitShort": "cloves",
+            "unitLong": "cloves"
           }
         }
       },
@@ -1617,191 +2790,49 @@
         "consistency": "LIQUID",
         "name": "mayonnaise",
         "nameClean": "mayonnaise",
-        "original": "2 tbsp mayonnaise",
+        "original": "1/3 cup mayonnaise",
         "originalName": "mayonnaise",
-        "amount": 2,
-        "unit": "tbsp",
+        "amount": 0.33333334,
+        "unit": "cup",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 2,
-            "unitShort": "Tbsps",
-            "unitLong": "Tbsps"
+            "amount": 0.33333334,
+            "unitShort": "cups",
+            "unitLong": "cups"
           },
           "metric": {
-            "amount": 2,
-            "unitShort": "Tbsps",
-            "unitLong": "Tbsps"
+            "amount": 74.667,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
           }
         }
       },
       {
-        "id": 9152,
-        "aisle": "Produce",
-        "image": "lemon-juice.jpg",
+        "id": 1077,
+        "aisle": "Milk, Eggs, Other Dairy",
+        "image": "milk.png",
         "consistency": "LIQUID",
-        "name": "lemon juice",
-        "nameClean": "lemon juice",
-        "original": "1 tbsp lemon juice",
-        "originalName": "lemon juice",
-        "amount": 1,
-        "unit": "tbsp",
+        "name": "milk",
+        "nameClean": "milk",
+        "original": "1/3 cup milk",
+        "originalName": "milk",
+        "amount": 0.33333334,
+        "unit": "cup",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 1,
-            "unitShort": "Tbsp",
-            "unitLong": "Tbsp"
+            "amount": 0.33333334,
+            "unitShort": "cups",
+            "unitLong": "cups"
           },
           "metric": {
-            "amount": 1,
-            "unitShort": "Tbsp",
-            "unitLong": "Tbsp"
+            "amount": 81.333,
+            "unitShort": "ml",
+            "unitLong": "milliliters"
           }
         }
-      }
-    ],
-    "summary": "Spicy Salmon Patties takes about <b>45 minutes</b> from beginning to end. This recipe serves 4 and costs $3.02 per serving. This main course has <b>262 calories</b>, <b>26g of protein</b>, and <b>15g of fat</b> per serving. A mixture of bread crumbs, eggs, scallions, and a handful of other ingredients are all it takes to make this recipe so scrumptious. 4 people were impressed by this recipe. It is brought to you by Foodista. It is a good option if you're following a <b>dairy free and pescatarian</b> diet. All things considered, we decided this recipe <b>deserves a spoonacular score of 67%</b>. This score is good. Try <a href=\"https://spoonacular.com/recipes/spicy-salmon-patties-369195\">Spicy Salmon Patties</a>, <a href=\"https://spoonacular.com/recipes/baked-salmon-patties-with-a-spicy-dip-612060\">Baked Salmon Patties with a Spicy Dip</a>, and <a href=\"https://spoonacular.com/recipes/salmon-patties-with-spicy-low-fat-mayonnaise-82903\">Salmon Patties With Spicy Low-fat Mayonnaise</a> for similar recipes.",
-    "cuisines": [],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "dairy free",
-      "pescatarian"
-    ],
-    "occasions": [],
-    "instructions": "Prep salmon: remove skin; crush bones with thumb and index finger leaving them in for added calcium.\nKnead together salmon with eggs, parsley, scallions, bread crumbs, lemon juice and red pepper flakes.\nCook in a lightly-oiled cast-iron pan over medium heat until golden brown. Serve warm, with sauce.",
-    "analyzedInstructions": [
-      {
-        "name": "",
-        "steps": [
-          {
-            "number": 1,
-            "step": "Prep salmon: remove skin; crush bones with thumb and index finger leaving them in for added calcium.",
-            "ingredients": [
-              {
-                "id": 15076,
-                "name": "salmon",
-                "localizedName": "salmon",
-                "image": "https://spoonacular.com/cdn/ingredients_100x100/salmon.png"
-              }
-            ],
-            "equipment": []
-          },
-          {
-            "number": 2,
-            "step": "Knead together salmon with eggs, parsley, scallions, bread crumbs, lemon juice and red pepper flakes.",
-            "ingredients": [
-              {
-                "id": 1032009,
-                "name": "red pepper flakes",
-                "localizedName": "red pepper flakes",
-                "image": "red-pepper-flakes.jpg"
-              },
-              {
-                "id": 18079,
-                "name": "breadcrumbs",
-                "localizedName": "breadcrumbs",
-                "image": "breadcrumbs.jpg"
-              },
-              {
-                "id": 9152,
-                "name": "lemon juice",
-                "localizedName": "lemon juice",
-                "image": "lemon-juice.jpg"
-              },
-              {
-                "id": 11291,
-                "name": "green onions",
-                "localizedName": "green onions",
-                "image": "spring-onions.jpg"
-              },
-              {
-                "id": 11297,
-                "name": "parsley",
-                "localizedName": "parsley",
-                "image": "parsley.jpg"
-              },
-              {
-                "id": 15076,
-                "name": "salmon",
-                "localizedName": "salmon",
-                "image": "https://spoonacular.com/cdn/ingredients_100x100/salmon.png"
-              },
-              {
-                "id": 1123,
-                "name": "egg",
-                "localizedName": "egg",
-                "image": "egg.png"
-              }
-            ],
-            "equipment": []
-          },
-          {
-            "number": 3,
-            "step": "Cook in a lightly-oiled cast-iron pan over medium heat until golden brown.",
-            "ingredients": [],
-            "equipment": [
-              {
-                "id": 404645,
-                "name": "frying pan",
-                "localizedName": "frying pan",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
-              }
-            ]
-          },
-          {
-            "number": 4,
-            "step": "Serve warm, with sauce.",
-            "ingredients": [
-              {
-                "id": 0,
-                "name": "sauce",
-                "localizedName": "sauce",
-                "image": ""
-              }
-            ],
-            "equipment": []
-          }
-        ]
-      }
-    ],
-    "originalId": null,
-    "spoonacularScore": 72.9897232055664,
-    "spoonacularSourceUrl": "https://spoonacular.com/spicy-salmon-patties-661186"
-  },
-  {
-    "id": 633263,
-    "image": "https://img.spoonacular.com/recipes/633263-556x370.jpg",
-    "imageType": "jpg",
-    "title": "Bacon & Potato Soup, Gluten & Dairy Free",
-    "readyInMinutes": 45,
-    "servings": 6,
-    "sourceUrl": "https://www.foodista.com/recipe/QPXXKRS4/bacon-potato-soup-gluten-free",
-    "vegetarian": false,
-    "vegan": false,
-    "glutenFree": false,
-    "dairyFree": true,
-    "veryHealthy": false,
-    "cheap": false,
-    "veryPopular": false,
-    "sustainable": false,
-    "lowFodmap": false,
-    "weightWatcherSmartPoints": 12,
-    "gaps": "no",
-    "preparationMinutes": null,
-    "cookingMinutes": null,
-    "aggregateLikes": 47,
-    "healthScore": 16,
-    "creditsText": "foodista.com",
-    "license": null,
-    "sourceName": "foodista.com",
-    "pricePerServing": 197.02,
-    "extendedIngredients": [
+      },
       {
         "id": 4053,
         "aisle": "Oil, Vinegar, Salad Dressing",
@@ -1809,37 +2840,36 @@
         "consistency": "LIQUID",
         "name": "olive oil",
         "nameClean": "olive oil",
-        "original": "2 Tbsp olive oil",
+        "original": "2 Tbs olive oil",
         "originalName": "olive oil",
         "amount": 2,
-        "unit": "Tbsp",
+        "unit": "Tbs",
         "meta": [],
         "measures": {
           "us": {
             "amount": 2,
-            "unitShort": "Tbsps",
-            "unitLong": "Tbsps"
+            "unitShort": "Tbs",
+            "unitLong": "Tbs"
           },
           "metric": {
             "amount": 2,
-            "unitShort": "Tbsps",
-            "unitLong": "Tbsps"
+            "unitShort": "Tbs",
+            "unitLong": "Tbs"
           }
         }
       },
       {
-        "id": 99006,
-        "aisle": "Meat",
-        "image": "raw-bacon.png",
+        "id": 11282,
+        "aisle": "Produce",
+        "image": "brown-onion.png",
         "consistency": "SOLID",
-        "name": "bacon",
-        "nameClean": "bacon",
-        "original": "1 cup lean bacon, chopped",
-        "originalName": "lean bacon, chopped",
+        "name": "onions",
+        "nameClean": "onions",
+        "original": "1 cup chopped onions",
+        "originalName": "chopped onions",
         "amount": 1,
         "unit": "cup",
         "meta": [
-          "lean",
           "chopped"
         ],
         "measures": {
@@ -1849,349 +2879,224 @@
             "unitLong": "cup"
           },
           "metric": {
-            "amount": 236.588,
+            "amount": 160,
             "unitShort": "g",
             "unitLong": "grams"
           }
         }
       },
       {
-        "id": 10511282,
-        "aisle": "Produce",
-        "image": "brown-onion.png",
+        "id": 1033,
+        "aisle": "Cheese",
+        "image": "parmesan.jpg",
         "consistency": "SOLID",
-        "name": "onions",
-        "nameClean": "onions",
-        "original": "2 yellow onions, diced",
-        "originalName": "yellow onions, diced",
-        "amount": 2,
-        "unit": "",
+        "name": "parmesan cheese - is best",
+        "nameClean": "parmesan cheese - is best",
+        "original": "3 Tbs parmesan cheese – freshly grated is best.",
+        "originalName": "parmesan cheese – freshly grated is best",
+        "amount": 3,
+        "unit": "Tbs",
         "meta": [
-          "diced",
-          "yellow"
+          "freshly grated"
         ],
         "measures": {
           "us": {
-            "amount": 2,
-            "unitShort": "",
-            "unitLong": ""
+            "amount": 3,
+            "unitShort": "Tbs",
+            "unitLong": "Tbs"
           },
           "metric": {
-            "amount": 2,
-            "unitShort": "",
-            "unitLong": ""
+            "amount": 3,
+            "unitShort": "Tbs",
+            "unitLong": "Tbs"
           }
         }
       },
       {
-        "id": 10211215,
-        "aisle": "Produce",
-        "image": "garlic.jpg",
+        "id": 1002030,
+        "aisle": "Spices and Seasonings",
+        "image": "pepper.jpg",
         "consistency": "SOLID",
-        "name": "garlic cloves",
-        "nameClean": "garlic cloves",
-        "original": "4 garlic cloves, minced",
-        "originalName": "garlic cloves, minced",
-        "amount": 4,
-        "unit": "",
-        "meta": [
-          "minced"
-        ],
-        "measures": {
-          "us": {
-            "amount": 4,
-            "unitShort": "",
-            "unitLong": ""
-          },
-          "metric": {
-            "amount": 4,
-            "unitShort": "",
-            "unitLong": ""
-          }
-        }
-      },
-      {
-        "id": 6172,
-        "aisle": "Canned and Jarred",
-        "image": "chicken-broth.png",
-        "consistency": "LIQUID",
-        "name": "chicken stock",
-        "nameClean": "chicken stock",
-        "original": "7 cups vegetable or chicken stock",
-        "originalName": "vegetable or chicken stock",
-        "amount": 7,
-        "unit": "cups",
+        "name": "pepper",
+        "nameClean": "pepper",
+        "original": "½ tsp pepper",
+        "originalName": "pepper",
+        "amount": 0.5,
+        "unit": "tsp",
         "meta": [],
         "measures": {
           "us": {
-            "amount": 7,
-            "unitShort": "cups",
-            "unitLong": "cups"
+            "amount": 0.5,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
           },
           "metric": {
-            "amount": 1.68,
-            "unitShort": "l",
-            "unitLong": "liters"
+            "amount": 0.5,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
           }
         }
       },
       {
-        "id": 18010,
-        "aisle": "Baking",
-        "image": "brown-flour.jpg",
+        "id": 18334,
+        "aisle": "Refrigerated",
+        "image": "pie-crust.jpg",
         "consistency": "SOLID",
-        "name": "baking potaotes",
-        "nameClean": "baking potaotes",
-        "original": "2 1/4 cups diced red or baking potaotes",
-        "originalName": "diced red or baking potaotes",
-        "amount": 2.25,
-        "unit": "cups",
+        "name": "pie crust",
+        "nameClean": "pie crust",
+        "original": "1 refrigerated pie crust",
+        "originalName": "refrigerated pie crust",
+        "amount": 1,
+        "unit": "",
         "meta": [
-          "diced",
-          "red"
+          "refrigerated"
         ],
         "measures": {
           "us": {
-            "amount": 2.25,
-            "unitShort": "cups",
-            "unitLong": "cups"
+            "amount": 1,
+            "unitShort": "",
+            "unitLong": ""
           },
           "metric": {
-            "amount": 270,
-            "unitShort": "ml",
-            "unitLong": "milliliters"
+            "amount": 1,
+            "unitShort": "",
+            "unitLong": ""
           }
         }
       },
       {
-        "id": 11114,
-        "aisle": "Produce",
-        "image": "savoy-cabbage.jpg",
+        "id": 2047,
+        "aisle": "Spices and Seasonings",
+        "image": "salt.jpg",
         "consistency": "SOLID",
-        "name": "savoy cabbage",
-        "nameClean": "savoy cabbage",
-        "original": "3 cups Savoy cabbage, shredded",
-        "originalName": "Savoy cabbage, shredded",
-        "amount": 3,
-        "unit": "cups",
+        "name": "salt",
+        "nameClean": "salt",
+        "original": "½ tsp salt",
+        "originalName": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "meta": [],
+        "measures": {
+          "us": {
+            "amount": 0.5,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
+          },
+          "metric": {
+            "amount": 0.5,
+            "unitShort": "tsps",
+            "unitLong": "teaspoons"
+          }
+        }
+      },
+      {
+        "id": 1031009,
+        "aisle": "Cheese",
+        "image": "cheddar-cheese.png",
+        "consistency": "SOLID",
+        "name": "sharp cheddar cheese",
+        "nameClean": "sharp cheddar cheese",
+        "original": "1 cup shredded Sharp Cheddar cheese",
+        "originalName": "shredded Sharp Cheddar cheese",
+        "amount": 1,
+        "unit": "cup",
         "meta": [
           "shredded"
         ],
         "measures": {
           "us": {
-            "amount": 3,
-            "unitShort": "cups",
-            "unitLong": "cups"
+            "amount": 1,
+            "unitShort": "cup",
+            "unitLong": "cup"
           },
           "metric": {
-            "amount": 210,
+            "amount": 113,
             "unitShort": "g",
             "unitLong": "grams"
           }
         }
       },
       {
-        "id": 6971,
-        "aisle": "Condiments",
-        "image": "dark-sauce.jpg",
-        "consistency": "LIQUID",
-        "name": "worcestershire sauce",
-        "nameClean": "worcestershire sauce",
-        "original": "1 tsp Worcestershire sauce",
-        "originalName": "Worcestershire sauce",
-        "amount": 1,
-        "unit": "tsp",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          }
-        }
-      },
-      {
-        "id": 1032046,
-        "aisle": "Condiments",
-        "image": "dijon-mustard.jpg",
-        "consistency": "LIQUID",
-        "name": "dijon mustard",
-        "nameClean": "dijon mustard",
-        "original": "1 tsp Dijon mustard",
-        "originalName": "Dijon mustard",
-        "amount": 1,
-        "unit": "tsp",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          }
-        }
-      },
-      {
-        "id": 10311297,
+        "id": 10011457,
         "aisle": "Produce",
-        "image": "parsley.jpg",
+        "image": "spinach.jpg",
         "consistency": "SOLID",
-        "name": "flat leaf parsley",
-        "nameClean": "flat leaf parsley",
-        "original": "3 Tbsp flat leaf parsley, finely chopped",
-        "originalName": "flat leaf parsley, finely chopped",
-        "amount": 3,
-        "unit": "Tbsp",
-        "meta": [
-          "finely chopped"
-        ],
-        "measures": {
-          "us": {
-            "amount": 3,
-            "unitShort": "Tbsps",
-            "unitLong": "Tbsps"
-          },
-          "metric": {
-            "amount": 3,
-            "unitShort": "Tbsps",
-            "unitLong": "Tbsps"
-          }
-        }
-      },
-      {
-        "id": -1,
-        "aisle": "?",
-        "image": null,
-        "consistency": "SOLID",
-        "name": "garnish",
-        "nameClean": "garnish",
-        "original": "Garnish with a tablespoon of lemon",
-        "originalName": "Garnish with a tablespoon of lemon",
+        "name": "spinach",
+        "nameClean": "spinach",
+        "original": "1 cup fresh spinach",
+        "originalName": "fresh spinach",
         "amount": 1,
-        "unit": "serving",
+        "unit": "cup",
         "meta": [
-          "with a tablespoon of lemon"
+          "fresh"
         ],
         "measures": {
           "us": {
             "amount": 1,
-            "unitShort": "serving",
-            "unitLong": "serving"
+            "unitShort": "cup",
+            "unitLong": "cup"
           },
           "metric": {
-            "amount": 1,
-            "unitShort": "serving",
-            "unitLong": "serving"
-          }
-        }
-      },
-      {
-        "id": -1,
-        "aisle": "?",
-        "image": null,
-        "consistency": "SOLID",
-        "name": "garnish",
-        "nameClean": "garnish",
-        "original": "Garnish with a tablespoon of lemon",
-        "originalName": "Garnish with a tablespoon of lemon",
-        "amount": 6,
-        "unit": "servings",
-        "meta": [
-          "with a tablespoon of lemon"
-        ],
-        "measures": {
-          "us": {
-            "amount": 6,
-            "unitShort": "servings",
-            "unitLong": "servings"
-          },
-          "metric": {
-            "amount": 6,
-            "unitShort": "servings",
-            "unitLong": "servings"
+            "amount": 30,
+            "unitShort": "g",
+            "unitLong": "grams"
           }
         }
       }
     ],
-    "summary": "Bacon & Potato Soup, Gluten & Dairy Free is a <b>dairy free</b> main course. For <b>$1.97 per serving</b>, this recipe <b>covers 17%</b> of your daily requirements of vitamins and minerals. One portion of this dish contains approximately <b>20g of protein</b>, <b>17g of fat</b>, and a total of <b>410 calories</b>. This recipe serves 6. It is brought to you by Foodista. It will be a hit at your <b>Autumn</b> event. If you have dijon mustard, garlic cloves, onions, and a few other ingredients on hand, you can make it. 47 people have made this recipe and would make it again. From preparation to the plate, this recipe takes around <b>45 minutes</b>. With a spoonacular <b>score of 71%</b>, this dish is solid. Similar recipes include <a href=\"https://spoonacular.com/recipes/2-ingredient-sweet-potato-pancakes-gluten-free-dairy-free-nut-free-1198187\">2-ingredient Sweet Potato Pancakes {gluten-free, dairy-free, nut-free}</a>, <a href=\"https://spoonacular.com/recipes/healthy-sweet-potato-casserole-gluten-free-nut-free-dairy-free-1052405\">Healthy Sweet Potato Casserole (gluten-free, nut-free, dairy-free)</a>, and <a href=\"https://spoonacular.com/recipes/2-ingredient-sweet-potato-pancakes-gluten-free-dairy-free-nut-free-1379303\">2-ingredient Sweet Potato Pancakes {gluten-free, dairy-free, nut-free}</a>.",
-    "cuisines": [],
+    "summary": "If you want to add more <b>Mediterranean</b> recipes to your collection, Vegetable Cheddar Quiche might be a recipe you should try. For <b>72 cents per serving</b>, you get a hor d'oeuvre that serves 8. One portion of this dish contains about <b>7g of protein</b>, <b>22g of fat</b>, and a total of <b>280 calories</b>. 2 people have tried and liked this recipe. From preparation to the plate, this recipe takes roughly <b>1 hour and 15 minutes</b>. If you have pepper, mushrooms, milk, and a few other ingredients on hand, you can make it. It is brought to you by Foodista. All things considered, we decided this recipe <b>deserves a spoonacular score of 31%</b>. This score is rather bad. Similar recipes include <a href=\"https://spoonacular.com/recipes/roasted-vegetable-cheddar-quiche-78591\">Roasted Vegetable Cheddar Quiche</a>, <a href=\"https://spoonacular.com/recipes/mixed-vegetable-quiche-with-cheddar-and-parmesan-287937\">Mixed Vegetable Quiche with Cheddar and Parmesan</a>, and <a href=\"https://spoonacular.com/recipes/roasted-vegetable-quiche-with-spinach-and-sharp-cheddar-728810\">Roasted Vegetable Quiche with Spinach and Sharp Cheddar</a>.",
+    "cuisines": [
+      "Mediterranean",
+      "French",
+      "European"
+    ],
     "dishTypes": [
-      "lunch",
-      "soup",
-      "main course",
-      "main dish",
-      "dinner"
+      "antipasti",
+      "morning meal",
+      "starter",
+      "brunch",
+      "snack",
+      "appetizer",
+      "breakfast",
+      "antipasto",
+      "hor d'oeuvre"
     ],
-    "diets": [
-      "dairy free"
-    ],
-    "occasions": [
-      "fall",
-      "winter"
-    ],
-    "instructions": "In a large stock pot, heat the olive oil over medium-high heat. Add the chopped bacon and onions, cooking until the bacon is crisp and the onions are translucent. Add garlic and cook for one more minute, until fragrant.\nAdd the chicken or vegetable stock, potatoes, cabbage, Worcestershire sauce and mustard. Mix well and season with salt and pepper. Bring soup to a boil, then reduce heat and simmer for 30 minutes, or until potatoes are tender but not disintegrating.\nRemove the pot from heat and allow it to cool for 5 minutes. Transfer 2 1/2 cups of the soup to a blender and pulse quickly to achiever a coarse puree. Pour blended portion back into the stock pot and return to heat. Cook, stirring often, for 5-10 minutes or until heated through.\nStir in parsley and ladle into serving bowls. Serve with a wedge of lemon and gluten free garlic croutons.",
+    "diets": [],
+    "occasions": [],
+    "instructions": "<ol><li>Preheat oven to 375. </li><li>Unroll pie crust and place into pie plate, crimp edges and set aside. </li><li>Cook vegetables and garlic in frying pan over medium heat on stove top for about 5 minutes until tender  stir occasionally. </li><li>Add salt, pepper and cayenne pepper while cooking. After vegetables are tender, remove pan from the heat and set aside to cool.</li><li>In a bowl, beat the eggs, mayonnaise and milk with a whisk until all is blended and smooth. </li><li>Once vegetables have cooled, add them to the egg mix. </li><li>Add the cheese as well and then pour the mixture into the pie crust. </li><li>Top with the 3 tbs of grated parmesan cheese.</li><li>Bake for 40-45 minutes until you can jiggle the pie plate and the center of the quiche is set and not jiggly! The top should be golden brown. </li><li>Let quiche stand for 10 minutes before cutting to serve. </li><li>Garnish with cilantro</li></ol>",
     "analyzedInstructions": [
       {
         "name": "",
         "steps": [
           {
             "number": 1,
-            "step": "In a large stock pot, heat the olive oil over medium-high heat.",
-            "ingredients": [
-              {
-                "id": 4053,
-                "name": "olive oil",
-                "localizedName": "olive oil",
-                "image": "olive-oil.jpg"
-              },
-              {
-                "id": 1006615,
-                "name": "stock",
-                "localizedName": "stock",
-                "image": "chicken-broth.png"
-              }
-            ],
+            "step": "Preheat oven to 37",
+            "ingredients": [],
             "equipment": [
               {
-                "id": 404752,
-                "name": "pot",
-                "localizedName": "pot",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
+                "id": 404784,
+                "name": "oven",
+                "localizedName": "oven",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
               }
             ]
           },
           {
             "number": 2,
-            "step": "Add the chopped bacon and onions, cooking until the bacon is crisp and the onions are translucent.",
+            "step": "Unroll pie crust and place into pie plate, crimp edges and set aside. Cook vegetables and garlic in frying pan over medium heat on stove top for about 5 minutes until tender  stir occasionally.",
             "ingredients": [
               {
-                "id": 11282,
-                "name": "onion",
-                "localizedName": "onion",
-                "image": "brown-onion.png"
+                "id": 11583,
+                "name": "vegetable",
+                "localizedName": "vegetable",
+                "image": "mixed-vegetables.png"
               },
               {
-                "id": 10123,
-                "name": "bacon",
-                "localizedName": "bacon",
-                "image": "https://spoonacular.com/cdn/ingredients_100x100/raw-bacon.png"
-              }
-            ],
-            "equipment": []
-          },
-          {
-            "number": 3,
-            "step": "Add garlic and cook for one more minute, until fragrant.",
-            "ingredients": [
+                "id": 18334,
+                "name": "pie crust",
+                "localizedName": "pie crust",
+                "image": "pie-crust.jpg"
+              },
               {
                 "id": 11215,
                 "name": "garlic",
@@ -2199,94 +3104,18 @@
                 "image": "garlic.png"
               }
             ],
-            "equipment": [],
-            "length": {
-              "number": 1,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 4,
-            "step": "Add the chicken or vegetable stock, potatoes, cabbage, Worcestershire sauce and mustard.",
-            "ingredients": [
-              {
-                "id": 6971,
-                "name": "worcestershire sauce",
-                "localizedName": "worcestershire sauce",
-                "image": "dark-sauce.jpg"
-              },
-              {
-                "id": 6615,
-                "name": "vegetable stock",
-                "localizedName": "vegetable stock",
-                "image": "chicken-broth.png"
-              },
-              {
-                "id": 11352,
-                "name": "potato",
-                "localizedName": "potato",
-                "image": "potatoes-yukon-gold.png"
-              },
-              {
-                "id": 11109,
-                "name": "cabbage",
-                "localizedName": "cabbage",
-                "image": "cabbage.jpg"
-              },
-              {
-                "id": 0,
-                "name": "chicken",
-                "localizedName": "chicken",
-                "image": "whole-chicken.jpg"
-              },
-              {
-                "id": 2046,
-                "name": "mustard",
-                "localizedName": "mustard",
-                "image": "regular-mustard.jpg"
-              }
-            ],
-            "equipment": []
-          },
-          {
-            "number": 5,
-            "step": "Mix well and season with salt and pepper. Bring soup to a boil, then reduce heat and simmer for 30 minutes, or until potatoes are tender but not disintegrating.",
-            "ingredients": [
-              {
-                "id": 1102047,
-                "name": "salt and pepper",
-                "localizedName": "salt and pepper",
-                "image": "salt-and-pepper.jpg"
-              },
-              {
-                "id": 11352,
-                "name": "potato",
-                "localizedName": "potato",
-                "image": "potatoes-yukon-gold.png"
-              },
-              {
-                "id": 0,
-                "name": "soup",
-                "localizedName": "soup",
-                "image": ""
-              }
-            ],
-            "equipment": [],
-            "length": {
-              "number": 30,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 6,
-            "step": "Remove the pot from heat and allow it to cool for 5 minutes.",
-            "ingredients": [],
             "equipment": [
               {
-                "id": 404752,
-                "name": "pot",
-                "localizedName": "pot",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
+                "id": 404645,
+                "name": "frying pan",
+                "localizedName": "frying pan",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+              },
+              {
+                "id": 404794,
+                "name": "stove",
+                "localizedName": "stove",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
               }
             ],
             "length": {
@@ -2295,61 +3124,59 @@
             }
           },
           {
-            "number": 7,
-            "step": "Transfer 2 1/2 cups of the soup to a blender and pulse quickly to achiever a coarse puree.",
+            "number": 3,
+            "step": "Add salt, pepper and cayenne pepper while cooking. After vegetables are tender, remove pan from the heat and set aside to cool.In a bowl, beat the eggs, mayonnaise and milk with a whisk until all is blended and smooth. Once vegetables have cooled, add them to the egg mix.",
             "ingredients": [
               {
-                "id": 0,
-                "name": "soup",
-                "localizedName": "soup",
-                "image": ""
+                "id": 2031,
+                "name": "cayenne pepper",
+                "localizedName": "cayenne pepper",
+                "image": "chili-powder.jpg"
+              },
+              {
+                "id": 4025,
+                "name": "mayonnaise",
+                "localizedName": "mayonnaise",
+                "image": "mayonnaise.png"
+              },
+              {
+                "id": 11583,
+                "name": "vegetable",
+                "localizedName": "vegetable",
+                "image": "mixed-vegetables.png"
+              },
+              {
+                "id": 1002030,
+                "name": "pepper",
+                "localizedName": "pepper",
+                "image": "pepper.jpg"
+              },
+              {
+                "id": 1123,
+                "name": "egg",
+                "localizedName": "egg",
+                "image": "egg.png"
+              },
+              {
+                "id": 1077,
+                "name": "milk",
+                "localizedName": "milk",
+                "image": "milk.png"
+              },
+              {
+                "id": 2047,
+                "name": "salt",
+                "localizedName": "salt",
+                "image": "salt.jpg"
               }
             ],
             "equipment": [
               {
-                "id": 404726,
-                "name": "blender",
-                "localizedName": "blender",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/blender.png"
-              }
-            ]
-          },
-          {
-            "number": 8,
-            "step": "Pour blended portion back into the stock pot and return to heat. Cook, stirring often, for 5-10 minutes or until heated through.",
-            "ingredients": [
-              {
-                "id": 1006615,
-                "name": "stock",
-                "localizedName": "stock",
-                "image": "chicken-broth.png"
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404752,
-                "name": "pot",
-                "localizedName": "pot",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg"
-              }
-            ],
-            "length": {
-              "number": 10,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 9,
-            "step": "Stir in parsley and ladle into serving bowls.",
-            "ingredients": [
-              {
-                "id": 11297,
-                "name": "parsley",
-                "localizedName": "parsley",
-                "image": "parsley.jpg"
-              }
-            ],
-            "equipment": [
+                "id": 404661,
+                "name": "whisk",
+                "localizedName": "whisk",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/whisk.png"
+              },
               {
                 "id": 404783,
                 "name": "bowl",
@@ -2357,499 +3184,74 @@
                 "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
               },
               {
-                "id": 404630,
-                "name": "ladle",
-                "localizedName": "ladle",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/ladle.jpg"
-              }
-            ]
-          },
-          {
-            "number": 10,
-            "step": "Serve with a wedge of lemon and gluten free garlic croutons.",
-            "ingredients": [
-              {
-                "id": 0,
-                "name": "garlic croutons",
-                "localizedName": "garlic croutons",
-                "image": "croutons.png"
-              },
-              {
-                "id": 9150,
-                "name": "lemon",
-                "localizedName": "lemon",
-                "image": "lemon.png"
-              }
-            ],
-            "equipment": []
-          }
-        ]
-      }
-    ],
-    "originalId": null,
-    "spoonacularScore": 72.04289245605469,
-    "spoonacularSourceUrl": "https://spoonacular.com/bacon-potato-soup-gluten-dairy-free-633263"
-  },
-  {
-    "id": 641208,
-    "image": "https://img.spoonacular.com/recipes/641208-556x370.jpg",
-    "imageType": "jpg",
-    "title": "Dak Bulgogi - Korean BBQ Chicken",
-    "readyInMinutes": 400,
-    "servings": 4,
-    "sourceUrl": "http://www.foodista.com/recipe/QNLYWCMG/dak-bulgogi-korean-bbq-chicken",
-    "vegetarian": false,
-    "vegan": false,
-    "glutenFree": true,
-    "dairyFree": true,
-    "veryHealthy": false,
-    "cheap": false,
-    "veryPopular": false,
-    "sustainable": false,
-    "lowFodmap": false,
-    "weightWatcherSmartPoints": 15,
-    "gaps": "no",
-    "preparationMinutes": null,
-    "cookingMinutes": null,
-    "aggregateLikes": 2,
-    "healthScore": 10,
-    "creditsText": "foodista.com",
-    "license": null,
-    "sourceName": "foodista.com",
-    "pricePerServing": 160.26,
-    "extendedIngredients": [
-      {
-        "id": 9003,
-        "aisle": "Produce",
-        "image": "apple.jpg",
-        "consistency": "SOLID",
-        "name": "apple",
-        "nameClean": "apple",
-        "original": "•1/2 apple or pear",
-        "originalName": "apple or pear",
-        "amount": 0.5,
-        "unit": "",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 0.5,
-            "unitShort": "",
-            "unitLong": ""
-          },
-          "metric": {
-            "amount": 0.5,
-            "unitShort": "",
-            "unitLong": ""
-          }
-        }
-      },
-      {
-        "id": 11250,
-        "aisle": "Produce",
-        "image": "Butter-or-Boston-Bibb-lettuce.jpg",
-        "consistency": "SOLID",
-        "name": "boston bibb lettuce",
-        "nameClean": "boston bibb lettuce",
-        "original": "•1 bunch Boston bibb lettuce",
-        "originalName": "Boston bibb lettuce",
-        "amount": 1,
-        "unit": "bunch",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "bunch",
-            "unitLong": "bunch"
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "bunch",
-            "unitLong": "bunch"
-          }
-        }
-      },
-      {
-        "id": 19334,
-        "aisle": "Baking",
-        "image": "light-brown-sugar.jpg",
-        "consistency": "SOLID",
-        "name": "brown sugar",
-        "nameClean": "brown sugar",
-        "original": "•1 tbsp brown sugar",
-        "originalName": "brown sugar",
-        "amount": 1,
-        "unit": "tbsp",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "Tbsp",
-            "unitLong": "Tbsp"
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "Tbsp",
-            "unitLong": "Tbsp"
-          }
-        }
-      },
-      {
-        "id": 5091,
-        "aisle": "Meat",
-        "image": "chicken-thighs.png",
-        "consistency": "SOLID",
-        "name": "chicken thighs",
-        "nameClean": "chicken thighs",
-        "original": "2 lbs chicken thighs",
-        "originalName": "chicken thighs",
-        "amount": 2,
-        "unit": "lbs",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 2,
-            "unitShort": "lb",
-            "unitLong": "pounds"
-          },
-          "metric": {
-            "amount": 907.185,
-            "unitShort": "g",
-            "unitLong": "grams"
-          }
-        }
-      },
-      {
-        "id": 10211215,
-        "aisle": "Produce",
-        "image": "garlic.jpg",
-        "consistency": "SOLID",
-        "name": "garlic cloves",
-        "nameClean": "garlic cloves",
-        "original": "•3 garlic cloves",
-        "originalName": "garlic cloves",
-        "amount": 3,
-        "unit": "",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 3,
-            "unitShort": "",
-            "unitLong": ""
-          },
-          "metric": {
-            "amount": 3,
-            "unitShort": "",
-            "unitLong": ""
-          }
-        }
-      },
-      {
-        "id": 11216,
-        "aisle": "Produce",
-        "image": "ginger.png",
-        "consistency": "SOLID",
-        "name": "ginger",
-        "nameClean": "ginger",
-        "original": "•1 tsp ginger",
-        "originalName": "ginger",
-        "amount": 1,
-        "unit": "tsp",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          }
-        }
-      },
-      {
-        "id": 1032009,
-        "aisle": "Spices and Seasonings",
-        "image": "red-pepper-flakes.jpg",
-        "consistency": "SOLID",
-        "name": "pepper flakes",
-        "nameClean": "pepper flakes",
-        "original": "•1 tsp red pepper flakes",
-        "originalName": "red pepper flakes",
-        "amount": 1,
-        "unit": "tsp",
-        "meta": [
-          "red"
-        ],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          }
-        }
-      },
-      {
-        "id": 11291,
-        "aisle": "Produce",
-        "image": "spring-onions.jpg",
-        "consistency": "SOLID",
-        "name": "scallions",
-        "nameClean": "scallions",
-        "original": "•scallions",
-        "originalName": "scallions",
-        "amount": 4,
-        "unit": "servings",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 4,
-            "unitShort": "servings",
-            "unitLong": "servings"
-          },
-          "metric": {
-            "amount": 4,
-            "unitShort": "servings",
-            "unitLong": "servings"
-          }
-        }
-      },
-      {
-        "id": 4058,
-        "aisle": "Ethnic Foods",
-        "image": "sesame-oil.png",
-        "consistency": "LIQUID",
-        "name": "sesame oil",
-        "nameClean": "sesame oil",
-        "original": "•1 tsp sesame oil",
-        "originalName": "sesame oil",
-        "amount": 1,
-        "unit": "tsp",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          }
-        }
-      },
-      {
-        "id": 12023,
-        "aisle": "Ethnic Foods",
-        "image": "sesame-seeds.png",
-        "consistency": "SOLID",
-        "name": "sesame seeds",
-        "nameClean": "sesame seeds",
-        "original": "•1 tsp sesame seeds (garnish)",
-        "originalName": "sesame seeds (garnish)",
-        "amount": 1,
-        "unit": "tsp",
-        "meta": [
-          "(garnish)"
-        ],
-        "measures": {
-          "us": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          },
-          "metric": {
-            "amount": 1,
-            "unitShort": "tsp",
-            "unitLong": "teaspoon"
-          }
-        }
-      },
-      {
-        "id": 16124,
-        "aisle": "Condiments",
-        "image": "soy-sauce.jpg",
-        "consistency": "LIQUID",
-        "name": "soy sauce",
-        "nameClean": "soy sauce",
-        "original": "•1/2 cup soy sauce",
-        "originalName": "soy sauce",
-        "amount": 0.5,
-        "unit": "cup",
-        "meta": [],
-        "measures": {
-          "us": {
-            "amount": 0.5,
-            "unitShort": "cups",
-            "unitLong": "cups"
-          },
-          "metric": {
-            "amount": 116,
-            "unitShort": "ml",
-            "unitLong": "milliliters"
-          }
-        }
-      }
-    ],
-    "summary": "If you have around <b>6 hours and 40 minutes</b> to spend in the kitchen, Dak Bulgogi - Korean BBQ Chicken might be an amazing <b>gluten free and dairy free</b> recipe to try. This main course has <b>557 calories</b>, <b>40g of protein</b>, and <b>39g of fat</b> per serving. This recipe serves 4. For <b>$1.6 per serving</b>, this recipe <b>covers 20%</b> of your daily requirements of vitamins and minerals. 2 people have made this recipe and would make it again. Only a few people really liked this Korean dish. Head to the store and pick up chicken thighs, boston bibb lettuce, brown sugar, and a few other things to make it today. It is brought to you by Foodista. Overall, this recipe earns a <b>pretty good spoonacular score of 47%</b>. Users who liked this recipe also liked <a href=\"https://spoonacular.com/recipes/dak-bulgogi-korean-bbq-chicken-248907\">Dak Bulgogi (Korean BBQ Chicken)</a>, <a href=\"https://spoonacular.com/recipes/dak-bulgogi-korean-bbq-chicken-1248345\">Dak Bulgogi - Korean BBQ Chicken</a>, and <a href=\"https://spoonacular.com/recipes/dak-bulgogi-korean-bbq-chicken-1566187\">Dak Bulgogi (Korean BBQ Chicken)</a>.",
-    "cuisines": [
-      "Korean",
-      "Asian"
-    ],
-    "dishTypes": [
-      "lunch",
-      "main course",
-      "main dish",
-      "dinner"
-    ],
-    "diets": [
-      "gluten free",
-      "dairy free"
-    ],
-    "occasions": [],
-    "instructions": "<ol><li>Peel off thigh skins with a paring knife. Trim off excess fat. Cut into one single \"steak\" piece working around the bone. Save smaller pieces for cooking as well. Set aside in a large mixing bowl.</li><li>Pulse the marinade ingredients in a food processor until smooth.</li><li>Coat the chicken pieces with the marinade. Marinate overnight in the refrigerator or a minimum of 6-12 hours. With a skewer or toothpick, piercing the thighs for extra marinade absorption is optional.</li><li>Preheat a skillet or non stick pan over medium heat. Add the chicken thighs and cook for about 15-20 minutes or until cooked through. To ensure fully cooked thighs, use a meat thermometer and check for a reading of 165-170F.</li><li>Transfer to a serving plate and garnish with scallion. Serve with lettuce leaves. Enjoy!</li></ol>",
-    "analyzedInstructions": [
-      {
-        "name": "",
-        "steps": [
-          {
-            "number": 1,
-            "step": "Peel off thigh skins with a paring knife. Trim off excess fat.",
-            "ingredients": [],
-            "equipment": [
-              {
-                "id": 404745,
-                "name": "knife",
-                "localizedName": "knife",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/chefs-knife.jpg"
-              }
-            ]
-          },
-          {
-            "number": 2,
-            "step": "Cut into one single \"steak\" piece working around the bone. Save smaller pieces for cooking as well. Set aside in a large mixing bowl.Pulse the marinade ingredients in a food processor until smooth.Coat the chicken pieces with the marinade. Marinate overnight in the refrigerator or a minimum of 6-12 hours. With a skewer or toothpick, piercing the thighs for extra marinade absorption is optional.Preheat a skillet or non stick pan over medium heat.",
-            "ingredients": [
-              {
-                "id": 1005006,
-                "name": "chicken pieces",
-                "localizedName": "chicken pieces",
-                "image": "chicken-parts.jpg"
-              },
-              {
-                "id": 0,
-                "name": "marinade",
-                "localizedName": "marinade",
-                "image": "seasoning.png"
-              },
-              {
-                "id": 23232,
-                "name": "steak",
-                "localizedName": "steak",
-                "image": "ribeye-raw.jpg"
-              },
-              {
-                "id": 0,
-                "name": "bone",
-                "localizedName": "bone",
-                "image": ""
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404771,
-                "name": "food processor",
-                "localizedName": "food processor",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/food-processor.png"
-              },
-              {
-                "id": 405907,
-                "name": "mixing bowl",
-                "localizedName": "mixing bowl",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/mixing-bowl.jpg"
-              },
-              {
-                "id": 404644,
-                "name": "toothpicks",
-                "localizedName": "toothpicks",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/toothpicks.jpg"
-              },
-              {
                 "id": 404645,
                 "name": "frying pan",
                 "localizedName": "frying pan",
                 "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
-              },
-              {
-                "id": 3065,
-                "name": "skewers",
-                "localizedName": "skewers",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/wooden-skewers.jpg"
               }
-            ],
-            "length": {
-              "number": 720,
-              "unit": "minutes"
-            }
-          },
-          {
-            "number": 3,
-            "step": "Add the chicken thighs and cook for about 15-20 minutes or until cooked through. To ensure fully cooked thighs, use a meat thermometer and check for a reading of 165-170F.",
-            "ingredients": [
-              {
-                "id": 5091,
-                "name": "chicken thighs",
-                "localizedName": "chicken thighs",
-                "image": "chicken-thigh.jpg"
-              },
-              {
-                "id": 1065062,
-                "name": "meat",
-                "localizedName": "meat",
-                "image": "whole-chicken.jpg"
-              }
-            ],
-            "equipment": [
-              {
-                "id": 404789,
-                "name": "kitchen thermometer",
-                "localizedName": "kitchen thermometer",
-                "image": "https://spoonacular.com/cdn/equipment_100x100/food-thermometer.jpg"
-              }
-            ],
-            "length": {
-              "number": 20,
-              "unit": "minutes"
-            }
+            ]
           },
           {
             "number": 4,
-            "step": "Transfer to a serving plate and garnish with scallion.",
+            "step": "Add the cheese as well and then pour the mixture into the pie crust. Top with the 3 tbs of grated parmesan cheese.",
             "ingredients": [
               {
-                "id": 11291,
-                "name": "green onions",
-                "localizedName": "green onions",
-                "image": "spring-onions.jpg"
+                "id": 1032,
+                "name": "grated parmesan cheese",
+                "localizedName": "grated parmesan cheese",
+                "image": "parmesan.jpg"
+              },
+              {
+                "id": 18334,
+                "name": "pie crust",
+                "localizedName": "pie crust",
+                "image": "pie-crust.jpg"
+              },
+              {
+                "id": 1041009,
+                "name": "cheese",
+                "localizedName": "cheese",
+                "image": "https://spoonacular.com/cdn/ingredients_100x100/cheddar-cheese.png"
               }
             ],
             "equipment": []
           },
           {
             "number": 5,
-            "step": "Serve with lettuce leaves. Enjoy!",
+            "step": "Bake for 40-45 minutes until you can jiggle the pie plate and the center of the quiche is set and not jiggly! The top should be golden brown.",
+            "ingredients": [],
+            "equipment": [
+              {
+                "id": 404784,
+                "name": "oven",
+                "localizedName": "oven",
+                "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+              }
+            ],
+            "length": {
+              "number": 45,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 6,
+            "step": "Let quiche stand for 10 minutes before cutting to serve.",
+            "ingredients": [],
+            "equipment": [],
+            "length": {
+              "number": 10,
+              "unit": "minutes"
+            }
+          },
+          {
+            "number": 7,
+            "step": "Garnish with cilantro",
             "ingredients": [
               {
-                "id": 93623,
-                "name": "lettuce leaf",
-                "localizedName": "lettuce leaf",
-                "image": "iceberg-lettuce"
+                "id": 11165,
+                "name": "cilantro",
+                "localizedName": "cilantro",
+                "image": "cilantro.png"
               }
             ],
             "equipment": []
@@ -2858,7 +3260,7 @@
       }
     ],
     "originalId": null,
-    "spoonacularScore": 52.185428619384766,
-    "spoonacularSourceUrl": "https://spoonacular.com/dak-bulgogi-korean-bbq-chicken-641208"
+    "spoonacularScore": 36.981693267822266,
+    "spoonacularSourceUrl": "https://spoonacular.com/vegetable-cheddar-quiche-664533"
   }
 ]

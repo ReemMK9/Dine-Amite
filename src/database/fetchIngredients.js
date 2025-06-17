@@ -1,11 +1,10 @@
 const { createClient } = require('@supabase/supabase-js');
+const fs = require('fs');
 require('dotenv').config();
-const recipeData = require('./message.json'); // Load JSON file
 
-// 🔹 Replace with your actual Supabase project URL and API key
 const SUPABASE_URL = 'https://kxeogsfnfwlncyachcxm.supabase.co/';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4ZW9nc2ZuZndsbmN5YWNoY3htIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ5OTQ0MTcsImV4cCI6MjA2MDU3MDQxN30.ZG5a-IUm9HTML0tFOXGG-DnBANips7T1DVniHyvetEs';
-const SPOONACULAR_KEY = 'e6c5f053d1d04f9ca91f75dd6c4d341f'; // Store API key in .env
+const SPOONACULAR_KEY = '660953067a554b56b32cab6f548213a2'; // Store API key in .env
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -18,70 +17,58 @@ async function fetchIngredientDetails(ingredientId) {
 
     const ingredientData = await response.json();
 
-    // 🔹 Prefer `originalName` if available, otherwise fall back to `name`
-    ingredientData.name = ingredientData.originalName || ingredientData.name;
-
-    return ingredientData;
+    return {
+      id: ingredientData.id,
+      name: ingredientData.originalName || ingredientData.name,
+      name_alt: ingredientData.name
+    };
   } catch (error) {
-    console.error(`❌ Error fetching ingredient ${ingredientId}:`, error);
+    console.error(`❌ Error fetching ingredient ${ingredientId}:`, error.message);
     return null;
   }
 }
 
-const SPOONACULAR_IMAGE_URL = "https://img.spoonacular.com/ingredients_100x100/";
-
-async function insertIngredient(ingredientData) {
-  if (!ingredientData) {
-    console.error("❌ No ingredient data received.");
+async function updateIngredientNames(ingredient) {
+  if (ingredient.name && ingredient.name_alt) {
+    console.log(`⏭️ Skipping ${ingredient.ingredient_id} — already has name and name_alt.`);
     return;
   }
 
-  console.log(`🛠️ Updating ingredient: ${ingredientData.name}`);
+  const ingredientData = await fetchIngredientDetails(ingredient.ingredient_id);
+  if (!ingredientData) return;
 
-  const nutrients = ingredientData.nutrition?.nutrients.reduce((acc, nutrient) => {
-    acc[nutrient.name.toLowerCase().replace(/\s/g, '_')] = Math.round(nutrient.amount);
-    return acc;
-  }, {});
+  console.log(`🛠️ Updating ${ingredient.ingredient_id} → name: "${ingredientData.name}", name_alt: "${ingredientData.name_alt}"`);
 
-  const { data, error } = await supabase.from('ingredient').upsert({
-    ingredient_id: ingredientData.id,
+  const { error } = await supabase.from('ingredient').update({
     name: ingredientData.name,
-    image: ingredientData.image ? `${SPOONACULAR_IMAGE_URL}${ingredientData.image}` : null, // 🔹 Append base URL
-    calories: nutrients.calories || null,
-    fat: nutrients.fat || null,
-    saturated_fat: nutrients.saturated_fat || null,
-    carbohydrates: nutrients.carbohydrates || null,
-    sugar: nutrients.sugar || null,
-    cholesterol: nutrients.cholesterol || null,
-    sodium: nutrients.sodium || null,
-    protein: nutrients.protein || null,
-    fiber: nutrients.fiber || null,
-    calcium: nutrients.calcium || null,
-    synced_at: new Date().toISOString(),
-  });
-
-  if (error) console.error(`❌ Supabase Insert Error:`, error);
-  else console.log(`✅ Ingredient updated: ${ingredientData.name}`);
-}
-
-async function updateAllIngredients() {
-  // 🔍 Fetch all ingredient IDs from Supabase
-  const { data: ingredients, error } = await supabase.from('ingredient').select('ingredient_id');
+    name_alt: ingredientData.name_alt
+  }).eq('ingredient_id', ingredient.ingredient_id);
 
   if (error) {
-    console.error("❌ Error fetching ingredient IDs:", error);
+    console.error(`❌ Supabase Update Error for ID ${ingredient.ingredient_id}:`, error);
+  } else {
+    console.log(`✅ Updated ingredient ${ingredient.ingredient_id}`);
+  }
+}
+
+async function updateAllIngredientNames() {
+  const { data: ingredients, error } = await supabase
+    .from('ingredient')
+    .select('ingredient_id, name, name_alt');
+
+  if (error) {
+    console.error('❌ Error fetching ingredients:', error);
     return;
   }
 
-  console.log(`🔄 Updating ${ingredients.length} ingredients...`);
+  console.log(`🔄 Checking ${ingredients.length} ingredients...`);
 
   for (const ingredient of ingredients) {
-    const ingredientData = await fetchIngredientDetails(ingredient.ingredient_id);
-    await insertIngredient(ingredientData);
+    await updateIngredientNames(ingredient);
+    await new Promise(resolve => setTimeout(resolve, 1000)); // prevent API rate limit issues
   }
 
-  console.log("✅ All ingredients updated!");
+  console.log('✅ Done updating ingredient names!');
 }
 
-// 🔄 Run the update process for all ingredients
-updateAllIngredients();
+updateAllIngredientNames();

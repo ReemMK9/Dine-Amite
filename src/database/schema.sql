@@ -15,7 +15,7 @@ DROP TABLE IF EXISTS app_user;
 
 CREATE TABLE app_user (
     user_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    username VARCHAR(50) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
     display_name VARCHAR(100),
     FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE
 );
@@ -31,30 +31,20 @@ CREATE TABLE recipe (
     recipe_id SERIAL PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
     image VARCHAR(255),
+    summary TEXT,
+    instructions TEXT,
+    steps JSONB,
     preparation_time INT,
     cooking_time INT,
     ready_in INT,
     servings INT,
-    summary TEXT,
-    instructions TEXT,
-    steps JSONB,
     synced_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE ingredient (
     ingredient_id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    image VARCHAR(255),
-    calories INT,
-    fat FLOAT,
-    saturated_fat FLOAT,
-    carbohydrates FLOAT,
-    sugar FLOAT,
-    cholesterol FLOAT,
-    sodium FLOAT,
-    protein FLOAT,
-    fiber FLOAT,
-    calcium FLOAT,
+    name VARCHAR(100),
+    name_alt VARCHAR(100) NOT NULL,
     synced_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -107,7 +97,8 @@ CREATE TABLE grocery_list_items (
 
 CREATE TABLE recipe_saved (
     recipe_saved_id SERIAL PRIMARY KEY,
-    user_id UUID,
+    name VARCHAR(100) NOT NULL DEFAULT 'Untitled List',
+    user_id UUID NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES app_user(user_id) ON DELETE CASCADE
