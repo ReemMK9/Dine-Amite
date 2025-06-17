@@ -1,16 +1,18 @@
-@import "../../vars.css";
-
-
 .collectionCard {
+  /* width: 100%; or max-width: 18rem if you want a limit */
   width: 18rem;
-  margin: 0;
+  height: 20rem;
 }
 
 .collectionImage {
-  height: 14rem;
-  width: 18rem;
+  height: 12rem;
+  width: 100%;
   border-radius: 10px;
   background-color: blue;
+}
+
+.collectionInfo {
+  text-align: center;
 }
 
 .collectionTitle {
@@ -20,7 +22,7 @@
   overflow-wrap: break-word;
 }
 
-.collectionBtn{
+.collectionBtn {
   width: 8rem;
   height: 2.5rem;
   border-radius: 6px;

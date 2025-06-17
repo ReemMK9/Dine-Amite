@@ -43,7 +43,7 @@ const Home = () => {
       <SliderCategories recipes={recipes}/>
       <SliderCategories recipes={recipes}/>
       <PopularCategories/>
-      <FullSubscriptionSection/>
+      {/* <FullSubscriptionSection/> */}
       <Collections/>
     </div>
     );
