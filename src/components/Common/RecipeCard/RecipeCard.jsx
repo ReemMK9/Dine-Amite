@@ -29,8 +29,13 @@ const RecipeCard = ({ recipe }) => {
           alt={recipe.title || "Recipe"}
         />
       </div>
-      <h2 className={styles.recipeTitle}>{recipe.title}</h2>
+      <div className={styles.infoContainer}>
+<div className={styles.recipeTitleContainer}>
+                <h2 className={styles.recipeTitle}>{recipe.title}</h2>
+</div>
       <div className={styles.recipeDuration}>{recipe.ready_in}</div>
+      </div>
+
     </div>
   );
 };
