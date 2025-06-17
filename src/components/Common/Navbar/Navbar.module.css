@@ -21,7 +21,7 @@
   color: var(--color-primary);
   text-decoration: none;
   margin: 0 auto;
-  margin-left: 0;
+  margin-left: 5.5rem;
 }
 
 .title:hover {
@@ -30,24 +30,26 @@
 
 .menu {
   display: flex;
-  align-items: center; 
+  align-items: center;
   width: auto;
   margin-left: 0;
 }
 
 /* Desktop Menu Styles */
 .menuItems {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   list-style: none;
-  gap: 2rem;
+  /* gap: 2rem; */
   margin: 0;
+  width: 30%;
 }
 
 .menuItems a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 1.5rem;
+  width: 50%;
 }
 
 /* Search Styles */
@@ -85,7 +87,7 @@
   border-radius: 0 0 20px 20px;
   padding: 1rem 1rem 1.5rem;
   margin-top: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile Menu Items - Fixed Spacing */
@@ -108,7 +110,7 @@
 }
 
 .collapsibleMenu .navLink:hover {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* Mobile Search */
@@ -137,7 +139,8 @@
 }
 
 .userIcon {
-  margin-left: 1rem;
+  margin-right: 6rem;
+  background-color: #fff;
 }
 
 /* Bootstrap Collapse Overrides */
