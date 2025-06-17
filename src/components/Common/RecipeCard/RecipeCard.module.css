@@ -18,11 +18,33 @@
   transform: scale(1.02);
 }
 
+.saveButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--color-primary);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.recipeImage:hover .saveButton {
+  display: flex;
+}
+
+
 .recipeImage {
+  position: relative;
   height: 10rem;
   width: 15rem;
   border-radius: 10px;
-  background-color: blue;
+  background-color: var(--color-bg);
   margin:0;
 }
 

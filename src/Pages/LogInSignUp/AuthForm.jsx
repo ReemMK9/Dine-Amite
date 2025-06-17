@@ -1,14 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./AuthForm.module.css";
+import supabase from "../../config/supabaseClient";
+import { useNavigate } from "react-router-dom";
+
 
 const AuthForm = () => {
+  const [errors, setErrors] = useState({});
+  const [user, setUser] = useState(null);
   const [isSignup, setIsSignup] = useState(false);
   const [formData, setFormData] = useState({
     displayName: "",
     email: "",
     password: "",
   });
-  const [errors, setErrors] = useState({});
+
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+  const fetchUser = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    setUser(user);
+  };
+  fetchUser();
+}, []);
 
   const toggleMode = () => {
     setIsSignup(!isSignup);
@@ -41,17 +55,52 @@ const AuthForm = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formErrors = validate();
-    if (Object.keys(formErrors).length === 0) {
-      alert(`${isSignup ? "Signed up" : "Logged in"} successfully!`);
-      // Here you would typically send data to your backend (e.g., Supabase)
-      console.log("Form Data:", formData);
+  const signUp = async (email, password, displayName) => {
+      const { user, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: { data: { displayName } },
+      });
+
+      if (error) {
+        console.error('Sign-up error:', error.message);
+        setErrors((prev) => ({ ...prev, general: error.message }));
+      } else {
+        console.log("User signed up:", user);
+      }
+  };
+
+  const signIn = async (email, password) => {
+    const { user, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (error) {
+      console.error('Login error:', error.message);
+      setErrors((prev) => ({ ...prev, general: error.message }));
     } else {
-      setErrors(formErrors);
+      console.log("User logged in:", user);
+      navigate("/");
     }
   };
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  const formErrors = validate();
+
+  if (Object.keys(formErrors).length === 0) {
+    if (isSignup) {
+      await signUp(formData.email, formData.password, formData.displayName);
+    } else {
+      await signIn(formData.email, formData.password);
+    }
+  } else {
+    setErrors(formErrors);
+  }
+};
+
+
 
   return (
     <div className="container mt-5">

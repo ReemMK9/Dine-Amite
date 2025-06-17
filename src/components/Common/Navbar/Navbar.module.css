@@ -21,6 +21,18 @@
   color: var(--color-primary);
   text-decoration: none;
   margin: 0 auto;
+  margin-left: 0;
+}
+
+.title:hover {
+  opacity: 0.6;
+}
+
+.menu {
+  display: flex;
+  align-items: center; 
+  width: auto;
+  margin-left: 0;
 }
 
 /* Desktop Menu Styles */
