@@ -13,6 +13,12 @@ const Home = () => {
   const [error, setError] = useState(null);
   const [recipes, setRecipes] = useState(null);
 
+  supabase.auth.onAuthStateChange((event, session) => {
+  console.log("Auth event:", event);
+  console.log(session ? "User is logged in" : "User is logged out");
+});
+
+
   useEffect(() => {
     const fetchRecipes = async () => {
         const { data, error } = await supabase

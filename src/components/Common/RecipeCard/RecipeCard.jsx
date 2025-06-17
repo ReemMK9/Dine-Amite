@@ -15,11 +15,12 @@ const RecipeCard = ({ recipe }) => {
   const handleSaveRecipe = async (e) => {
     //prevent the click from navigating to recipe details
     e.stopPropagation(); 
-    
+
     if (!recipe || !recipe.recipe_id) return;
 
     const {data: {user}} = await supabase.auth.getUser();
     const userId = user?.id;
+    console.log("user id:", userId)
     if (!userId) {
       alert("Please log in to save recipes.");
       return;
