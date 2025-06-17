@@ -2,69 +2,37 @@ import React, { useEffect, useState } from "react";
 import styles from "./NutritionFacts.module.css";
 import supabase from "../../../config/supabaseClient";
 
-// conversion map: unit to grams
-const unitToGrams = {
-  g: 1,
-  kg: 1000,
-  mg: 0.001,
-  lb: 453.592,
-  oz: 28.3495,
-};
 
-const nutritionFacts = ({ recipeId, servings }) => {
+const nutritionFacts = ({ recipeId }) => {
   const [nutrition, setNutrition] = useState(null);
 
   useEffect(() => {
     const fetchRecipeNutrition = async () => {
       const { data, error } = await supabase
-        .from("recipe_ingredient")
+        .from("recipe_nutrition")
         .select(`
-          amount,
-          unit,
-          ingredient (
-            calories, fat, saturated_fat, carbohydrates, sugar, cholesterol,
-            sodium, protein, fiber, calcium
-          )
+          calories, fat, saturated_fat, carbohydrates, sugar, cholesterol,
+          sodium, protein, fiber
         `)
-        .eq("recipe_id", recipeId);
+        .eq("recipe_id", recipeId)
+        .single();
 
       if (error) {
         console.error("Error fetching nutrition:", error);
         return;
       }
-
-      // calculate total nutrition for the whole recipe
-      const totalNutrition = data.reduce((total, { amount, unit, ingredient }) => {
-        let amountInGrams = amount;
-        if (unitToGrams[unit]) {
-          amountInGrams = amount * unitToGrams[unit];
-        }
-        for (const key in ingredient) {
-          total[key] = (total[key] || 0) + (ingredient[key] || 0) * amountInGrams;
-        }
-        return total;
-      }, {});
-
-      // checks if servings is valid and greater than 0
-      const servingsCount = servings && servings > 0 ? servings : 1;
-
-      // calculate per serving nutrition
-      const perServingNutrition = {};
-      for (const key in totalNutrition) {
-        perServingNutrition[key] = totalNutrition[key] / servingsCount;
-      }
-
-      setNutrition(perServingNutrition);
+      console.log("Nutrition data:", data);
+      setNutrition(data);
     };
 
     fetchRecipeNutrition();
-  }, [recipeId, servings]);
+  }, [recipeId]);
 
   if (!nutrition) return <p>Loading nutrition...</p>;
 
   // relabelling for better readability
   const nutritionLabels = {
-    calories: "Calories",
+    calories: "Calories (Kcal)",
     fat: "Fat (g)",
     saturated_fat: "Saturated Fat (g)",
     carbohydrates: "Carbohydrates (g)",
@@ -80,7 +48,7 @@ const nutritionFacts = ({ recipeId, servings }) => {
   return (
     <div className={styles.container}>
       <div className={styles.nutritionFacts}>
-        <h2 className={styles.title}>Nutrition Facts (per serving)</h2>
+        <h2 className={styles.title}>Nutrition Facts </h2> <p className={styles.subtitle}>(Per Serving)</p>
         <hr/>
         <div className={styles.nutritionInfo}>
           {Object.entries(nutritionLabels).map(([key, label]) => (
