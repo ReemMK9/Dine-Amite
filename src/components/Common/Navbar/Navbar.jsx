@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (search.trim()) {
+      navigate(`/searchresults/${encodeURIComponent(search.trim())}`);
+      setSearch("");
+    }
+  };
+
   return (
     <nav className={`navbar navbar-expand-lg ${styles.navbar}`}>
       <div className={`container-fluid ${styles.navContainer}`}>
@@ -29,9 +40,14 @@ const Navbar = () => {
 
           <div className={`collapse navbar-collapse ${styles.collapsibleMenu}`} id="navbarMenu">
             <div className={`d-flex flex-column align-items-center py-3 ${styles.mobileMenuContent} ${styles.mobileMenuInner}`}>
-              <div className={styles.searchMobile}>
-                <input type="text" placeholder="Search..." />
-              </div>
+              <form className={styles.searchMobile} onSubmit={handleSearch}>
+            <input
+              type="text"
+              placeholder="Search..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </form>
               <ul className="navbar-nav text-center mt-3">
                 <li className="nav-item">
                   <Link to="/" className={styles.navLink}>Home</Link>
@@ -64,9 +80,14 @@ const Navbar = () => {
               <Link to="/recipes" className={styles.navLink}>Recipes</Link>
             </li>
           </ul>
-          <div className={styles.search}>
-            <input type="text" placeholder="Search..." />
-          </div>
+          <form className={styles.search} onSubmit={handleSearch}>
+            <input
+              type="text"
+              placeholder="Search..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </form>
           <div className={styles.userIcon}>
             <Link to="/userprofile">
               <img

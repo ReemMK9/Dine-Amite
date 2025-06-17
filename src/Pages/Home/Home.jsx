@@ -13,10 +13,6 @@ const Home = () => {
   const [error, setError] = useState(null);
   const [recipes, setRecipes] = useState(null);
 
-  supabase.auth.onAuthStateChange((event, session) => {
-  console.log("Auth event:", event);
-  console.log(session ? "User is logged in" : "User is logged out");
-});
 
 
   useEffect(() => {
@@ -35,13 +31,17 @@ const Home = () => {
             setError(null);
           }
     }
-
+    supabase.auth.onAuthStateChange((event, session) => {
+      console.log("Auth event:", event);
+      console.log(session ? "User is logged in" : "User is logged out");
+    });
+    console.log(supabase);
     fetchRecipes(); 
   }, []);
 
 
 
-    console.log(supabase);
+    
 
     return (
     <div className={styles.container}>
