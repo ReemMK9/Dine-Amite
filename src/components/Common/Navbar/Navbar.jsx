@@ -29,11 +29,13 @@ const Navbar = () => {
         <input type="text" placeholder="Search..." />
       </div>
       <div className={styles.userIcon}>
+        <Link to="/userprofile">
         <img
           src="https://via.placeholder.com/40"
           alt="User Icon"
           className={styles.userIconImage}
         />
+        </Link>
       </div>
       </div>
     </nav>
