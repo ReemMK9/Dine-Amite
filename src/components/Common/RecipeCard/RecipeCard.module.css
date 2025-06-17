@@ -9,10 +9,7 @@
 .recipeCard {
   width: 15rem;
   margin-inline: 0;
-  /* margin-left: 0%; */
   display: inline-block;
-   /* width: calc(20% - clamp(0.5rem, 2vw, 2rem)); subtract the space between */
-  /* margin-bottom: clamp(0.5rem, 2vw, 2rem); */
   cursor: pointer;
   transition: transform 0.2s ease;
 }
