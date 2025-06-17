@@ -18,18 +18,12 @@ const SearchResults = () => {
       setLoading(true);
       const { data, error } = await supabase
         .from("recipe")
-      .select(`
-        *,
-        recipe_category:recipe_id (
-          name
-        )
-      `)
-      .or(
-        `title.ilike.%${query}%,description.ilike.%${query}%,recipe_category.category_name.ilike.%${query}%`
-      );
+        .select("*") //need to update when categories are added
+        .or(`title.ilike.%${query}%,instructions.ilike.%${query}%`)
       setRecipes(data || []);
       setLoading(false);
     };
+    
 
     if (query) 
       fetchRecipes();
@@ -40,7 +34,7 @@ const SearchResults = () => {
   }, [query]);
 
   return (
-    <div className={styles.pageContainer}>
+    <div className={styles.pageC}>
       <SearchResultsHeader />
       <div className={styles.results}>
         {recipes && recipes.slice(0,6).map((recipe) => (
