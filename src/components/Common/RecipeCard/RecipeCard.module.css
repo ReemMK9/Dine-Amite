@@ -90,3 +90,154 @@
   display: inline-block;
   
 }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayContent {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  min-width: 320px;
+  min-height: 40vh;
+  max-width: 95vw;
+  max-height: 420px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.overlayTitle {
+  margin: 0 0 1em 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--color-primary, #ff7f50);
+  text-align: center;
+}
+
+.errorMsg {
+  color: #d32f2f;
+  background: #ffeaea;
+  border-radius: 6px;
+  padding: 0.5em 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 0.98em;
+}
+
+.listGroup {
+  list-style: none;
+  padding: 0 0 0.5em 0;
+  margin: 0;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.listItem {
+  padding: 0.7em 1em;
+  border-radius: 8px;
+  margin-bottom: 0.3em;
+  background: #f7f1ec;
+  cursor: pointer;
+  transition: background 0.18s;
+  font-size: 1em;
+}
+
+.listItem:hover {
+  background: var(--color-primary, #ff7f50);
+  color: #fff;
+}
+
+.noLists {
+  color: #888;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.addListSection {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0.7em;
+  justify-content: center;
+}
+
+.addListBtn, .saveListBtn, .cancelListBtn {
+  background: var(--color-primary, #ff7f50);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.addListBtn {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.addListBtn:hover, .saveListBtn:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.cancelListBtn {
+  background: #eee;
+  color: #888;
+  border: 1px solid #ccc;
+}
+
+.cancelListBtn:hover {
+  background: #ddd;
+}
+
+.addListInput {
+  flex: 1;
+  padding: 0.5em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.successMsg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f5e9;
+  color: #43a047;
+  border-radius: 8px;
+  padding: 1.2em 1em;
+  font-size: 1.1em;
+  margin: auto 0;
+  opacity: 1;
+  transition: opacity 0.4s;
+  min-height: 60px;
+}
