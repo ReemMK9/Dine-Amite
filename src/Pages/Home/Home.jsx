@@ -38,12 +38,12 @@ const Home = () => {
     console.log(supabase);
 
     return (
-    <div>
+    <div className={styles.container}>
       <HeroSection/>
       <SliderCategories recipes={recipes}/>
       <SliderCategories recipes={recipes}/>
       <PopularCategories/>
-      <FullSubscriptionSection/>
+      {/* <FullSubscriptionSection/> */}
       <Collections/>
     </div>
     );
