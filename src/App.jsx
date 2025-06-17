@@ -12,6 +12,7 @@ import UserProfile from "./Pages/User Profile/UserProfile";
 import AdminDashboard from "./Pages/AdminView/AdminDashboard";
 import GroceryList from "./Pages/GroceryList";
 import AuthForm from "./Pages/LogInSignUp/AuthForm";
+import ShoppingList from "./Pages/Shopping List/ShoppingList";
 
 function App() {
   const routes = createBrowserRouter([
@@ -23,19 +24,18 @@ function App() {
         { path: "searchresults/:query", element: <SearchResults /> },
         { path: "recipes", element: <Recipes /> },
         { path: "recipedetails/:id", element: <RecipeDetails /> },
-        {path: "userprofile", element: <UserProfile/>},
-        {path: "admindashboard", element: <AdminDashboard/>},
-        {path: "grocerylist", element: <GroceryList/>},
-        {path: "login", element: <AuthForm/>},
+        { path: "userprofile", element: <UserProfile /> },
+        { path: "admindashboard", element: <AdminDashboard /> },
+        { path: "grocerylist", element: <GroceryList /> },
+        { path: "login", element: <AuthForm /> },
+        { path: "shoppinglist", element: <ShoppingList /> },
 
-    
         { path: "*", element: <NotFound /> },
       ],
     },
   ]);
   return (
     <div className={styles.App}>
-    
       <RouterProvider router={routes}></RouterProvider>
     </div>
   );
