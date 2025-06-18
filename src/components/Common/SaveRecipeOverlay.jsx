@@ -10,6 +10,7 @@ const SaveRecipeOverlay = ({ recipeId, open, onClose }) => {
   const [successMsg, setSuccessMsg] = useState(false);
 
   useEffect(() => {
+    //checks if overlay is open to lock the main page from scrolling
     if (open) {
       const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = "hidden";
@@ -25,6 +26,7 @@ const SaveRecipeOverlay = ({ recipeId, open, onClose }) => {
     };
   }, [open]);
 
+  //checks if user is logged in and gets their details (existing lists and id)
   const fetchUserLists = async () => {
     setErrorMsg("");
     const { data: { user }, error: userError } = await supabase.auth.getUser();
@@ -46,6 +48,7 @@ const SaveRecipeOverlay = ({ recipeId, open, onClose }) => {
     setUserLists(data || []);
   };
 
+  //function to add recipe to list
   const handleAddToList = async (recipe_saved_id) => {
     setErrorMsg("");
     setSuccessMsg(false);
@@ -59,6 +62,7 @@ const SaveRecipeOverlay = ({ recipeId, open, onClose }) => {
       setErrorMsg("Error checking list: " + checkError.message);
       return;
     }
+    //checks if recipe is already in same list
     if (existing) {
       setErrorMsg("Recipe is already in this list.");
       return;
@@ -77,6 +81,7 @@ const SaveRecipeOverlay = ({ recipeId, open, onClose }) => {
     }, 1400);
   };
 
+  //function to allow user to create a new list directly from overlay
   const handleAddList = async () => {
     setErrorMsg("");
     const { data: { user }, error: userError } = await supabase.auth.getUser();
