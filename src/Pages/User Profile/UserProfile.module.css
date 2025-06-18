@@ -1,86 +1,168 @@
-.infoBox{
-  display: flex;
-  flex-direction: row;
-  height: 10rem;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
+.userimg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ddd;
+  /* text-align: left; */
+  margin-inline: 0;
+  padding-left: 0cap;
 }
 
-.userInfo{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: space-between;
-  margin-inline: 2rem;
-  margin-bottom: 0%;
-  margin-top: 1rem;
+.userImgContainer{
+  width: auto;
 }
-.userSocials{
+
+.infoBox {
+  padding: 1.5rem;
   display: flex;
-  flex-direction: row;
-  align-items: start;
   justify-content: start;
-  margin-top: 0.5rem;
   margin-left: 0%;
 }
 
-.userSocials span{
-  color: var(--color-text);
-  margin-right: 1rem;
-  align-self: end;
-  font-size: 1.2rem;
-}
-
-.userSocials button{
-  color: var(--color-bg);
-  font-size: 1.3rem;
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
-  border-radius: 0.6rem;
-  border: none;
-  background-color: var(--color-primary);
-  cursor: pointer;
-}
-
-.userimg{
-  border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  background-color: orange;
-  margin-inline: 2rem;
-}
-
-.userBio{
-  font-size: 1rem;
-  margin-top:0;
-  margin-bottom: 1.2rem;
-}
-
-.userProfileTabs button{
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  border: none;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.userProfileTabs button:hover {
-  background-color: var(--color-secondary);
-  /* color: var(--color-bg); */
-}
-.userProfileTabs button.active {
-  background-color: var(--color-secondary);
-  color: var(--color-bg);
-}
-
-.userProfItems{
+.userInfo {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-inline: 0%;
-  padding-inline: 0%;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: start;
+  align-items: start;
+  align-content: start;
 }
+
+.userBio {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-left: 1rem;
+}
+
+.userSocials{
+  display: flex;
+  margin-left: 1rem;
+}
+
+.userSocials button {
+  background-color: #eee;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.userSocials button:hover {
+  background-color: #ddd;
+}
+
+.mainContent{
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.userProfileTabsWrapper {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* margin-top: 2rem; */
+}
+
+.userProfileTabs {
+  margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.userProfileTabsContainer {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* margin-top: 2rem; */
+}
+
+.tabButton {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.tabButton:hover {
+  background-color: #e4e4e4;
+}
+
+.activeTab {
+  background-color: #d1e7dd;
+  font-weight: 600;
+  color: #0f5132;
+}
+
+.customAddedButton{
+  display: flex;
+  justify-content: start;
+  margin-left: 0%;
+  gap: 0.5rem;
+}
+
+.tabsHr {
+  border-top: 1px solid #ccc;
+  margin-bottom: 0%;
+}
+
+.userProfItems {
+  padding: 1.5rem 0;
+}
+
+.tabInput {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  outline: none;
+  margin-right: 0.5rem;
+  margin-left: 0%;
+}
+
+.tabInput:focus {
+  border-color: #999;
+  background-color: #fff;
+}
+
+.deleteTabBtn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1rem;
+  margin-left: 0.4rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.deleteTabBtn:hover {
+  color: #d33;
+}
+
+.addTabButton {
+  background-color: #f4f4f4;
+  color: #555;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 1px dashed #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addTabButton:hover {
+  background-color: #e6e6e6;
+}
+

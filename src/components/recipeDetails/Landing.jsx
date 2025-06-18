@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Landing.module.css";
 
 const Landing = ({ recipe }) => {
-  if (!recipe) return <p>Loading...</p>
+  if (!recipe) return <p>Loading...</p>;
   return (
     <div>
       <div className={styles.landingInfo}>
@@ -23,8 +23,8 @@ const Landing = ({ recipe }) => {
           <p>No. of Comments</p>
           <div>Ratings</div>
         </div> */}
-        <hr />
         <h1 className={styles.recipeTitle}>{recipe.title}</h1>
+        <hr />
       </div>
 
       <div className={styles.recipeImage}>
