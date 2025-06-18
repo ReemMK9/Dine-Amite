@@ -1,11 +1,41 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import styles from "./CircularCard.module.css"
 
-const CircularCard = () => {
+const CircularCard = ({ category, imageUrl }) => {
+  const navigate = useNavigate();
+  
+  // Capitalize category name for display
+  const displayName = category?.name 
+    ? category.name.charAt(0).toUpperCase() + category.name.slice(1)
+    : "Category";
+
+  const handleClick = () => {
+    if (category?.category_id && category?.name) {
+      // Navigate to category results page with category ID and name
+      navigate(`/category/${category.category_id}/${encodeURIComponent(category.name)}`);
+    }
+  };
+
   return (
-    <div className={styles.cardContainer}>
-      <div className={styles.categoryImg}></div>
-      <h3 className={styles.categoryTitle}>Category</h3>
+    <div 
+      className={styles.cardContainer}
+      onClick={handleClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === "Enter" && handleClick()}
+      style={{ cursor: 'pointer' }}
+    >
+      <div 
+        className={styles.categoryImg}
+        style={{
+          backgroundImage: imageUrl ? `url(${imageUrl})` : 'none',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundColor: imageUrl ? 'transparent' : '#ddd'
+        }}
+      ></div>
+      <h3 className={styles.categoryTitle}>{displayName}</h3>
     </div>
   )
 }

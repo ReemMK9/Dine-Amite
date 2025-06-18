@@ -4,15 +4,13 @@ import "@fontsource/roboto";
 import Home from "./Pages/Home/Home";
 import SearchResults from "./Pages/Search Results/SearchResults";
 import RecipeDetails from "./Pages/RecipeDetails";
+import CategoryResults from "./Pages/CategoryResults";
 import NotFound from "./Pages/NotFound";
-// import Navbar from "./components/Common/Navbar/Navbar";
 import Layout from "./Pages/Layout";
 import Recipes from "./Pages/Recipes/Recipes";
 import UserProfile from "./Pages/User Profile/UserProfile";
 import AdminDashboard from "./Pages/AdminView/AdminDashboard";
-// import GroceryList from "./Pages/GroceryList";
 import AuthForm from "./Pages/LogInSignUp/AuthForm";
-// import ShoppingList from "./Pages/Shopping List/ShoppingList";
 
 function App() {
   const routes = createBrowserRouter([
@@ -22,6 +20,7 @@ function App() {
       children: [
         { path: "", element: <Home /> },
         { path: "searchresults/:query", element: <SearchResults /> },
+        { path: "category/:categoryId/:categoryName", element: <CategoryResults /> },
         { path: "recipes", element: <Recipes /> },
         { path: "recipedetails/:id", element: <RecipeDetails /> },
         { path: "userprofile", element: <UserProfile /> },
