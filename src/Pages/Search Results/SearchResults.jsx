@@ -16,10 +16,42 @@ const SearchResults = () => {
   useEffect(() => {
     const fetchRecipes = async () => {
       setLoading(true);
+
+      const { data: ingredients } = await supabase
+        .from("ingredient")
+        .select("ingredient_id")
+        .ilike("name", `%${query}%`);
+      const ingredientIds = ingredients?.map(i => i.ingredient_id) || [];
+
+      let recipeIdsByIngredient = [];
+      if (ingredientIds.length > 0) {
+        const { data: recipeIngredients } = await supabase
+          .from("recipe_ingredient")
+          .select("recipe_id")
+          .in("ingredient_id", ingredientIds);
+        recipeIdsByIngredient = recipeIngredients?.map(ri => ri.recipe_id) || [];
+      }
+
+      const { data: tagRecipes } = await supabase
+        .from("recipe_dietary_tags")
+        .select("recipe_id")
+        .ilike("dietary_tag", `%${query}%`);
+      const recipeIdsByTag = tagRecipes?.map(rt => rt.recipe_id) || [];
+
+      const combinedRecipeIds = Array.from(new Set([
+        ...recipeIdsByIngredient,
+        ...recipeIdsByTag,
+      ]));
+
+      let orQuery = `title.ilike.%${query}%,instructions.ilike.%${query}%`;
+      if (combinedRecipeIds.length > 0) {
+        orQuery += `,recipe_id.in.(${combinedRecipeIds.join(",")})`;
+      }
+
       const { data, error } = await supabase
         .from("recipe")
         .select("*") //need to update when categories are added
-        .or(`title.ilike.%${query}%,instructions.ilike.%${query}%`)
+        .or(orQuery)
       setRecipes(data || []);
       setLoading(false);
     };
