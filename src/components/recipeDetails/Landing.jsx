@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Landing.module.css";
+import SaveRecipeOverlay from "../../components/Common/SaveRecipeOverlay";
 
 const Landing = ({ recipe }) => {
-  if (!recipe) return <p>Loading...</p>;
+  const [showSaveOverlay, setShowSaveOverlay] = useState(false);
+
+  if (!recipe) return <p>Loading...</p>
   return (
     <div>
       <div className={styles.landingInfo}>
@@ -24,7 +27,16 @@ const Landing = ({ recipe }) => {
           <div>Ratings</div>
         </div> */}
         <h1 className={styles.recipeTitle}>{recipe.title}</h1>
-        <hr />
+        { recipe && (
+      <>
+        <button className={styles.saveRecipeBtn}
+        onClick={() => setShowSaveOverlay(true)}><i className="material-symbols-outlined">add_circle</i></button>
+        <SaveRecipeOverlay
+        recipeId={recipe.recipe_id}
+        open={showSaveOverlay}
+        onClose={() => setShowSaveOverlay(false)} />
+      </>
+    )}
       </div>
 
       <div className={styles.recipeImage}>

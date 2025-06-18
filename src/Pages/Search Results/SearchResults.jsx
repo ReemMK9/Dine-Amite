@@ -17,12 +17,14 @@ const SearchResults = () => {
     const fetchRecipes = async () => {
       setLoading(true);
 
+      //get ingredient IDs matching search query
       const { data: ingredients } = await supabase
         .from("ingredient")
         .select("ingredient_id")
         .ilike("name", `%${query}%`);
       const ingredientIds = ingredients?.map(i => i.ingredient_id) || [];
 
+      //find IDs of recipes that use those ingredients
       let recipeIdsByIngredient = [];
       if (ingredientIds.length > 0) {
         const { data: recipeIngredients } = await supabase
@@ -32,17 +34,38 @@ const SearchResults = () => {
         recipeIdsByIngredient = recipeIngredients?.map(ri => ri.recipe_id) || [];
       }
 
+      //get category IDs matching search query
+      const { data: categories } = await supabase
+        .from("category")
+        .select("category_id")
+        .ilike("name", `%${query}%`);
+      const categoryIds = categories?.map(c => c.category_id) || [];
+
+      //find IDs of recipes that have those categories
+      let recipeIdsByCategory = [];
+      if (categoryIds.length > 0) {
+        const { data: recipeCategories } = await supabase
+          .from("recipe_category")
+          .select("recipe_id")
+          .in("category_id", categoryIds);
+        recipeIdsByCategory = recipeCategories?.map(rc => rc.recipe_id) || [];
+      }
+
+      //search dietary tags table using recipe id
       const { data: tagRecipes } = await supabase
         .from("recipe_dietary_tags")
         .select("recipe_id")
         .ilike("dietary_tag", `%${query}%`);
       const recipeIdsByTag = tagRecipes?.map(rt => rt.recipe_id) || [];
 
+      //combine and remove any duplicate recipe IDs
       const combinedRecipeIds = Array.from(new Set([
         ...recipeIdsByIngredient,
         ...recipeIdsByTag,
+        ...recipeIdsByCategory,
       ]));
 
+      //create a supabase 'or' query to fetch matching recipes
       let orQuery = `title.ilike.%${query}%,instructions.ilike.%${query}%`;
       if (combinedRecipeIds.length > 0) {
         orQuery += `,recipe_id.in.(${combinedRecipeIds.join(",")})`;
