@@ -75,6 +75,32 @@
   color: var(--color-bg);
 } */
 
+.addTabButton {
+  background-color: #f1f1f1;
+  color: #555;
+  border: 1px dashed #ccc;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addTabButton:hover {
+  background-color: #e0e0e0;
+}
+
+.newTabForm {
+  display: flex;
+  align-items: center;
+}
+
+.newTabInput {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  min-width: 120px;
+}
+
+
 .tabButton {
   background-color: var(--color-bg);
   color: var(--color-text);

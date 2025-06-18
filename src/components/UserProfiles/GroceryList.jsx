@@ -1,43 +1,52 @@
-import React, { useState } from 'react';
-import styles from './ShoppingList.module.css';
+import React, { useState } from "react";
+import styles from "./GroceryList.module.css";
 
 const initialData = [
   {
-    title: 'Fruits & Veggies',
-    color: '#d5f7af',
-    items: ['Apples', 'Bananas', 'Carrots', 'Tomatoes', 'Lettuce'],
+    title: "Fruits & Veggies",
+    color: "#d5f7af",
+    items: ["Apples", "Bananas", "Carrots", "Tomatoes", "Lettuce"],
   },
   {
-    title: 'Frozen Goods',
-    color: '#e6e5fb',
-    items: ['Frozen peas', 'Ice cream', 'Frozen pizza'],
+    title: "Frozen Goods",
+    color: "#e6e5fb",
+    items: ["Frozen peas", "Ice cream", "Frozen pizza"],
   },
   {
-    title: 'Snacks',
-    color: '#fffbd1',
-    items: ['Chips', 'Chocolate bars', 'Trail mix', 'Cookies'],
+    title: "Snacks",
+    color: "#fffbd1",
+    items: ["Chips", "Chocolate bars", "Trail mix", "Cookies"],
   },
   {
-    title: 'Dairy Products',
-    color: '#e5fbe5',
-    items: ['Milk', 'Cheese', 'Yogurt', 'Butter'],
+    title: "Dairy Products",
+    color: "#e5fbe5",
+    items: ["Milk", "Cheese", "Yogurt", "Butter"],
   },
   {
-    title: 'Beverages',
-    color: '#fef4c3',
-    items: ['Orange juice', 'Coffee', 'Tea', 'Bottled water'],
+    title: "Beverages",
+    color: "#fef4c3",
+    items: ["Orange juice", "Coffee", "Tea", "Bottled water"],
   },
   {
-    title: 'Pantry Staples',
-    color: '#d6effe',
-    items: ['Rice', 'Pasta', 'Canned beans', 'Spices'],
+    title: "Pantry Staples",
+    color: "#d6effe",
+    items: [
+      "Rice",
+      "Pasta",
+      "Canned beans",
+      "Spices",
+      "Flour",
+      "Sugar",
+      "Oil",
+      "Salt",
+    ],
   },
 ];
 
-const ShoppingList = () => {
+const GroceryList = () => {
   const [lists, setLists] = useState(initialData);
   const [checkedItems, setCheckedItems] = useState({});
-  const [newListTitle, setNewListTitle] = useState('');
+  const [newListTitle, setNewListTitle] = useState("");
   const [isAdding, setIsAdding] = useState(false);
 
   const handleCheck = (category, item) => {
@@ -73,25 +82,23 @@ const ShoppingList = () => {
 
     const newEntry = {
       title: newListTitle,
-      color: '#ffffff',
+      color: "#ffffff",
       items: [],
     };
 
     setLists((prev) => [newEntry, ...prev]);
-    setNewListTitle('');
+    setNewListTitle("");
     setIsAdding(false);
   };
 
   return (
-    <div className={styles.wrapper}>
-      <h1 className={styles.heading}>My Lists</h1>
-
-      <div className={styles.grid}>
-<div
-  className={`${styles.card} ${styles.placeholderWrapper}`}
-  onClick={() => setIsAdding(true)}
-  style={{ cursor: 'pointer' }}
->
+    <div className={`row ${styles.wrapper} gx-4 gy-4`}>
+      <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+        <div
+          className={`${styles.card} ${styles.placeholderWrapper} w-100`}
+          onClick={() => setIsAdding(true)}
+          style={{ cursor: "pointer" }}
+        >
           {isAdding ? (
             <form onSubmit={handleCreateList} className={styles.addCardForm}>
               <input
@@ -106,31 +113,41 @@ const ShoppingList = () => {
             <div className={styles.placeholderCard}>➕ New List</div>
           )}
         </div>
+      </div>
 
-        {lists.map((section, listIndex) => (
+      {lists.map((section, listIndex) => (
+        <div
+          key={section.title + listIndex}
+          className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex"
+        >
           <div
-            key={section.title + listIndex}
-            className={styles.card}
-            style={{ backgroundColor: section.color }}
+            className={`${styles.card} w-100`}
+            style={{
+              border: `3px solid ${section.color}`,
+              backgroundColor: "transparent", // or any neutral background you prefer
+            }}
           >
             <div className={styles.cardHeader}>
-  <input
-  type="color"
-  className={styles.colorPicker}
-  value={section.color}
-  onChange={(e) => {
-    const updated = [...lists];
-    updated[listIndex].color = e.target.value;
-    setLists(updated);
-  }}
-/>
+              <input
+                type="color"
+                className={styles.colorPicker}
+                value={section.color}
+                onChange={(e) => {
+                  const updated = [...lists];
+                  updated[listIndex].color = e.target.value;
+                  setLists(updated);
+                }}
+              />
+              <h2 className={styles.cardTitle}>{section.title}</h2>
+              <button
+                className={styles.deleteListBtn}
+                onClick={() => handleDeleteList(listIndex)}
+              >
+                🗑️
+              </button>
+            </div>
 
-  <h2 className={styles.cardTitle}>{section.title}</h2>
-  <button className={styles.deleteListBtn} onClick={() => handleDeleteList(listIndex)}>
-    🗑️
-  </button>
-</div>
-            <ul>
+            <ul className={styles.itemList}>
               {section.items.map((item, itemIndex) => {
                 const key = `${section.title}-${item}`;
                 return (
@@ -152,8 +169,11 @@ const ShoppingList = () => {
                   </li>
                 );
               })}
-              {section.items.length === 0 && <li className={styles.empty}>No items listed.</li>}
+              {section.items.length === 0 && (
+                <li className={styles.empty}>No items listed.</li>
+              )}
             </ul>
+
             <form
               className={styles.addForm}
               onSubmit={(e) => {
@@ -167,10 +187,10 @@ const ShoppingList = () => {
               <button type="submit">➕</button>
             </form>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default ShoppingList;
+export default GroceryList;

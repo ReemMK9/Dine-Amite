@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./UserProfile.module.css";
 import RecipeCard from "../../components/Common/RecipeCard/RecipeCard";
 import supabase from "../../config/supabaseClient";
+import GroceryList from "../../components/UserProfiles/GroceryList";
 
 const UserProfile = () => {
   const [error, setError] = useState(null);
@@ -9,13 +10,27 @@ const UserProfile = () => {
   const [copied, setCopied] = useState(false);
   const [activeTab, setActiveTab] = useState("Saved Recipes");
 
-  const tabs = [
-    "Saved Recipes",
-    "Favorites",
-    "Collection Name 1",
-    "Collection Name 2",
-    "History",
-  ];
+  const [tabs, setTabs] = useState([
+  "Saved Recipes",
+  "Favorites",
+  "Collection Name",
+  "Grocery Lists",
+  "History",
+]);
+const [isAddingTab, setIsAddingTab] = useState(false);
+const [newTabName, setNewTabName] = useState("");
+
+const handleCreateTab = (e) => {
+  e.preventDefault();
+  const trimmed = newTabName.trim();
+  if (trimmed) {
+    setTabs((prev) => [...prev, trimmed]);
+    setActiveTab(trimmed);
+  }
+  setNewTabName("");
+  setIsAddingTab(false);
+};
+
 
   const handleShare = () => {
     navigator.clipboard
@@ -45,6 +60,12 @@ const UserProfile = () => {
 
     fetchRecipes();
   }, []);
+
+  const handleAddTab = () => {
+    const newTabTitle = `New Tab ${tabs.length + 1}`;
+    setTabs((prev) => [...prev, newTabTitle]);
+    setActiveTab(newTabTitle);
+  };
 
   return (
     <div className="container-fluid col-12">
@@ -77,19 +98,49 @@ const UserProfile = () => {
           {/* Tabs Section */}
           <div className={`row mt-4 ${styles.userProfileTabs}`}>
             <div className="col-12">
-              <div className="d-flex flex-nowrap overflow-auto gap-2">
-                {tabs.map((tab) => (
-                  <button
-                    key={tab}
-                    onClick={() => setActiveTab(tab)}
-                    className={`${styles.tabButton} ${
-                      activeTab === tab ? styles.activeTab : ""
-                    }`}
-                  >
-                    {tab}
-                  </button>
-                ))}
-              </div>
+<div className="d-flex flex-nowrap overflow-auto gap-2 align-items-start">
+  {/* ➕ Add Tab Button on the far left */}
+  <button
+    onClick={() => {
+      setIsAddingTab(true);
+      setNewTabName("");
+    }}
+    className={`${styles.tabButton} ${styles.addTabButton}`}
+  >
+    ➕
+  </button>
+
+  {/* Render all existing tabs */}
+  {tabs.map((tab) => (
+    <button
+      key={tab}
+      onClick={() => setActiveTab(tab)}
+      className={`${styles.tabButton} ${
+        activeTab === tab ? styles.activeTab : ""
+      }`}
+    >
+      {tab}
+    </button>
+  ))}
+
+  {/* Render input as the last "tab" when adding a new one */}
+  {isAddingTab && (
+    <form onSubmit={handleCreateTab} className={styles.newTabForm}>
+      <input
+        type="text"
+        className={styles.newTabInput}
+        placeholder="New tab name..."
+        value={newTabName}
+        onChange={(e) => setNewTabName(e.target.value)}
+        autoFocus
+        onBlur={() => {
+          if (!newTabName.trim()) setIsAddingTab(false);
+        }}
+      />
+    </form>
+  )}
+</div>
+
             </div>
             <div className="col-12">
               <hr className={styles.tabsHr} />
@@ -97,21 +148,30 @@ const UserProfile = () => {
           </div>
 
           {/* Recipe Items Section */}
+          {/* Tab Content Section */}
           <div className={`row ${styles.userProfItems}`}>
-            {activeTab === "Saved Recipes" && recipes && recipes.length > 0 ? (
-              recipes.slice(0, 6).map((recipe) => (
-                <div
-                  key={recipe.recipe_id}
-                  className="col-12 col-sm-6 col-md-4 col-xl-3 d-flex mb-4"
-                >
-                  <RecipeCard recipe={recipe} className="w-100" />
+            <div className="col-12">
+              {activeTab === "Saved Recipes" &&
+              recipes &&
+              recipes.length > 0 ? (
+                <div className="row">
+                  {recipes.slice(0, 6).map((recipe) => (
+                    <div
+                      key={recipe.recipe_id}
+                      className="col-12 col-sm-6 col-md-4 col-xl-3 d-flex mb-4"
+                    >
+                      <RecipeCard recipe={recipe} className="w-100" />
+                    </div>
+                  ))}
                 </div>
-              ))
-            ) : (
-              <div className="col-12 text-center text-muted mt-4">
-                No recipes here
-              </div>
-            )}
+              ) : activeTab === "Grocery Lists" ? (
+                <GroceryList />
+              ) : (
+                <div className="text-center text-muted mt-4">
+                  No recipes here
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
