@@ -1,37 +1,36 @@
-.infoBox{
+.infoBox {
   display: flex;
   flex-direction: row;
-  height: 10rem;
+  flex-wrap: wrap; /* responsive */
+  height: auto;
   margin-bottom: 3rem;
   margin-top: 2rem;
 }
 
-.userInfo{
+.userInfo {
   display: flex;
   flex-direction: column;
-  align-items: end;
   justify-content: space-between;
-  margin-inline: 2rem;
-  margin-bottom: 0%;
-  margin-top: 1rem;
+  margin: 1rem 2rem 0 2rem;
+  text-align: start;
 }
-.userSocials{
+
+.userSocials {
   display: flex;
   flex-direction: row;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  gap: 1rem;
   margin-top: 0.5rem;
   margin-left: 0%;
 }
 
-.userSocials span{
+.userSocials span {
   color: var(--color-text);
-  margin-right: 1rem;
-  align-self: end;
   font-size: 1.2rem;
+  margin: auto;
 }
 
-.userSocials button{
+.userSocials button {
   color: var(--color-bg);
   font-size: 1.3rem;
   padding-inline: 1rem;
@@ -42,21 +41,20 @@
   cursor: pointer;
 }
 
-.userimg{
+.userimg {
   border-radius: 50%;
   width: 10rem;
   height: 10rem;
   background-color: orange;
-  margin-inline: 2rem;
+  margin: 0 auto; /* center on small screens */
 }
 
-.userBio{
+.userBio {
   font-size: 1rem;
-  margin-top:0;
   margin-bottom: 1.2rem;
 }
-
-.userProfileTabs button{
+/* 
+.userProfileTabs button {
   background-color: var(--color-bg);
   color: var(--color-text);
   border: none;
@@ -67,20 +65,47 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .userProfileTabs button:hover {
   background-color: var(--color-secondary);
-  /* color: var(--color-bg); */
 }
+
 .userProfileTabs button.active {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+} */
+
+.tabButton {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  margin-bottom: 0;
+}
+
+.tabButton:hover {
+  background-color: var(--color-secondary);
+}
+
+.activeTab {
   background-color: var(--color-secondary);
   color: var(--color-bg);
 }
 
-.userProfItems{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-inline: 0%;
-  padding-inline: 0%;
+
+.userProfItems {
+  margin: 0;
+  padding: 0;
+}
+
+
+hr{
+  margin-top: 0%;
 }
