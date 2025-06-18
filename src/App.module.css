@@ -8,3 +8,26 @@
   background-color: var(--color-bg);
   padding-top: 0;
 }
+
+/* App.module.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full height of viewport */
+}
+
+.mainContent {
+  flex-grow: 1; /* takes up remaining vertical space */
+}
+
+/* Optional: footer styling */
+footer {
+  /* background-color: #f2f2f2; */
+  padding: 15px;
+  text-align: center;
+}

@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./CollectionCard.module.css";
 
-const CollectionCard = () => {
+const CollectionCard = ({ collection }) => {
   return (
     <div className={styles.collectionCard}>
-      <div className={styles.collectionImage}>
-        <img src="/" alt="" />
-      </div>
-      <div className="collectionInfo">
-        <h2 className={styles.collectionTitle}>Everything Bagel</h2>
-        <button className={styles.collectionBtn}>100 Recipes</button>
+      <div className={styles.collectionImage}></div>
+      <div className={styles.collectionInfo}>
+        <h2 className={styles.collectionTitle}>{collection.title}</h2>
+        <button className={styles.collectionBtn}>
+          {collection.recipeCount} Recipes
+        </button>
       </div>
     </div>
   );
