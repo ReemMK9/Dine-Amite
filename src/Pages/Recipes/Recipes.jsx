@@ -4,17 +4,16 @@ import styles from "../Recipes/Recipes.module.css";
 import Footer from "../../components/Common/Footer/Footer";
 import supabase from "../../config/supabaseClient";
 import { useState, useEffect } from "react";
+import SearchFilters from "../../components/Common/SearchFilters/SearchFilters";
 
-const Recipes = ( ) => {
+const Recipes = () => {
   const [error, setError] = useState(null);
   const [recipes, setRecipes] = useState([]);
   const [visibleCount, setVisibleCount] = useState(8);
 
   useEffect(() => {
     const fetchRecipes = async () => {
-        const { data, error } = await supabase
-          .from('recipe')
-          .select('*')
+      const { data, error } = await supabase.from("recipe").select("*");
 
           if (error) {
             setError('Could not fetch recipes');
@@ -27,7 +26,7 @@ const Recipes = ( ) => {
           }
     }
 
-    fetchRecipes(); 
+    fetchRecipes();
   }, []);
 
   const handleLoadMore = () => {
@@ -36,23 +35,17 @@ const Recipes = ( ) => {
 
   return (
   <div className={styles.recipesPage}>
-    <div className={styles.headerContainer}>
-      <h1 className={styles.recipesHeader}>Browse Recipes</h1>
-      <hr/>
-    </div>
-    <div className={styles.recipesContainer}>
-      {recipes && recipes.slice(0, visibleCount).map((recipe) => (
-          <RecipeCard key={recipe.recipe_id} recipe={recipe} />
-        ))}
-    </div>
-    {visibleCount < recipes.length && (
-      <div style={{ textAlign: "center", margin: "2rem 0" }}>
-        <button className={styles.loadMoreBtn} onClick={handleLoadMore}>
-          Load More
-        </button>
+    <h1 className={styles.recipesHeader}>Browse Recipes</h1>
+    <div className={styles.mainContainer}>
+        <SearchFilters />
+        {/* <hr/> */}
+        <div className={styles.recipesContainer}>
+          {recipes && recipes.slice(0,4).map((recipe) => (
+              <RecipeCard key={recipe.recipe_id} recipe={recipe} />
+            ))}
+        </div>
       </div>
-    )}
-    </div>
+      </div>
   );
 };
 

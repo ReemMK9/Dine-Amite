@@ -19,40 +19,40 @@ const CategoryResults = () => {
 
         // Get recipe IDs for this category
         const { data: recipeCategories, error: recipeCatError } = await supabase
-          .from('recipe_category')
-          .select('recipe_id')
-          .eq('category_id', categoryId);
+          .from("recipe_category")
+          .select("recipe_id")
+          .eq("category_id", categoryId);
 
         if (recipeCatError) {
-          setError('Could not fetch category recipes');
+          setError("Could not fetch category recipes");
           console.log(recipeCatError);
           return;
         }
 
         if (!recipeCategories || recipeCategories.length === 0) {
-          setError('No recipes found in this category');
+          setError("No recipes found in this category");
           return;
         }
 
         setTotalRecipes(recipeCategories.length);
 
         // Get full recipe details
-        const recipeIds = recipeCategories.map(rc => rc.recipe_id);
+        const recipeIds = recipeCategories.map((rc) => rc.recipe_id);
         const { data: categoryRecipes, error: recipeError } = await supabase
-          .from('recipe')
-          .select('*')
-          .in('recipe_id', recipeIds)
-          .order('title', { ascending: true });
+          .from("recipe")
+          .select("*")
+          .in("recipe_id", recipeIds)
+          .order("title", { ascending: true });
 
         if (recipeError) {
-          setError('Could not fetch recipe details');
+          setError("Could not fetch recipe details");
           console.log(recipeError);
           return;
         }
 
         setRecipes(categoryRecipes || []);
       } catch (err) {
-        setError('An unexpected error occurred');
+        setError("An unexpected error occurred");
         console.log(err);
       } finally {
         setLoading(false);
@@ -65,9 +65,10 @@ const CategoryResults = () => {
   }, [categoryId]);
 
   // Format category name for display
-  const displayName = categoryName 
-    ? decodeURIComponent(categoryName).charAt(0).toUpperCase() + decodeURIComponent(categoryName).slice(1)
-    : 'Category';
+  const displayName = categoryName
+    ? decodeURIComponent(categoryName).charAt(0).toUpperCase() +
+      decodeURIComponent(categoryName).slice(1)
+    : "Category";
 
   if (loading) {
     return (
@@ -100,20 +101,27 @@ const CategoryResults = () => {
         <div className={styles.header}>
           <h1>{displayName} Recipes</h1>
           <p className={styles.subtitle}>
-            Discover {totalRecipes} delicious {displayName.toLowerCase()} recipes
+            Discover {totalRecipes} delicious {displayName.toLowerCase()}{" "}
+            recipes
           </p>
           <hr className={styles.divider} />
         </div>
 
         <div className={styles.results}>
           {recipes.length > 0 ? (
-            <div className="row g-4">
-              {recipes.map((recipe) => (
-                <div key={recipe.recipe_id} className="col-12 col-sm-6 col-md-4 col-lg-3">
-                  <RecipeCard recipe={recipe} />
-                </div>
-              ))}
-            </div>
+            <div className="row gx-4 gy-4 justify-content-center">
+  {recipes.map((recipe) => (
+    <div
+      key={recipe.recipe_id}
+      className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center"
+    >
+      <div className={styles.cardWrapper}>
+        <RecipeCard recipe={recipe} />
+      </div>
+    </div>
+  ))}
+</div>
+
           ) : (
             <div className={styles.noResults}>
               <p>No recipes found in this category.</p>

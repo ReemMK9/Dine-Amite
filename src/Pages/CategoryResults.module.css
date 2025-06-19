@@ -8,20 +8,21 @@
 
 .header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .header h1 {
   font-size: 3rem;
   color: var(--color-primary, #d36b09);
-  margin-bottom: 1rem;
   font-weight: bold;
+  margin-inline: 0%;
 }
 
 .subtitle {
   font-size: 1.2rem;
   color: var(--color-text, #666);
   margin-bottom: 2rem;
+
 }
 
 .divider {
@@ -29,16 +30,19 @@
   height: 3px;
   background-color: var(--color-primary, #d36b09);
   border: none;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
 }
 
 .results {
   flex: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 2rem;
 }
+
 
 .error {
   color: #dc3545;
@@ -66,4 +70,20 @@
   .pageContainer {
     padding-top: 1rem;
   }
+}
+
+.cardWrapper {
+  width: 100%;
+  max-width: 260px;
+  min-height: 100%;
+  
+}
+
+
+.customGrid > .col-12,
+.customGrid > .col-sm-6,
+.customGrid > .col-lg-3 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-bottom: 2rem;
 }
