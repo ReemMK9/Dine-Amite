@@ -83,6 +83,13 @@ color: #fff;
   background-color: blue;
   width: 70%;
   height: 620px;
-  border-radius: 20px;
+  border-radius: 32px;
   margin-inline: auto;
+}
+
+.recipeImage img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
 }

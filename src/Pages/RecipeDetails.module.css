@@ -19,3 +19,8 @@
 .rightSection{
   margin-right:0;
 }
+
+.sectionSpacing{
+align-self: start;
+margin-top: 2rem;
+}
