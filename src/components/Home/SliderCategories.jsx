@@ -16,15 +16,13 @@ const SliderCategories = ({ category, recipes }) => {
   return (
     <div className={`container ${styles.container}`}>
       <h1 className={styles.sliderTitle}>{displayName}</h1>
-
-      {/* Bootstrap row with gutter spacing */}
-      <div className="row g-4">
-        {recipes.map((recipe) => (
-          <div key={recipe.recipe_id} className="col-12 col-md-6 col-xl-3 d-flex">
-            <RecipeCard recipe={recipe} />
-          </div>
-        ))}
-      </div>
+        <div className={`row g-5 ${styles.myRecipeRow}`}>
+          {recipes.map((recipe) => (
+            <div key={recipe.recipe_id} className="col-12 col-md-6 col-xl-3 d-flex">
+              <RecipeCard recipe={recipe} />
+            </div>
+          ))}
+        </div>
     </div>
   );
 };

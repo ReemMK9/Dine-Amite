@@ -16,101 +16,96 @@ const Home = () => {
 
   useEffect(() => {
     const fetchCategoriesWithRecipes = async () => {
-      try {
-        setLoading(true);
-        
-        // Fetch all categories
-        const { data: categories, error: categoryError } = await supabase
-          .from('category')
-          .select('*');
-        
-        if (categoryError) {
-          setError('Could not fetch categories');
-          console.log(categoryError);
-          return;
-        }
+    try {
+      setLoading(true);
 
-        if (!categories || categories.length === 0) {
-          setError('No categories found');
-          return;
-        }
-
-        // Filter categories that have at least 4 recipes
-        const categoriesWithEnoughRecipes = [];
-        
-        for (const category of categories) {
-          const { data: recipeCategories, error: recipeCatError } = await supabase
-            .from('recipe_category')
-            .select('recipe_id')
-            .eq('category_id', category.category_id);
-
-          if (!recipeCatError && recipeCategories && recipeCategories.length >= 4) {
-            categoriesWithEnoughRecipes.push({
-              ...category,
-              totalRecipes: recipeCategories.length
-            });
-          }
-        }
-
-        if (categoriesWithEnoughRecipes.length === 0) {
-          setError('No categories found with enough recipes');
-          return;
-        }
-
-        // Randomly select 2 categories from those with enough recipes
-        const shuffledCategories = categoriesWithEnoughRecipes.sort(() => 0.5 - Math.random());
-        const selectedCategories = shuffledCategories.slice(0, 2);
-
-        // Fetch recipes for each selected category
-        const categoryWithRecipes = await Promise.all(
-          selectedCategories.map(async (category) => {
-            const { data: recipeCategories, error: recipeCatError } = await supabase
-              .from('recipe_category')
-              .select('recipe_id')
-              .eq('category_id', category.category_id)
-              .limit(20); // Get more recipes to choose from
-
-            if (recipeCatError) {
-              console.log('Error fetching recipe categories:', recipeCatError);
-              return { ...category, recipes: [] };
-            }
-
-            if (!recipeCategories || recipeCategories.length === 0) {
-              return { ...category, recipes: [] };
-            }
-
-            // Get recipe IDs and fetch full recipe data
-            const recipeIds = recipeCategories.map(rc => rc.recipe_id);
-            const { data: recipes, error: recipeError } = await supabase
-              .from('recipe')
-              .select('*')
-              .in('recipe_id', recipeIds);
-
-            if (recipeError) {
-              console.log('Error fetching recipes:', recipeError);
-              return { ...category, recipes: [] };
-            }
-
-            // Randomly select 4 recipes from this category
-            const shuffledRecipes = recipes ? recipes.sort(() => 0.5 - Math.random()) : [];
-            const selectedRecipes = shuffledRecipes.slice(0, 4);
-
-            return {
-              ...category,
-              recipes: selectedRecipes
-            };
-          })
-        );
-
-        setCategoryData(categoryWithRecipes);
-        setError(null);
-      } catch (err) {
-        setError('Could not fetch data');
-        console.log(err);
-      } finally {
-        setLoading(false);
+      // Fetch all categories
+      const { data: categories, error: categoryError } = await supabase
+        .from('category')
+        .select('*');
+      if (categoryError) {
+        setError('Could not fetch categories');
+        console.log(categoryError);
+        return;
       }
-    };
+      if (!categories || categories.length === 0) {
+        setError('No categories found');
+        return;
+      }
+
+      // Fetch all recipe_category rows
+      const { data: recipeCategories, error: rcError } = await supabase
+        .from('recipe_category')
+        .select('recipe_id, category_id');
+      if (rcError) {
+        setError('Could not fetch recipe categories');
+        console.log(rcError);
+        return;
+      }
+
+      // Group recipe IDs by category
+      const categoryToRecipeIds = {};
+      recipeCategories.forEach(rc => {
+        if (!categoryToRecipeIds[rc.category_id]) categoryToRecipeIds[rc.category_id] = [];
+        categoryToRecipeIds[rc.category_id].push(rc.recipe_id);
+      });
+
+      // Filter categories with at least 4 recipes
+      const categoriesWithEnoughRecipes = categories
+        .map(cat => ({
+          ...cat,
+          recipeIds: categoryToRecipeIds[cat.category_id] || []
+        }))
+        .filter(cat => cat.recipeIds.length >= 4);
+
+      if (categoriesWithEnoughRecipes.length === 0) {
+        setError('No categories found with enough recipes');
+        return;
+      }
+
+      // 5. Randomly select 2 categories
+      const shuffledCategories = categoriesWithEnoughRecipes.sort(() => 0.5 - Math.random());
+      const selectedCategories = shuffledCategories.slice(0, 2);
+
+      // Collect all needed recipe IDs 
+      let allRecipeIds = [];
+      const categoryRecipeMap = {};
+      selectedCategories.forEach(cat => {
+        const shuffled = cat.recipeIds.sort(() => 0.5 - Math.random());
+        const selected = shuffled.slice(0, 4);
+        categoryRecipeMap[cat.category_id] = selected;
+        allRecipeIds = allRecipeIds.concat(selected);
+      });
+
+      // Fetch all recipes in one query
+      const { data: recipes, error: recipeError } = await supabase
+        .from('recipe')
+        .select('*')
+        .in('recipe_id', allRecipeIds);
+      if (recipeError) {
+        setError('Could not fetch recipes');
+        console.log(recipeError);
+        return;
+      }
+
+      // Map recipes to their categories
+      const recipeMap = {};
+      recipes.forEach(r => { recipeMap[r.recipe_id] = r; });
+
+      const categoryWithRecipes = selectedCategories.map(cat => ({
+        ...cat,
+        recipes: (categoryRecipeMap[cat.category_id] || []).map(id => recipeMap[id]).filter(Boolean)
+      }));
+
+      setCategoryData(categoryWithRecipes);
+      setError(null);
+    } catch (err) {
+      setError('Could not fetch data');
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
     supabase.auth.onAuthStateChange((event, session) => {
       console.log("Auth event:", event);

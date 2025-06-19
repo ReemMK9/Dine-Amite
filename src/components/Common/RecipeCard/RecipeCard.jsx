@@ -45,7 +45,7 @@ const RecipeCard = ({ recipe }) => {
           <div className={styles.recipeTitleContainer}>
             <h2 className={styles.recipeTitle}>{recipe.title}</h2>
           </div>
-          <div className={styles.recipeDuration}>{recipe.ready_in}</div>
+          {/* <div className={styles.recipeDuration}>{recipe.ready_in}</div> */}
         </div>
       </div>
 

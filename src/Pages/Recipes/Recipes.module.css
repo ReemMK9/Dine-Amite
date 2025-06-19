@@ -26,3 +26,17 @@ hr {
   padding: auto;
   margin-top: 0%;
 }
+
+.loadMoreBtn {
+  background: var(--color-bg);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 0.7em 0.7em;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.loadMoreBtn:hover {
+  background: #d95d27;
+}

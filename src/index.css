@@ -5,3 +5,11 @@
   /* font-family: 'mervale-script', Arial, Helvetica, sans-serif; */
 }
 
+@font-face {
+  font-family: 'CopperPot';
+  src: url('/fonts/CopperPot.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
