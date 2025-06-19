@@ -1,26 +1,24 @@
 @import "../../../vars.css";
 @import url("https://fonts.cdnfonts.com/css/mervale-script");
 
-/* Base Navbar Styles */
 .navbar {
   padding: 0.5rem 1rem;
   background: linear-gradient(0deg, #faf7f2 0%, #faf7f2 50%, #f0e8da 100%);
   border-bottom: 1px solid #ddd;
   position: relative;
-  overflow: visible !important; /* Crucial for border radius */
+  overflow: visible !important; 
 }
 
 .navContainer {
   width: 100%;
 }
 
-/* Logo Styles */
 .title {
   font-family: var(--font-logo);
   font-size: 2.5rem;
   color: var(--color-primary);
   text-decoration: none;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   /* margin-left: -1.5rem; */
 }
 
@@ -35,7 +33,6 @@
   margin-left: 0;
 }
 
-/* Desktop Menu Styles */
 .menuItems {
   /* display: flex; */
   /* align-items: center; */
@@ -48,30 +45,80 @@
 .menuItems a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
   width: 50%;
 }
 
-/* Search Styles */
-.search {
-  color: var(--color-text);
-  background-color: #fff;
-  padding: 0.5em;
-  border-radius: 12px;
+.menuItems a:hover {
+  text-decoration: underline var(--color-primary) 1px;
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex; 
   width: 25%;
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  color: var(--color-primary);
+  background-color: var(--color-bg);
+  padding: 0.2em;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  margin: 0;
+  width: 100%;
+}
+
+.search:focus-within {
+  outline: solid 1px var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 2px 2px 2px #ebd2c5;
+}
+
+.searchBtn {
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  display: flex;
+}
+
+.searchBtn:hover {
+  opacity: 80%;
+}
+
+.searchError {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  color: var(--color-text);
+  font-size: 0.95em;
+  font-weight: bold;
+  background: #ffcaca;
+  padding: 2px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 10;
+  min-height: 2em;
+  align-items: center;
 }
 
 .search input {
   border: none;
-  font-size: 1.2rem;
+  background-color: var(--color-bg);
+  font-size: 0.8rem;
   width: 100%;
+  height: 1rem;
 }
 
 .search input:focus {
   outline: none;
 }
 
-/* Mobile Menu - Fixed Version */
+/* Mobile Menu */
 .collapsibleMenu {
   position: absolute;
   left: 0;
@@ -90,7 +137,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile Menu Items - Fixed Spacing */
+/* Mobile Menu Items */
 .collapsibleMenu .nav-item {
   width: 100%;
   margin: 0;
@@ -129,20 +176,6 @@
   outline: none;
 }
 
-/* User Icon Styles */
-.userIconMobile {
-  margin: 1rem auto 0;
-}
-
-.userIconImage {
-  border-radius: 50%;
-}
-
-.userIcon {
-  margin-right: 6rem;
-  background-color: #fff;
-}
-
 /* Bootstrap Collapse Overrides */
 .navbar-collapse {
   overflow: hidden !important;
@@ -165,4 +198,85 @@
 /* Base Link Styles */
 a {
   text-decoration: none;
+}
+
+.userMenuWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userAccount {
+  display: flex;
+  gap: 5px;
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.dropdownMenu::before {
+  content: "";
+  display: block;
+  height: 12px;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  padding-top: 0.5em;
+  background: var(--color-bg);
+  border-radius: 5px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+  min-width: 160px;
+  z-index: 100;
+  flex-direction: column;
+  padding: 0.5em 0;
+}
+
+.dropdownItem {
+  padding: 0.7em 1.2em;
+  color: #333;
+  text-decoration: none;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.15s, color 0.15s;
+  width: 100%;          
+  display: block;        
+  border-radius: 0;
+}
+
+.dropdownItem:hover {
+  background: #f1ece4;
+}
+
+.userLoginWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.loginLink {
+  color: var(--color-text);
+  text-decoration: none;
+  margin-left: 0.2em;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.loginLink:hover {
+  text-decoration: underline var(--color-primary) 1px;
+}
+
+.userMenuWrapper:hover .dropdownMenu,
+.userMenuWrapper:focus-within .dropdownMenu {
+  display: flex;
 }
