@@ -36,21 +36,23 @@ const Recipes = ( ) => {
 
   return (
   <div className={styles.recipesPage}>
-    <h1 className={styles.recipesHeader}>Browse Recipes</h1>
-    <hr/>
-      <div className={styles.recipesContainer}>
-        {recipes && recipes.slice(0, visibleCount).map((recipe) => (
-            <RecipeCard key={recipe.recipe_id} recipe={recipe} />
-          ))}
+    <div className={styles.headerContainer}>
+      <h1 className={styles.recipesHeader}>Browse Recipes</h1>
+      <hr/>
+    </div>
+    <div className={styles.recipesContainer}>
+      {recipes && recipes.slice(0, visibleCount).map((recipe) => (
+          <RecipeCard key={recipe.recipe_id} recipe={recipe} />
+        ))}
+    </div>
+    {visibleCount < recipes.length && (
+      <div style={{ textAlign: "center", margin: "2rem 0" }}>
+        <button className={styles.loadMoreBtn} onClick={handleLoadMore}>
+          Load More
+        </button>
       </div>
-      {visibleCount < recipes.length && (
-        <div style={{ textAlign: "center", margin: "2rem 0" }}>
-          <button className={styles.loadMoreBtn} onClick={handleLoadMore}>
-            Load More
-          </button>
-        </div>
-      )}
-      </div>
+    )}
+    </div>
   );
 };
 
