@@ -1,10 +1,9 @@
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs');
-require('dotenv').config();
 
 const SUPABASE_URL = 'https://kxeogsfnfwlncyachcxm.supabase.co/';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt4ZW9nc2ZuZndsbmN5YWNoY3htIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ5OTQ0MTcsImV4cCI6MjA2MDU3MDQxN30.ZG5a-IUm9HTML0tFOXGG-DnBANips7T1DVniHyvetEs';
-const SPOONACULAR_KEY = '660953067a554b56b32cab6f548213a2'; // Store API key in .env
+const SPOONACULAR_KEY = 'd54f095c7b9f42d587e4bb14e3166e20'; // Store API key in .env
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
