@@ -1,3 +1,5 @@
+// src/App.jsx
+
 import styles from "./App.module.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "@fontsource/roboto";
@@ -24,12 +26,17 @@ function App() {
         { path: "recipes", element: <Recipes /> },
         { path: "recipedetails/:id", element: <RecipeDetails /> },
         { path: "userprofile", element: <UserProfile /> },
-        { path: "admindashboard", element: <AdminDashboard /> },
         { path: "login", element: <AuthForm /> },
         { path: "*", element: <NotFound /> },
       ],
     },
+    // Admin Dashboard - Separate route outside main layout
+    {
+      path: "/admin",
+      element: <AdminDashboard />,
+    },
   ]);
+
   return (
     <div className={styles.App}>
       <RouterProvider router={routes}></RouterProvider>

@@ -1,0 +1,217 @@
+/* src/components/AdminView/AdminNotification.module.css */
+
+@import "../../vars.css";
+
+.notification {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  min-width: 320px;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  z-index: 2100;
+  animation: slideInRight 0.3s ease;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.notificationContent {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  position: relative;
+}
+
+.notificationIcon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+}
+
+.notificationMessage {
+  flex: 1;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.closeButton:hover {
+  opacity: 1;
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+}
+
+.progressBar {
+  position: relative;
+  height: 4px;
+  background: rgba(255,255,255,0.2);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  width: 100%;
+  animation: shrink linear;
+  transform-origin: left;
+}
+
+@keyframes shrink {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+/* Notification Types */
+.notificationSuccess {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: #fff;
+}
+
+.notificationError {
+  background: linear-gradient(135deg, #dc3545, #e74c3c);
+  color: #fff;
+}
+
+.notificationWarning {
+  background: linear-gradient(135deg, #ffc107, #fd7e14);
+  color: #212529;
+}
+
+.notificationInfo {
+  background: linear-gradient(135deg, #17a2b8, #6f42c1);
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .notification {
+    top: 1rem;
+    right: 1rem;
+    left: 1rem;
+    min-width: unset;
+    max-width: unset;
+  }
+  
+  .notificationContent {
+    padding: 0.875rem 1rem;
+  }
+  
+  .notificationMessage {
+    font-size: 0.9rem;
+  }
+  
+  .notificationIcon {
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .notification {
+    top: 0.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+  
+  .notificationContent {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+  
+  .notificationMessage {
+    font-size: 0.85rem;
+  }
+  
+  .notificationIcon {
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+  }
+  
+  .closeButton {
+    width: 20px;
+    height: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .notification {
+    border: 2px solid;
+  }
+  
+  .notificationSuccess {
+    border-color: #28a745;
+  }
+  
+  .notificationError {
+    border-color: #dc3545;
+  }
+  
+  .notificationWarning {
+    border-color: #ffc107;
+  }
+  
+  .notificationInfo {
+    border-color: #17a2b8;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .notification {
+    animation: none;
+  }
+  
+  .progressFill {
+    animation: none;
+    width: 0;
+  }
+  
+  .closeButton:hover {
+    transform: none;
+  }
+}
