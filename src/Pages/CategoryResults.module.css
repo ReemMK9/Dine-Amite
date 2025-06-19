@@ -8,20 +8,21 @@
 
 .header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .header h1 {
   font-size: 3rem;
   color: var(--color-primary, #d36b09);
-  margin-bottom: 1rem;
   font-weight: bold;
+  margin-inline: 0%;
 }
 
 .subtitle {
   font-size: 1.2rem;
   color: var(--color-text, #666);
   margin-bottom: 2rem;
+
 }
 
 .divider {
@@ -29,7 +30,7 @@
   height: 3px;
   background-color: var(--color-primary, #d36b09);
   border: none;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
 }
 
 .results {
@@ -38,6 +39,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
 .error {
