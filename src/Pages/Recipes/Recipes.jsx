@@ -4,41 +4,46 @@ import styles from "../Recipes/Recipes.module.css";
 import Footer from "../../components/Common/Footer/Footer";
 import supabase from "../../config/supabaseClient";
 import { useState, useEffect } from "react";
+import SearchFilters from "../../components/Common/SearchFilters/SearchFilters";
 
-const Recipes = ( ) => {
+const Recipes = () => {
   const [error, setError] = useState(null);
   const [recipes, setRecipes] = useState(null);
 
   useEffect(() => {
     const fetchRecipes = async () => {
-        const { data, error } = await supabase
-          .from('recipe')
-          .select('*')
+      const { data, error } = await supabase.from("recipe").select("*");
 
-          if (error) {
-            setError('Could not fetch recipes');
-            setRecipes(null);
-            console.log(error);
-          }
-          if (data) {
-            setRecipes(data);
-            setError(null);
-          }
-    }
+      if (error) {
+        setError("Could not fetch recipes");
+        setRecipes(null);
+        console.log(error);
+      }
+      if (data) {
+        setRecipes(data);
+        setError(null);
+      }
+    };
 
-    fetchRecipes(); 
+    fetchRecipes();
   }, []);
 
   return (
-  <div className={styles.recipesPage}>
-    <h1 className={styles.recipesHeader}>Browse Recipes</h1>
-    <hr/>
-      <div className={styles.recipesContainer}>
-        {recipes && recipes.slice(0,4).map((recipe) => (
-            <RecipeCard key={recipe.recipe_id} recipe={recipe} />
-          ))}
+    <div className={styles.recipesPage}>
+      <h1 className={styles.recipesHeader}>Explore Recipes</h1>
+      <div className={styles.mainContainer}>
+        <SearchFilters />
+        {/* <hr/> */}
+        <div className={styles.recipesContainer}>
+          {recipes &&
+            recipes
+              .slice(0, 4)
+              .map((recipe) => (
+                <RecipeCard key={recipe.recipe_id} recipe={recipe} />
+              ))}
+        </div>
       </div>
-      </div>
+    </div>
   );
 };
 

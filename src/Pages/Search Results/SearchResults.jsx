@@ -6,6 +6,7 @@ import Footer from "../../components/Common/Footer/Footer";
 import RecipeCard from "../../components/Common/RecipeCard/RecipeCard";
 import SearchResultsHeader from "./SearchResultsHeader";
 import supabase from "../../config/supabaseClient";
+import SearchFilters from "../../components/Common/SearchFilters/SearchFilters";
 
 
 const SearchResults = () => {
@@ -91,6 +92,7 @@ const SearchResults = () => {
   return (
     <div className={styles.pageC}>
       <SearchResultsHeader />
+      {/* <SearchFilters/> */}
       <div className={styles.results}>
         {recipes && recipes.slice(0,6).map((recipe) => (
             <RecipeCard key={recipe.recipe_id} recipe={recipe} />

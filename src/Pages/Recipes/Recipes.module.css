@@ -6,7 +6,7 @@
   background-color: var(--color-bg);
 }
 .recipesHeader {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   margin-left: 0%;
 }
@@ -17,6 +17,19 @@ hr {
   border: none;
   margin-bottom: 3rem;
 }
+
+.mainContainer{
+  background-color: #fff;
+  width: 100%;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding-top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .recipesContainer {
   display: flex;
   flex-wrap: wrap;
@@ -25,4 +38,7 @@ hr {
   gap: 2.7rem;
   padding: auto;
   margin-top: 0%;
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+
 }
