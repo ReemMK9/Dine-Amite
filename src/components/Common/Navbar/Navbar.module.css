@@ -72,11 +72,21 @@
   width: 100%;
 }
 
+.search:focus-within {
+  outline: solid 1px var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 2px 2px 2px #ebd2c5;
+}
+
 .searchBtn {
   color: var(--color-primary);
   background: none;
   border: none;
   display: flex;
+}
+
+.searchBtn:hover {
+  opacity: 80%;
 }
 
 .searchError {
