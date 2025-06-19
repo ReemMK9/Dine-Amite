@@ -53,7 +53,7 @@ const nutritionFacts = ({ recipeId }) => {
         <div className={styles.nutritionInfo}>
           {Object.entries(nutritionLabels).map(([key, label]) => (
             nutrition[key] !== undefined && (
-              <div key={key}>
+              <div key={key} className={styles.nutritionLabelContainer}>
                 <p className={styles.nutritionText}>{label}: {Math.round(nutrition[key])}</p>
                 <hr />
               </div>

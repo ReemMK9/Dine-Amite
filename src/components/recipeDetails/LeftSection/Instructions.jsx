@@ -23,7 +23,7 @@ function replaceUnits(text) {
 }
 
   return (
-    <div>
+    <div className={styles.container}>
       <h2 className={styles.title}>Directions</h2>
      {parsedSteps.length > 0 && (
         <div className={styles.stepsSection}>
