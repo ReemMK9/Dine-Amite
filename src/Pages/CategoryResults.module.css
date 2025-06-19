@@ -36,13 +36,13 @@
 .results {
   flex: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
   background-color: #fff;
   border-radius: 2rem;
-  padding: 2rem;
 }
+
 
 .error {
   color: #dc3545;
@@ -70,4 +70,20 @@
   .pageContainer {
     padding-top: 1rem;
   }
+}
+
+.cardWrapper {
+  width: 100%;
+  max-width: 260px;
+  min-height: 100%;
+  
+}
+
+
+.customGrid > .col-12,
+.customGrid > .col-sm-6,
+.customGrid > .col-lg-3 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-bottom: 2rem;
 }
