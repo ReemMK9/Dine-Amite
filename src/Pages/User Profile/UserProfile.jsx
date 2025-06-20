@@ -15,9 +15,7 @@ const UserProfile = () => {
 
   const predefinedTabs = [
     "Saved Recipes",
-    "Favorites",
     "Grocery Lists",
-    "History",
   ];
 
   const handleShare = () => {
