@@ -25,13 +25,13 @@ footer {
   font-family: "Mervale Script", sans-serif;
 }
 
-ul{
+footer ul{
     list-style: none;
     padding-left: 0;
 
 }
 
-li{
+footer li{
   margin: 0%;
 }
 .socialinksList {
@@ -55,11 +55,11 @@ li{
   padding: 20px;
 }
 
-p {
+footer p {
 align-self: center;
 }
 
-a {
+footer a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
