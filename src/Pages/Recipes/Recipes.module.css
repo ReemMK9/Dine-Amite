@@ -1,20 +1,20 @@
 .recipesPage {
-  width: 80%;
   height: 80%;
   display: flex;
   flex-direction: column;
   background-color: var(--color-bg);
+  padding-left: max(2rem, calc(50% - 38.125rem));
+  padding-right: max(2rem, calc(50% - 38.125rem));
 }
 
 .headerContainer{
-  width:80%
+  width: 100%;
 }
 
 .recipesHeader {
   font-family: var(--font-title);
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  margin-left: 0;
+  font-size: 2rem;;
+  margin: 1rem auto 0.5rem 0;
 }
 
 hr {
@@ -40,7 +40,7 @@ hr {
 .recipesContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
   gap: 2.7rem;
   padding: auto;
@@ -49,21 +49,10 @@ hr {
   margin-bottom: 2rem;
 }
 
-.loadMoreBtn {
-  background: var(--color-bg);
-  color: var(--color-text);
-  border: 1px solid var(--color-primary);
-  border-radius: 4px;
-  padding: 0.2em 0.7em;
-  font-family: var(--font-text);
-  font-size: 1.1em;
-  font-weight: 600;
-  cursor: pointer;
-}
-.loadMoreBtn:hover {
-  outline: 1px solid var(--color-primary);
-  text-decoration: underline 1px var(--color-primary);
-  box-shadow: 2px 2px 2px #ebd2c5;
+@media (max-width: 768px) {
+  .recipesContainer {
+    justify-content: center;
+  }
 }
 
 .loadMoreBtn {
@@ -82,3 +71,4 @@ hr {
   text-decoration: underline 1px var(--color-primary);
   box-shadow: 2px 2px 2px #ebd2c5;
 }
+
