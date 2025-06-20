@@ -1,15 +1,19 @@
-.userimg {
+.userImg {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: #ddd;
-  /* text-align: left; */
   margin-inline: 0;
-  padding-left: 0cap;
+  padding-left: 0;
 }
 
-.userImgContainer{
+.userImgContainer {
   width: auto;
+}
+
+.profileImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .infoBox {
@@ -35,82 +39,51 @@
   margin-left: 1rem;
 }
 
-.userSocials{
-  display: flex;
-  margin-left: 1rem;
-}
-
-.userSocials button {
-  background-color: #eee;
-  border: none;
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.userSocials button:hover {
-  background-color: #ddd;
-}
-
-.mainContent{
-  background-color: #fff;
-  border-radius: 24px;
-  padding: 2rem;
-}
-
-.userProfileTabsWrapper {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  /* margin-top: 2rem; */
-}
-
 .userProfileTabs {
   margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
+  display: flex;
   flex-wrap: nowrap;
   gap: 0.5rem;
   align-items: center;
 }
 
-.userProfileTabsContainer {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  /* margin-top: 2rem; */
-}
+.listTabWrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+} 
 
 .tabButton {
-  border: none;
+  display: flex;
+  justify-content: space-between;
+  min-width: 4rem;
+  font-family: var(--font-text);
+  font-size: 15px;
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+  border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
   cursor: pointer;
   white-space: nowrap;
   transition: background-color 0.2s ease;
 }
 
 .tabButton:hover {
-  background-color: #e4e4e4;
+  background-color: var(--color-accent);
+  font-weight: 600;
 }
 
 .activeTab {
-  background-color: #d1e7dd;
+  background-color: var(--color-bg2);
   font-weight: 600;
-  color: #0f5132;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
-.customAddedButton{
-  display: flex;
-  justify-content: start;
-  margin-left: 0%;
-  gap: 0.5rem;
+i {
+  font-size: 20px !important;
+  margin: 0 10px 0 0 !important;
 }
 
 .tabsHr {
@@ -123,21 +96,63 @@
 }
 
 .tabInput {
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  box-shadow: 2px 2px #ebd2c5;
+  padding: 0.2rem 0.8rem;
   font-size: 0.9rem;
   outline: none;
-  margin-right: 0.5rem;
+  margin-right: 5px;
   margin-left: 0%;
 }
 
 .tabInput:focus {
-  border-color: #999;
-  background-color: #fff;
+  border-color: var(--color-primary);
+  background-color: transparent;
 }
 
+.saveListBtn {
+  font-family: var(--font-text);
+  font-size: 15px;
+  color: #52a752;
+  border: 1px solid #52a752;
+  border-radius: 5px;
+  background-color: #cae6ca;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.saveListBtn:hover {
+  background-color: #52a752;
+  color: white;
+  font-weight: 600;
+}
+
+.cancelListBtn {
+  font-family: var(--font-text);
+  font-size: 15px;
+  color: #f86329;
+  border: 1px solid #f86329;
+  border-radius: 5px;
+  background-color: #f3a586;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.cancelListBtn:hover {
+  background-color: #f86329;
+  color: white;
+  font-weight: 600;
+}
+
+
 .deleteTabBtn {
+  display: flex;
+  height: 1rem;
   background: none;
   border: none;
   color: #999;
@@ -149,20 +164,80 @@
 
 .deleteTabBtn:hover {
   color: #d33;
-}
-
-.addTabButton {
-  background-color: #f4f4f4;
-  color: #555;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  border: 1px dashed #ccc;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
+  text-decoration: none;
 }
 
 .addTabButton:hover {
-  background-color: #e6e6e6;
+  border-color: var(--color-secondary);
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
 }
 
+span {
+  font-size: 22px !important;
+  vertical-align: middle;
+}
+
+.editProfileForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.editInput {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: var(--font-text);
+  background: #fafafa;
+  color: #222;
+}
+
+.saveBtn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.5em;
+  transition: background 0.18s;
+}
+
+.saveBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  background: #eee;
+  color: #444;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0.5em;
+  transition: background 0.18s;
+}
+
+.editBtn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4em 1.2em;
+  font-size: 0.95em;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.7em;
+  transition: background 0.18s;
+}
+.editBtn:hover {
+  background: #d95d27;
+}

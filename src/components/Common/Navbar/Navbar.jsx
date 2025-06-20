@@ -49,11 +49,11 @@ const Navbar = () => {
       <div className={styles.userMenuWrapper} tabIndex={0}>
         <div className={styles.userAccount}>
           <i className="material-symbols-outlined">account_circle</i>
-          <p>My Account</p>
+          <p className={styles.account}>My Account</p>
           <i className="material-symbols-outlined">arrow_drop_down</i>
         </div>
         <div className={styles.dropdownMenu}>
-          <Link to="/userprofile" className={styles.dropdownItem}>
+          <Link to={`/userprofile/${user.id}`} className={styles.dropdownItem}>
             Profile
           </Link>
           <Link to="/savedrecipes" className={styles.dropdownItem}>

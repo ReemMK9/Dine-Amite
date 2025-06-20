@@ -1,5 +1,14 @@
 .container {
-  width: 80%;
-  align-items: center;
-margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  padding-right:auto;
+}
+
+h1 {
+  font-family: var(--font-title);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
 }

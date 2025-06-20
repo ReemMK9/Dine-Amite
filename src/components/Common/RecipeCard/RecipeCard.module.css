@@ -84,9 +84,7 @@
 .recipeTitle {
   font-family: 'CopperPot', sans-serif;
   font-size: 1.4rem;
-  font-weight: bold;
-  margin: 0;
-  height: 5rem;
+  font-weight: 400;
   overflow-wrap: break-word;
 }
 
