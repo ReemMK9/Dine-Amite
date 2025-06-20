@@ -53,7 +53,7 @@ const Navbar = () => {
           <i className="material-symbols-outlined">arrow_drop_down</i>
         </div>
         <div className={styles.dropdownMenu}>
-          <Link to="/userprofile" className={styles.dropdownItem}>
+          <Link to={`/userprofile/${user.id}`} className={styles.dropdownItem}>
             Profile
           </Link>
           <Link to="/savedrecipes" className={styles.dropdownItem}>

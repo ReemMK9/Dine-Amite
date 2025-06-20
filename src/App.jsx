@@ -23,7 +23,7 @@ function App() {
         { path: "category/:categoryId/:categoryName", element: <CategoryResults /> },
         { path: "recipes", element: <Recipes /> },
         { path: "recipedetails/:id", element: <RecipeDetails /> },
-        { path: "userprofile", element: <UserProfile /> },
+        { path: "userprofile/:userId", element: <UserProfile /> },
         { path: "admindashboard", element: <AdminDashboard /> },
         { path: "login", element: <AuthForm /> },
         { path: "*", element: <NotFound /> },
