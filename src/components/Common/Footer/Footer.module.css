@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mervale&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @import "../../../vars.css";
 
 footer {
@@ -7,18 +7,14 @@ footer {
   display: flex;
   flex-direction: column;
   bottom: 0;
-  margin-top: 60px;
+  margin-top: 3rem;
   width: 100%;
   
   
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  padding: 0.2rem;
   width: 100%;
 }
 
@@ -29,13 +25,42 @@ footer {
   font-family: "Mervale Script", sans-serif;
 }
 
+ul{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+li{
+  margin: 0%;
+}
+.socialinksList {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 0.5rem;
+  padding-inline: 0;
+  justify-content: center;
+}
+
+.socialLogos{
+  color: #ffffff;
+  font-size: 2rem;
+}
+
 .links{
   display: flex;
   flex-direction: row;
-  gap: 70px;
+  /* gap: 70px; */
   padding: 20px;
 }
 
 p {
 align-self: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
