@@ -47,7 +47,10 @@ const RecipeDetails = () => {
 
   return (
     <>
-      <Landing recipe={recipe} />
+      <div className={styles.headContainer}>
+        <Landing recipe={recipe} />
+        <SimilarRecipes />
+      </div>
       <div className={`container ${styles.mainContainer}`}>
         <div className="row col-12">
           {/* 1. Prep Info */}
@@ -55,7 +58,7 @@ const RecipeDetails = () => {
             <PrepInfo recipe={recipe} />
           </div>
 
-          {/* 2. NutritionFacts — on the right on large screens, before Ingredients on mobile */}
+          {/* 2. Nutrition facts — on the right on large screens, before Ingredients on mobile */}
           <div className="col-md-4 order-md-2">
             <NutritionFacts recipeId={id} />
           </div>
@@ -66,7 +69,7 @@ const RecipeDetails = () => {
             <Instructions summary={recipe.summary} steps={recipe.steps} />
           </div>
 
-          {/* 4. SimilarRecipes — right below NutritionFacts on large screens, but after Instructions on small */}
+          {/* 4. Similar recipes — right below nutrition facts on large screens, but after Instructions on small */}
           <div
             className="col-md-4 offset-md-8 order-md-3"
           >

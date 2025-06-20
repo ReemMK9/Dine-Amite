@@ -7,7 +7,7 @@ function formatAmount(amount) {
   const decimal = +(amount - whole).toFixed(2);
 
   const fractionMap = {
-     0.25: "1/4",
+    0.25: "1/4",
     0.33: "1/3",
     0.5: "1/2",
     0.66: "2/3",
@@ -37,7 +37,7 @@ function formatUnit(unit) {
 
 const Ingredients = ({ ingredients }) => {
   return (
-    <div>
+    <div className={styles.page}>
       <h2 className={styles.title}>Ingredients</h2>
       <div className={styles.ingredientsContainer}>
         <ul className={styles.ingredientsList}>

@@ -1,0 +1,46 @@
+.page {
+    width:380px;
+}
+
+.title {
+  font-family: var(--font-title, 'Montserrat');
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.ingredientsContainer {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  margin-bottom: 1.5rem;
+}
+
+.ingredientsList {
+  list-style: square inside;
+  color: var(--color-primary);
+  padding: 0;
+  margin: 0;
+}
+
+li::marker{
+    color: var(--color-primary);
+}
+
+.ingredientItem {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-text, #222);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ececec;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.ingredientItem:last-child {
+  border-bottom: none;
+}

@@ -17,7 +17,7 @@ const PrepInfo = ({ recipe }) => {
         </div>
         <div className={styles.section}>
           <h5>Servings</h5>
-          <p>{recipe.servings ? `${recipe.servings} PEOPLE` : "N/A"}</p>
+          <p>{recipe.servings ? `${recipe.servings} people` : "N/A"}</p>
         </div>
       </div>
     </div>
