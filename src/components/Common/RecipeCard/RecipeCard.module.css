@@ -11,6 +11,9 @@
   margin-inline: 0;
   display: inline-block;
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
 
 .recipeCard:hover {
@@ -42,7 +45,7 @@
   position: relative;
   height: 10rem;
   width: 15rem;
-  border-radius: 5px;
+  border-radius: 1rem;
   background-color: var(--color-bg);
   margin:0;
 }
@@ -50,7 +53,7 @@
 .recImage {
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 1rem;
   object-fit: cover;
 }
 
@@ -61,6 +64,12 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  /* border: #ababab 0.08rem solid; */
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  margin-top: -6px;
+  padding: 0.7rem;
 }
 
 .recipeTitleContainer{
