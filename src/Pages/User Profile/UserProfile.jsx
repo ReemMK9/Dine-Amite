@@ -189,7 +189,9 @@ const UserProfile = () => {
                       value={newListName}
                       onChange={e => setNewListName(e.target.value)}
                       onKeyDown={e => { if (e.key === "Enter") handleAddList(); }}
-                      onBlur={() => setShowAddInput(false)}
+                      onBlur={() => {
+                        setTimeout(() => setShowAddInput(false), 200);
+                      }}
                       placeholder="New list name"
                     />
                     <button className={styles.saveListBtn} onClick={handleAddList}>Save</button>

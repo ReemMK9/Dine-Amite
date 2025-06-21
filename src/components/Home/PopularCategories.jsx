@@ -44,7 +44,7 @@ const PopularCategories = () => {
             .eq('category_id', category.category_id);
 
           if (recipeCatError || !recipeCategories || recipeCategories.length === 0) {
-            continue; // Skip categories with no recipes
+            continue; 
           }
 
           // Get recipe details for these IDs
@@ -53,7 +53,7 @@ const PopularCategories = () => {
             .from('recipe')
             .select('recipe_id, image')
             .in('recipe_id', recipeIds)
-            .not('image', 'is', null); // Only get recipes with images
+            .not('image', 'is', null); 
 
           if (recipeError || !recipes || recipes.length === 0) {
             continue; 
@@ -76,7 +76,7 @@ const PopularCategories = () => {
             recipeCount: recipeCategories.length
           });
 
-          // Stop when we have 6 categories with unique images
+        
           if (categoriesWithImages.length >= 4) {
             break;
           }
