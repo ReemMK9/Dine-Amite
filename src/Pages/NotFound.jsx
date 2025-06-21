@@ -1,9 +1,9 @@
 import React from "react";
 import notfoundimg from "../../assets/notfound.png";
-
+import styles from "./NotFound.module.css";
 const NotFound = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <img src={notfoundimg} alt="Not Found" />
     </div>
   );
