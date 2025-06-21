@@ -3,9 +3,10 @@
   --color-text: #312f2f;
   --color-primary: #d36b09;
   --color-secondary: #cb7e36;
+  --color-accent: #f1c7a0;
   --color-dark: #0b2447;
   --color-bg: #faf7f2;
-  --color-bg2: #f1ece4;
+  --color-bg2: rgb(242, 236, 227);
   --color-shadow: linear-gradient(
     0deg,
     #faf7f2 0%,

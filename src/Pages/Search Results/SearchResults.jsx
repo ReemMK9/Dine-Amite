@@ -11,8 +11,9 @@ import SearchFilters from "../../components/Common/SearchFilters/SearchFilters";
 
 const SearchResults = () => {
   const { query } = useParams();
-  const [recipes, setRecipes] = useState(null);
+  const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [visibleCount, setVisibleCount] = useState(8);
 
   useEffect(() => {
     const fetchRecipes = async () => {
@@ -72,9 +73,10 @@ const SearchResults = () => {
         orQuery += `,recipe_id.in.(${combinedRecipeIds.join(",")})`;
       }
 
+      //get all search results that match the query
       const { data, error } = await supabase
         .from("recipe")
-        .select("*") //need to update when categories are added
+        .select("*")
         .or(orQuery)
       setRecipes(data || []);
       setLoading(false);
@@ -89,15 +91,39 @@ const SearchResults = () => {
     }
   }, [query]);
 
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 8); // Load 8 more each time
+  };
+
   return (
-    <div className={styles.pageC}>
-      <SearchResultsHeader />
+    <div className={styles.pageContainer}>
+       <div className={styles.headerContainer}>
+            <h1 className={styles.searchHeader}>Search Results for</h1>
+            <div className={styles.searchResultContainer}>
+              <h5 className={styles.searchResult}>{ query }</h5>
+              <hr />
+            </div>
+        </div>
+      {/* <SearchResultsHeader /> */}
       {/* <SearchFilters/> */}
       <div className={styles.results}>
-        {recipes && recipes.slice(0,6).map((recipe) => (
+        {loading ? (
+          <div className={styles.loading}>Loading...</div>
+        ) : recipes.length === 0 ? (
+          <div className={styles.noResults}>No recipes found :&#40;</div>
+        ) : (
+          recipes.slice(0, visibleCount).map((recipe) => (
             <RecipeCard key={recipe.recipe_id} recipe={recipe} />
-          ))}
+          ))
+        )}
       </div>
+      {visibleCount < recipes.length && (
+        <div style={{ textAlign: "center", margin: "2rem 0" }}>
+          <button className={styles.loadMoreBtn} onClick={handleLoadMore}>
+            Load More
+          </button>
+        </div>
+      )}
     </div>
   );
 };
