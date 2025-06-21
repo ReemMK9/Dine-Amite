@@ -1,15 +1,18 @@
 .container{
   display: flex;
-
   /* justify-content: center; */
+  /* align-items: center; */
   height: 90vh;
   background-color: #FCF7F3;
-  padding-top: 0%;
-    margin-top: 0%;
+  padding-top: 0;
+  margin-top: 0;
 
 }
 .container img{
-  height: 100%;
-  align-self: start;
-
+  max-width: 90vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
