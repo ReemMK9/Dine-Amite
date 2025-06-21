@@ -35,3 +35,21 @@
 .noFooterMargin {
   margin-top: 0 !important;
 }
+
+.formBg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* On large screens, remove background from form column */
+@media (min-width: 992px) {
+  .formBg {
+    background-image: none !important;
+  }
+}

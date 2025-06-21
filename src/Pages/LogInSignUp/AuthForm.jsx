@@ -13,7 +13,6 @@ const AuthForm = () => {
     email: "",
     password: "",
   });
-  
 
   const navigate = useNavigate();
 
@@ -110,9 +109,15 @@ const AuthForm = () => {
         <div className={`col-lg-6 d-none d-lg-flex ${styles.imgContainer} p-0`}>
           <img src={img} alt="" className={`${styles.loginImg} w-100 h-100`} />
         </div>
-        {/* Form: always visible, takes full width on md and below */}
-        <div className={`col-12 col-lg-6 d-flex align-items-center justify-content-center p-0`}>
+        {/* Form: always visible, and has background image on md and below */}
+        <div
+          className={`col-12 col-lg-6 d-flex align-items-center justify-content-center p-0 ${styles.formBg}`}
+          style={{
+            backgroundImage: `url(${img})`,
+          }}
+        >
           <div className={`${styles.card} shadow p-4 w-100`} style={{ maxWidth: 420 }}>
+            {/* ...form content... */}
             <h2 className="text-center mb-4">{isSignup ? "Sign Up" : "Log In"}</h2>
             <form onSubmit={handleSubmit} noValidate>
           {isSignup && (
@@ -161,7 +166,7 @@ const AuthForm = () => {
           <button type="submit" className="btn btn-primary w-100">
             {isSignup ? "Sign Up" : "Log In"}
           </button>
-             </form>
+              </form>
             <div className="text-center mt-3">
               <small>
                 {isSignup ? "Already have an account?" : "Don’t have an account?"}{" "}
