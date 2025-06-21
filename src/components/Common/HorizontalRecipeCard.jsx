@@ -1,19 +1,26 @@
 import React from "react";
 import styles from "./HorizontalRecipeCard.module.css";
+import { Link } from "react-router-dom"
 
-const HorizontalRecipeCard = () => {
+const HorizontalRecipeCard = ({ recipe }) => {
   return (
+    <Link
+      to={`/recipedetails/${recipe.recipe_id}`}
+      className={styles.linkWrapper}
+    >
     <div className={styles.recipeCard}>
-      <div className={styles.recipeImage}>
-        {/* <img src="" alt="" /> */}
+      <div className={styles.recipeImageContainer}>
+        {recipe.image && (
+          <img src={recipe.image} alt={recipe.title} className={styles.recipeImage}/>
+        )}
       </div>
-      <div>
-        <div>Rating</div>
+      <div className={styles.recipeTitleContainer}>
         <h4 className={styles.recipeTitle}>
-          Decadent Raspberry and Cream Cake
+          {recipe.title}
         </h4>
       </div>
     </div>
+    </Link>
   );
 };
 
