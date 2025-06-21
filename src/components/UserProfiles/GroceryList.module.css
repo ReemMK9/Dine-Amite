@@ -1,15 +1,16 @@
 .wrapper {
-  padding: 1rem 0;
-  margin: 0;
+  /* padding: 1rem 0; */
+  /* margin: 0; */
+  margin-inline: auto;
 }
 
 .card {
   min-height: 300px;
-  padding: 1.2rem 1rem;
-  border-radius: 14px;
+  padding: 0.5rem;
+  border-radius: 5px;
   background: #fff;
-  border: 1.5px solid var(--color-primary, #f86329);
-  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  border: 1.5px solid var(--color-primary);
+  box-shadow: 2px 2px 2px #ebd2c5;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -27,8 +28,9 @@
 }
 
 .placeholderWrapper {
-  background-color: #f9f9f9;
-  border: 1.5px dashed var(--color-primary, #f86329);
+  background-color: #fff;
+  border: 1.5px dashed var(--color-primary);
+  box-shadow: 2px 2px 2px #ebd2c5;
   min-height: 300px;
   display: flex;
   justify-content: center;
@@ -36,10 +38,10 @@
 }
 
 .addListBtn {
-  background: var(--color-primary, #f86329);
+  background: var(--color-primary);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 0.5em 1.5em;
   font-size: 1em;
   font-weight: 600;
@@ -49,7 +51,9 @@
 }
 
 .addListBtn:hover {
-  background: #d95d27;
+  background: var(--color-bg);
+  outline: 2px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .placeholderCard {
@@ -64,6 +68,7 @@
 }
 
 .addCardForm {
+  font-family: var(--font-text);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -73,18 +78,24 @@
 .addCardForm input {
   padding: 0.5rem 1rem;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 1em;
   background: #fafafa;
   color: #222;
 }
 
+.addCardForm input:focus{
+    border-color: var(--color-primary);
+    outline-color: var(--color-primary);
+    background: #fff;
+}
+
 .addCardForm button {
-  padding: 0.5rem 1.2rem;
+  padding: 0.25rem 1rem;
   border: none;
-  background-color: var(--color-primary, #f86329);
+  background-color: var(--color-primary);
   color: white;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
   font-size: 1em;
@@ -97,6 +108,12 @@
   margin-left: 0.5em;
 }
 
+.addCardForm button[type="submit"]:hover {
+  background: var(--color-bg);
+  outline: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
 .cardHeader {
   display: flex;
   align-items: center;
@@ -106,14 +123,18 @@
 
 .cardTitle {
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-decoration: underline solid var(--color-primary);
   margin: 0 8px;
   font-weight: 600;
-  color: var(--color-primary, #f86329);
-  font-family: var(--font-title, 'Montserrat');
+  color: var(--color-text);
+  font-family: var(--font-title);
+  text-align: center;
 }
 
 .deleteListBtn {
+  display: flex;
+  align-items: center;
   background: none;
   border: none;
   font-size: 1.1rem;
@@ -122,9 +143,10 @@
   transition: color 0.18s;
 }
 
-.deleteListBtn:hover {
-  color: #f86329;
+.deleteListBtn .material-symbols-outlined {
+  line-height: 1;
 }
+
 
 .itemList {
   list-style: none;
@@ -138,7 +160,7 @@
 .itemRow {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   font-size: 1rem;
   margin-bottom: 0.3rem;
   border-bottom: 1px solid #f2f2f2;
@@ -154,8 +176,9 @@
 
 .itemText {
   flex-grow: 1;
-  font-family: var(--font-text, 'Inter');
-  color: var(--color-text, #222);
+  font-size: 1rem;
+  font-family: var(--font-text);
+  color: var(--color-text);
 }
 
 .deleteBtn {
@@ -173,9 +196,9 @@
 }
 
 .addInput {
-  width: 100%;
+  min-width: 100%;
   padding: 0.4em 0.8em;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1em;
   background: #fafafa;
@@ -183,7 +206,8 @@
   transition: border 0.18s;
 }
 .addInput:focus {
-  border-color: var(--color-primary, #f86329);
+  border-color: var(--color-primary);
+  outline-color: var(--color-primary);
   background: #fff;
 }
 

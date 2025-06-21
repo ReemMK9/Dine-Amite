@@ -167,7 +167,7 @@ const GroceryList = () => {
   return (
     <div className={`row ${styles.wrapper} gx-4 gy-4`}>
       {/* Add List Button */}
-      <div className="col-12 mb-3">
+      <div className="col-12">
         <button
           className={styles.addListBtn}
           onClick={() => setShowAddList(true)}
@@ -188,10 +188,12 @@ const GroceryList = () => {
                 onChange={(e) => setNewListTitle(e.target.value)}
                 autoFocus
               />
-              <button type="submit">Create</button>
-              <button type="button" onClick={() => setShowAddList(false)}>
-                Cancel
-              </button>
+              <div>
+                <button type="submit">Create</button>
+                <button type="button" onClick={() => setShowAddList(false)}>
+                  Cancel
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -210,7 +212,7 @@ const GroceryList = () => {
                 className={styles.deleteListBtn}
                 onClick={() => handleDeleteList(section.list_id)}
               >
-                🗑️
+                <i className="material-symbols-outlined">delete</i>
               </button>
             </div>
 
@@ -230,15 +232,15 @@ const GroceryList = () => {
                           handleCheck(section.list_id, item.ingredient_id, !!checkedItems[key])
                         }
                       />
-                      <span className={styles.itemText}>
+                      <p className={styles.itemText}>
                         {ingredient ? ingredient.name : item.ingredient_id}
-                      </span>
+                      </p>
                     </label>
                     <button
                       className={styles.deleteBtn}
                       onClick={() => handleDeleteItem(section.list_id, item.ingredient_id)}
                     >
-                      ❌
+                      <i className="material-symbols-outlined">close</i>
                     </button>
                   </li>
                 );

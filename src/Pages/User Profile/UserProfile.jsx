@@ -109,114 +109,130 @@ const UserProfile = () => {
     }
   };
 
-  return (
-    <div className="container-fluid col-12">
-      <div className="row justify-content-center">
-        <div className="col-10 mt-4">
-          <h1>{displayName ? `${displayName}'s Recipe Book` : "User Profile"}</h1>
-          {/* profile info section */}
-          <div className={`row col-10 ${styles.infoBox}`}>
-            <div className={`col-12 col-md-4 d-flex justify-content-center ${styles.userImgContainer}`}>
-              <div className={styles.userImg}>
-                <img
-                  src={userImg || "/placeholder-user.png"}
-                  alt="User"
-                  className={styles.profileImg}
-                />
-              </div>
+return (
+  <div className="container-fluid col-12">
+    <div className="row justify-content-center">
+      <div className="col-10 mt-4">
+        <h1 className={styles.userTitle}>
+          {displayName ? `${displayName}'s Recipe Book` : "User Profile"}
+        </h1>
+
+        {/* Profile Info */}
+        <div className={`row col-10 ${styles.infoBox}`}>
+          <div className={`col-12 col-md-4 d-flex justify-content-center ${styles.userImgContainer}`}>
+            <div className={styles.userImg}>
+              <img
+                src={userImg || "/placeholder-user.png"}
+                alt="User"
+                className={styles.profileImg}
+              />
             </div>
-            <div className="col-12 col-md-8">
-              <div className={styles.userInfo}>
-                <div className={styles.userBio}>
-                  {editing ? (
-                    <form
-                      onSubmit={async (e) => {
-                        e.preventDefault();
-                        setSaving(true);
-                        await supabase
-                          .from("app_user")
-                          .update({ display_name: displayName, bio })
-                          .eq("user_id", userId);
-                        setSaving(false);
-                        setEditing(false);
-                      }}
-                      className={styles.editProfileForm}
+          </div>
+          <div className="col-12 col-md-8">
+            <div className={styles.userInfo}>
+              <div className={styles.userBio}>
+                {editing ? (
+                  <form
+                    onSubmit={async (e) => {
+                      e.preventDefault();
+                      setSaving(true);
+                      await supabase
+                        .from("app_user")
+                        .update({ display_name: displayName, bio })
+                        .eq("user_id", userId);
+                      setSaving(false);
+                      setEditing(false);
+                    }}
+                    className={styles.editProfileForm}
+                  >
+                    <input
+                      className={styles.editInput}
+                      value={displayName}
+                      onChange={(e) => setDisplayName(e.target.value)}
+                      placeholder="Display Name"
+                    />
+                    <textarea
+                      className={styles.editInput}
+                      value={bio}
+                      onChange={(e) => setBio(e.target.value)}
+                      placeholder="Bio"
+                      rows={3}
+                    />
+                    <button className={styles.saveBtn} type="submit" disabled={saving}>
+                      {saving ? "Saving..." : "Save"}
+                    </button>
+                    <button
+                      className={styles.cancelBtn}
+                      type="button"
+                      onClick={() => setEditing(false)}
                     >
-                      <input
-                        className={styles.editInput}
-                        value={displayName}
-                        onChange={e => setDisplayName(e.target.value)}
-                        placeholder="Display Name"
-                      />
-                      <textarea
-                        className={styles.editInput}
-                        value={bio}
-                        onChange={e => setBio(e.target.value)}
-                        placeholder="Bio"
-                        rows={3}
-                      />
-                      <button className={styles.saveBtn} type="submit" disabled={saving}>
-                        {saving ? "Saving..." : "Save"}
-                      </button>
-                      <button className={styles.cancelBtn} type="button" onClick={() => setEditing(false)}>
-                        Cancel
-                      </button>
-                    </form>
-                  ) : (
-                    <>
-                      <div><strong>{displayName || "No display name"}</strong></div>
-                      <div>{bio || "No bio yet."}</div>
-                      <button className={styles.editBtn} onClick={() => setEditing(true)}>
-                        Edit Profile
-                      </button>
-                    </>
-                  )}
-                </div>
+                      Cancel
+                    </button>
+                  </form>
+                ) : (
+                  <>
+                    <div><strong>{displayName || "No display name"}</strong></div>
+                    <div>{bio || "No bio yet."}</div>
+                    <button className={styles.editBtn} onClick={() => setEditing(true)}>
+                      Edit Profile
+                    </button>
+                  </>
+                )}
               </div>
             </div>
           </div>
-
-          {/* tabs */}
-          <div className={styles.userProfileTabs}>
-            <div className="col-12">
-              <div className="d-flex flex-nowrap overflow-auto gap-2 align-items-start">
-                {showAddInput ? (
-                  <>
-                    <input
-                      type="text"
-                      autoFocus
-                      className={styles.tabInput}
-                      value={newListName}
-                      onChange={e => setNewListName(e.target.value)}
-                      onKeyDown={e => { if (e.key === "Enter") handleAddList(); }}
-                      onBlur={() => {
-                        setTimeout(() => setShowAddInput(false), 200);
-                      }}
-                      placeholder="New list name"
-                    />
-                    <button className={styles.saveListBtn} onClick={handleAddList}>Save</button>
-                    <button className={styles.cancelListBtn} onClick={() => setShowAddInput(false)}>Cancel</button>
-                  </>
-                ) : (
-                  <button
-                    className={`${styles.tabButton} ${styles.addTabButton}`}
-                    onClick={() => setShowAddInput(true)}
-                  >
-                    <span className="material-symbols-outlined">add</span>
+        </div>
+        <hr style={{ borderTop: "1px solid #ccc" }} className="my-2" />
+        {/* Tabs */}
+        <div className={styles.userProfileTabs}>
+          <div className="col-12">
+            <div className="d-flex flex-nowrap overflow-auto gap-2 align-items-start">
+              {showAddInput ? (
+                <>
+                  <input
+                    type="text"
+                    autoFocus
+                    className={styles.tabInput}
+                    value={newListName}
+                    onChange={(e) => setNewListName(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") handleAddList();
+                    }}
+                    onBlur={() => {
+                      setTimeout(() => setShowAddInput(false), 200);
+                    }}
+                    placeholder="New list name"
+                  />
+                  <button className={styles.saveListBtn} onClick={handleAddList}>
+                    Save
                   </button>
-                )}
-                {/* user saved lists */}
-                {userLists.map((list) => (
-                  <div key={list.recipe_saved_id} className={styles.listTabWrapper}>
+                  <button className={styles.cancelListBtn} onClick={() => setShowAddInput(false)}>
+                    Cancel
+                  </button>
+                </>
+              ) : (
+                <button
+                  className={`${styles.tabButton} ${styles.addTabButton}`}
+                  onClick={() => setShowAddInput(true)}
+                >
+                  <span className="material-symbols-outlined">add</span>
+                </button>
+              )}
+              {userLists.map((list) => (
+                <div key={list.recipe_saved_id} className={styles.listTabWrapper}>
+                  <button
+                    onClick={() => {
+                      setActiveListId(list.recipe_saved_id);
+                      setActiveTabType("saved");
+                    }}
+                    className={`${styles.tabButton} ${
+                      activeListId === list.recipe_saved_id && activeTabType === "saved"
+                        ? styles.activeTab
+                        : ""
+                    }`}
+                  >
+                    {list.name}
                     <button
-                      onClick={() => {
-                        setActiveListId(list.recipe_saved_id);
-                        setActiveTabType("saved");
-                      }}
-                      className={`${styles.tabButton} ${activeListId === list.recipe_saved_id && activeTabType === "saved" ? styles.activeTab : ""}`}
-                    >
-                      {list.name}
-                      <button
                       className={styles.deleteTabBtn}
                       title="Delete list"
                       onClick={() => handleDeleteList(list.recipe_saved_id)}
@@ -224,54 +240,56 @@ const UserProfile = () => {
                     >
                       ×
                     </button>
-                    </button>
-                    
-                  </div>
-                ))}
-                {/* grocery list button */}
-                <button
-                  className={`${styles.tabButton} ${activeTabType === "grocery" ? styles.activeTab : ""}`}
-                  onClick={() => {
-                    setActiveTabType("grocery");
-                    setActiveListId(null);
-                  }}
-                >
-                  <i className="material-symbols-outlined">grocery</i>
-                  Grocery Lists
-                </button>
-              </div>
-            </div>
-            <div className="col-12">
-              <hr className={styles.tabsHr} />
+                  </button>
+                </div>
+              ))}
+              <button
+                className={`${styles.tabButton} ${activeTabType === "grocery" ? styles.activeTab : ""}`}
+                onClick={() => {
+                  setActiveTabType("grocery");
+                  setActiveListId(null);
+                }}
+              >
+                <i className="material-symbols-outlined">grocery</i>
+                Grocery Lists
+              </button>
             </div>
           </div>
-
-          {/* content displayed */}
-          <div className={`row ${styles.userProfItems}`}>
-            <div className="col-12">
-              {activeTabType === "saved" && activeListId ? (
-                savedListRecipes.length > 0 ? (
-                  <div className="row">
-                    {savedListRecipes.map((recipe) => (
-                      <div key={recipe.recipe_id} className="col-12 col-sm-6 col-md-4 col-xl-3 d-flex mb-4">
-                        <RecipeCard recipe={recipe} className="w-100" />
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="text-center text-muted mt-4">
-                    No recipes in this list.
-                  </div>
-                )
-              ) : activeTabType === "grocery" ? (
-                <GroceryList />
-              ) : null}
-            </div>
+        </div>
+        <hr style={{ borderTop: "2px solid #ccc" }} className="my-2" />        
+        {/* Content */}
+        <div className={`row ${styles.userProfItems}`}>
+          <div className="col-12">
+            {activeTabType === "saved" && activeListId ? (
+              savedListRecipes.length > 0 ? (
+                <div className={`row gx-4 gy-4 ${styles.recipeGridFix}`}>
+                  {savedListRecipes.map((recipe) => (
+                    <div
+                      key={recipe.recipe_id}
+                      className="col-12 col-sm-6 col-md-4 col-xl-3 d-flex"
+                    >
+                      <RecipeCard recipe={recipe} className="w-100" />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center text-muted mt-4">
+                  No recipes in this list.
+                </div>
+              )
+            ) : activeTabType === "grocery" ? (
+              <div className="row">
+                <div className="col-12 col-lg-10">
+                  <GroceryList />
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default UserProfile;

@@ -46,7 +46,7 @@ const RecipeDetails = () => {
   if (!recipe) return <p>Loading recipe...</p>;
 
   return (
-    <>
+    <div className={styles.page}>
       <div className={styles.headContainer}>
         <Landing recipe={recipe} />
         <SimilarRecipes />
@@ -80,7 +80,7 @@ const RecipeDetails = () => {
 
       {/* 5. Collections */}
       <Collections />
-    </>
+    </div>
   );
 };
 
