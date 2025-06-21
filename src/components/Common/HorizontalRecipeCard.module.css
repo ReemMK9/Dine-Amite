@@ -27,7 +27,7 @@
   height: 85px;
   width: 120px;
   border-radius: 5px 0 0 5px;
-  background-color: #f3a586;
+  background-color: var(--color-bg2);
   margin-right: 18px;
   overflow: hidden;
   display: flex;

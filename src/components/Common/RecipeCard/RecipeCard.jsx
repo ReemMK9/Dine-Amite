@@ -38,7 +38,7 @@ const RecipeCard = ({ recipe }) => {
             className={styles.saveButton}
             title="Save to list"
           >
-            <i className="material-symbols-outlined">add_circle</i>
+            <i className="material-symbols-outlined">favorite</i>
           </button>
         </div>
         <div className={styles.infoContainer}>
