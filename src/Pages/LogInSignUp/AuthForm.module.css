@@ -1,3 +1,22 @@
+.pageContainer {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imgContainer {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.loginImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
 .card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -10,4 +29,27 @@
 
 .toggleButton:hover {
   text-decoration: underline;
+}
+
+/* Footer override */
+.noFooterMargin {
+  margin-top: 0 !important;
+}
+
+.formBg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* On large screens, remove background from form column */
+@media (min-width: 992px) {
+  .formBg {
+    background-image: none !important;
+  }
 }

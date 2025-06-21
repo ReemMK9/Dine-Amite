@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Footer.module.css";
 
-const Footer = () => {
+const Footer = ({ noFooterMargin }) => {
   return (
-    <footer>
+    <footer className={noFooterMargin ? styles.noFooterMargin : ""}>
       <div className={`container-fluid ${styles.footerOuter}`}>
         <div className={`row ${styles.footerRow}`}>
           <div className="col-md-4 col-12 mb-4 mb-md-0">
