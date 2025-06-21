@@ -5,8 +5,10 @@
   /* width: 110%; */
   /* margin:auto; */
   /* margin-inline: max(2rem, calc(50% - 30rem)); */
-  margin-block: 1rem;
+  margin-block: 18px;
   width: 550px;
+  height: 87px;
+  border: 1px solid var(--color-accent2);
 }
 
 .row {
@@ -18,7 +20,6 @@
 .section {
   flex: 0 0 33.3333%;
   text-align: center;
-  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;

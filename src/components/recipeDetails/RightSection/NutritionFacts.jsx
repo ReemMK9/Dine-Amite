@@ -49,7 +49,7 @@ const nutritionFacts = ({ recipeId }) => {
     <div className={styles.container}>
       <div className={styles.nutritionFacts}>
         <h2 className={styles.title}>Nutrition Facts </h2> <p className={styles.subtitle}>(Per Serving)</p>
-        <hr/>
+        <hr className={styles.thickLine}/>
         <div className={styles.nutritionInfo}>
           {Object.entries(nutritionLabels).map(([key, label]) => (
             nutrition[key] !== undefined && (

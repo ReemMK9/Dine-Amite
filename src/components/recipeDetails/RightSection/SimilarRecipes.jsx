@@ -10,14 +10,12 @@ const SimilarRecipes = () => {
   useEffect(() => {
     const fetchRandomRecipes = async () => {
       setLoading(true);
-      // Fetch all recipes, then pick 4 random ones
       let { data, error } = await supabase
         .from("recipe")
         .select("*");
       if (data && data.length > 0) {
-        // Shuffle and take 4
         const shuffled = data.sort(() => 0.5 - Math.random());
-        setRecipes(shuffled.slice(0, 4));
+        setRecipes(shuffled.slice(0, 5));
       } else {
         setRecipes([]);
       }

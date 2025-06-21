@@ -18,6 +18,19 @@
   margin: auto;
 }
 
+.recipeInfo {
+  display: flex;
+  padding-left: max(2rem, calc(50% - 30rem));
+  padding-right: max(2rem, calc(50% - 30rem));
+  justify-content: space-around;
+  align-items: baseline;
+  margin-right: 0;
+}
+
+.nutritionFacts{
+  padding-left: 0;
+}
+
 .leftSection{
   margin-left:0;
 }
@@ -28,5 +41,5 @@
 
 .sectionSpacing{
 align-self: start;
-margin-top: 2rem;
+margin-bottom: 18px;
 }

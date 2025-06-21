@@ -48,37 +48,24 @@ const RecipeDetails = () => {
   return (
     <div className={styles.page}>
       <div className={styles.headContainer}>
-        <Landing recipe={recipe} />
-        <SimilarRecipes />
+        <div className={styles.recipeContainer}>
+          <Landing recipe={recipe} />
+          <PrepInfo recipe={recipe} />
+        </div>
+        <SimilarRecipes />        
       </div>
-      <div className={`container ${styles.mainContainer}`}>
-        <div className="row col-12">
-          {/* 1. Prep Info */}
-          <div className="col-12">
-            <PrepInfo recipe={recipe} />
-          </div>
-
-          {/* 2. Nutrition facts — on the right on large screens, before Ingredients on mobile */}
-          <div className="col-md-4 order-md-2">
+      {/* <div className={`container ${styles.mainContainer}`}> */}
+        <div className={`row col-12 ${styles.recipeInfo}`}>
+          <div className={`col-md-4 order-md-2 ${styles.nutritionFacts}`}>
             <NutritionFacts recipeId={id} />
           </div>
-
-          {/* 3. Ingredients + Instructions */}
           <div className={`col-md-8 order-md-1 ml-0 ${styles.sectionSpacing}`}>
             <Ingredients ingredients={ingredients} />
             <Instructions summary={recipe.summary} steps={recipe.steps} />
           </div>
-
-          {/* 4. Similar recipes — right below nutrition facts on large screens, but after Instructions on small */}
-          <div
-            className="col-md-4 offset-md-8 order-md-3"
-          >
-            <SimilarRecipes />
-          </div>
         </div>
-      </div>
+      {/* </div> */}
 
-      {/* 5. Collections */}
       <Collections />
     </div>
   );
