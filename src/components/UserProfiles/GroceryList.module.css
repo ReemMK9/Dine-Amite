@@ -139,7 +139,7 @@
   border: none;
   font-size: 1.1rem;
   cursor: pointer;
-  color: #b30000;
+  color: var(--color-primary);
   transition: color 0.18s;
 }
 
@@ -186,7 +186,7 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  color: #b30000;
+  color: var(--color-primary);
   transition: color 0.18s;
 }
 
