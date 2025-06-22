@@ -1,6 +1,6 @@
-*{
+/* *{
   margin-inline: auto;
-}
+} */
 .headContainer{
   display: flex;
   padding-left: max(2rem, calc(50% - 30rem));

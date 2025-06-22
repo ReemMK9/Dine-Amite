@@ -151,7 +151,7 @@ const Navbar = () => {
                 value={search}
                 onChange={(e) => {
                   setSearch(e.target.value);
-                  if (searchError) setSearchError(""); // Clear error as user types
+                  if (searchError) setSearchError(""); 
                 }}
               />
               <button className={styles.searchBtn}>

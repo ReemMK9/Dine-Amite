@@ -12,4 +12,11 @@
   font-style: normal;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
+#root {
+    min-height: 100vh;
+}
