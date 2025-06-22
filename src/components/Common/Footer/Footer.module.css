@@ -51,7 +51,6 @@ footer li{
 .links{
   display: flex;
   flex-direction: row;
-  /* gap: 70px; */
   padding: 20px;
 }
 

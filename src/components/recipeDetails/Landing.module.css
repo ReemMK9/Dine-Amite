@@ -51,7 +51,6 @@
   font-family: var(--font-title);
   font-size: 2rem;
   color: var(--color-primary);
-  /* text-align: center; */
   margin: 10px;
   margin-left: 0;
 }

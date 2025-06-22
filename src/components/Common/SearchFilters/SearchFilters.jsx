@@ -3,7 +3,7 @@ import styles from "./SearchFilters.module.css";
 // import supabase from "../../config/supabaseClient";
 
 const SearchFilters = () => {
-  const [activeTab, setActiveTab] = useState(null); // 👈 THIS IS THE FIX
+  const [activeTab, setActiveTab] = useState(null);
   const [ingredients, setIngredients] = useState([]);
   const [categories, setCategories] = useState([]);
   const [recipes, setRecipes] = useState([]);

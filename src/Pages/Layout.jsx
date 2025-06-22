@@ -6,7 +6,6 @@ import Footer from "../components/Common/Footer/Footer";
 
 const Layout = () => {
   const location = useLocation();
-  // Check if the current path is /login
   const noFooterMargin = location.pathname === "/login";
 
   return (

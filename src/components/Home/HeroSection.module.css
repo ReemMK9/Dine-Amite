@@ -1,5 +1,4 @@
 .container {
-  /* width: 80%; */
   background-color: #f1ece4;
   border-radius: 30px;
   display: flex;
@@ -9,8 +8,6 @@
 }
 
 .heroImgContainer{
-  /* width: 70vw; */
-  /* height: auto; */
   max-height: 100%;
   border-radius: 30px;
   overflow: hidden;
@@ -18,8 +15,6 @@
 }
 
 .heroText {
-  /* height: 90vh; */
-  /* width: 30vw; */
   margin-block: 2rem;
   display: flex;
   flex-direction: column;
@@ -33,7 +28,6 @@
   display: inline;
   height: 90vh;
   object-fit: cover;
-  /* position: relative; */
 }
 
 h1 {
@@ -44,7 +38,6 @@ h1 {
 }
 
 h3 {
-  /* width: 100%; */
   margin-left: 2em;
   text-decoration: none;
   font-size: 1.2rem;

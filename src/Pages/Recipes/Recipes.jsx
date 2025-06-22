@@ -38,7 +38,6 @@ const Recipes = () => {
     <div className={styles.headerContainer}>
       <h1 className={styles.recipesHeader}>Browse Recipes</h1>
       <SearchFilters />
-       {/* <hr/> */}
     </div>
         <div className={styles.recipesContainer}>
         {recipes && recipes.slice(0, visibleCount).map((recipe) => (

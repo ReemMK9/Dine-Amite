@@ -8,7 +8,6 @@ const SearchResultsHeader = () => {
     <div className={styles.container}>
       <h1>Search Results for:</h1>
       <h3>{ query }</h3>
-      {/* <hr /> */}
     </div>
   )
 }
