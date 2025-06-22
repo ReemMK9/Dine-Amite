@@ -16,29 +16,29 @@ const HeroSection = () => {
         setError(null);
 
         const { count, error: countError } = await supabase
-          .from('recipe')
-          .select('*', { count: 'exact', head: true });
+          .from("recipe")
+          .select("*", { count: "exact", head: true });
 
         if (countError || !count) {
-          setError('No recipes found');
+          setError("No recipes found");
           return;
         }
 
         const randomOffset = Math.floor(Math.random() * count);
         const { data: recipes, error: recipeError } = await supabase
-          .from('recipe')
-          .select('recipe_id, title, image, ready_in, servings')
+          .from("recipe")
+          .select("recipe_id, title, image, ready_in, servings")
           .range(randomOffset, randomOffset)
           .limit(1);
 
         if (recipeError || !recipes?.length) {
-          setError('Failed to load recipe');
+          setError("Failed to load recipe");
           return;
         }
 
         setRecipe(recipes[0]);
       } catch (err) {
-        setError('Failed to load recipe');
+        setError("Failed to load recipe");
       } finally {
         setLoading(false);
       }
@@ -63,24 +63,13 @@ const HeroSection = () => {
     );
   }
 
-  if (error || !recipe) {
-    return (
-      <div className={styles.container}>
-        <div className={styles.errorPlaceholder}>
-          <h2>Discover Amazing Recipes</h2>
-          <p>Explore our collection of delicious recipes</p>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className={styles.container}>
       <div className={styles.imageSection}>
         {recipe.image ? (
-          <img 
-            src={recipe.image} 
-            alt={recipe.title} 
+          <img
+            src={recipe.image}
+            alt={recipe.title}
             className={styles.heroImg}
           />
         ) : (
@@ -89,16 +78,13 @@ const HeroSection = () => {
           </div>
         )}
       </div>
-      
+
       <div className={styles.contentSection}>
         <div className={styles.header}>
-          <h1 
-            className={styles.title}
-            onClick={handleRecipeClick}
-          >
+          <h1 className={styles.title} onClick={handleRecipeClick}>
             {recipe.title}
           </h1>
-          
+
           <button
             className={styles.saveButton}
             onClick={(e) => e.stopPropagation()}
@@ -106,22 +92,21 @@ const HeroSection = () => {
             <i className="material-symbols-outlined">favorite</i>
           </button>
         </div>
-        
+
         {(recipe.ready_in || recipe.servings) && (
           <div className={styles.recipeInfo}>
             {recipe.ready_in && (
-              <span>Ready in {recipe.ready_in} minutes</span>
+              <p className={styles.heroText}>
+                Ready in {recipe.ready_in} minutes
+              </p>
             )}
             {recipe.servings && (
-              <span>Serves {recipe.servings}</span>
+              <p className={styles.heroText}>Serves {recipe.servings}</p>
             )}
           </div>
         )}
-        
-        <button 
-          className={styles.viewButton}
-          onClick={handleRecipeClick}
-        >
+
+        <button className={styles.viewButton} onClick={handleRecipeClick}>
           View Full Recipe
         </button>
       </div>
