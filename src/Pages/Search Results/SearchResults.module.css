@@ -19,7 +19,7 @@
 
 .searchResultContainer{
   padding-inline: 0.2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   width: 100%;
 }
 
@@ -37,13 +37,13 @@
 
 hr {
   border-top: 1px solid #ccc !important;
-  margin-bottom: 0% !important;
+  margin-bottom: 0%;
 }
 
 .results {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  /* width: 100%; */
   justify-content: space-between;
   gap: 2.7rem;
   padding: auto;

@@ -79,7 +79,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar navbar-expand-lg ${styles.navbar}`}>
-      <div className={`container-fluid ${styles.navContainer}`}>
+      <div className={`container-fluid justify-content-center ${styles.navContainer}`}>
 
         {/* Small screen layout */}
         <div className="d-lg-none w-100">

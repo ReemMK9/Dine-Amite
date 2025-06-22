@@ -18,7 +18,7 @@ const SliderCategories = ({ category, recipes }) => {
       <h1 className={styles.sliderTitle}>{displayName}</h1>
         <div className={`row g-5 ${styles.myRecipeRow}`}>
           {recipes.map((recipe) => (
-            <div key={recipe.recipe_id} className="col-12 col-md-6 col-xl-3 d-flex">
+            <div key={recipe.recipe_id} className="col-12 col-md-6 col-xl-3 d-flex justify-content-center">
               <RecipeCard recipe={recipe} />
             </div>
           ))}
