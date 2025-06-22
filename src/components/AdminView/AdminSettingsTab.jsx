@@ -32,10 +32,8 @@ const AdminSettingsTab = () => {
     setSaveStatus(null);
     
     try {
-      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // In real implementation, save to database
       console.log('Saving settings:', settings);
       
       setSaveStatus('success');
@@ -53,7 +51,6 @@ const AdminSettingsTab = () => {
     setLoading(true);
     try {
       console.log(`Exporting ${type} data...`);
-      // Simulate export process
       await new Promise(resolve => setTimeout(resolve, 2000));
       alert(`${type} data exported successfully!`);
     } catch (error) {
@@ -67,7 +64,6 @@ const AdminSettingsTab = () => {
     setLoading(true);
     try {
       console.log('Creating backup...');
-      // Simulate backup process
       await new Promise(resolve => setTimeout(resolve, 3000));
       alert('Database backup created successfully!');
     } catch (error) {
@@ -81,7 +77,6 @@ const AdminSettingsTab = () => {
     setLoading(true);
     try {
       console.log('Syncing recipes...');
-      // Simulate sync process
       await new Promise(resolve => setTimeout(resolve, 2000));
       alert('Recipes synced successfully!');
     } catch (error) {

@@ -322,7 +322,7 @@
   }
 }
 
-/* Dark mode support (if needed) */
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   .modal {
     background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);

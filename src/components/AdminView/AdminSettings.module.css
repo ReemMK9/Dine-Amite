@@ -499,7 +499,6 @@
   }
 }
 
-/* High Contrast Mode */
 @media (prefers-contrast: high) {
   .settingsCard {
     border: 2px solid var(--color-primary);
@@ -514,7 +513,6 @@
   }
 }
 
-/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .primaryButton, .secondaryButton, .saveButton, 
   .formInput, .formSelect, .checkboxLabel {
