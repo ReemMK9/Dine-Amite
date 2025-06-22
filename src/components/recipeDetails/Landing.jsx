@@ -7,7 +7,7 @@ const Landing = ({ recipe }) => {
 
   if (!recipe) return <p>Loading...</p>
   return (
-    <div>
+    <div className={styles.landingContainer}>
       <div className={styles.landingInfo}>
         {/* <h1 className={styles.recipeTitle}>Recipe Details</h1>
         <div className={styles.author}>
@@ -30,7 +30,7 @@ const Landing = ({ recipe }) => {
         { recipe && (
       <>
         <button className={styles.saveRecipeBtn}
-        onClick={() => setShowSaveOverlay(true)}><i className="material-symbols-outlined">add_circle</i></button>
+        onClick={() => setShowSaveOverlay(true)}><i className="material-symbols-outlined">favorite</i></button>
         <SaveRecipeOverlay
         recipeId={recipe.recipe_id}
         open={showSaveOverlay}
