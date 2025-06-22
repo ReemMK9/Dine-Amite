@@ -111,7 +111,7 @@ const UserProfile = () => {
 
 return (
   <div className="container-fluid col-12">
-    <div className="row justify-content-center">
+    <div className="row justify-content-between">
       <div className="col-10 mt-4">
         <h1 className={styles.userTitle}>
           {displayName ? `${displayName}'s Recipe Book` : "User Profile"}

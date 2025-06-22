@@ -9,7 +9,7 @@ const Layout = () => {
   const noFooterMargin = location.pathname === "/login";
 
   return (
-    <div className={styles.container}>
+    <div className={styles.pageContainer}>
       <Navbar />
       <div className={styles.mainContent}>
         <Outlet />

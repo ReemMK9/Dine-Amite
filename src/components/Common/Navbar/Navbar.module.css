@@ -7,10 +7,15 @@
   border-bottom: 1px solid #ddd;
   position: relative;
   overflow: visible !important; 
+  display: inline;
+  flex: 1;
+  flex-shrink: 0;
+  /* margin-inline: auto; */
 }
 
 .navContainer {
-  width: 100%;
+  min-width: 100%;
+  display: flex;
 }
 
 .title {
@@ -33,7 +38,11 @@
 }
 
 .menuItems {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
   list-style: none;
+  gap: 2rem;
   margin: 0;
   width: 30%;
 }
@@ -66,6 +75,7 @@
   border: 1px solid var(--color-primary);
   margin: 0;
   width: 100%;
+  align-items: center;
 }
 
 .search:focus-within {
@@ -206,8 +216,10 @@ a {
 
 .userAccount {
   display: flex;
+  align-items: center;
   gap: 5px;
   color: var(--color-primary);
+  margin-left: 10px;
 }
 
 .account {

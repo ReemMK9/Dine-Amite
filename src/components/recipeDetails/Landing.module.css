@@ -2,11 +2,11 @@
 @import url("https://fonts.cdnfonts.com/css/mervale-script");
 @import "../../vars.css";
 
-*{
-  /* display: flex; */
+/* *{
+  display: flex;
   align-items: center;
   align-content: center;
-}
+} */
 
 .landingContainer {
   display: flex;
