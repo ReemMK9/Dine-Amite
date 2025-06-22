@@ -8,6 +8,7 @@ const AuthForm = () => {
   const [errors, setErrors] = useState({});
   const [user, setUser] = useState(null);
   const [isSignup, setIsSignup] = useState(false);
+  const [signupSuccess, setSignupSuccess] = useState(false);
   const [formData, setFormData] = useState({
     displayName: "",
     email: "",
@@ -69,6 +70,7 @@ const AuthForm = () => {
       setErrors((prev) => ({ ...prev, general: error.message }));
     } else {
       console.log("User signed up:", user);
+      setSignupSuccess(true);
     }
   };
 
@@ -116,67 +118,89 @@ const AuthForm = () => {
             backgroundImage: `url(${img})`,
           }}
         >
-          <div className={`${styles.card} shadow p-4 w-100`} style={{ maxWidth: 420 }}>
-            <h2 className="text-center mb-4">{isSignup ? "Sign Up" : "Log In"}</h2>
+          <div className={`${styles.card} p-4 w-100`} style={{ maxWidth: 420 }}>
+            {/* ...form content... */}
+            <h2 className={`${styles.loginTitle} text-center mb-4`}>
+              {isSignup ? "Sign Up" : "Log In"}
+            </h2>
             <form onSubmit={handleSubmit} noValidate>
-          {isSignup && (
-            <div className="mb-3">
-              <label className="form-label">Display Name</label>
-              <input
-                type="text"
-                className={`form-control ${
-                  errors.displayName ? "is-invalid" : ""
-                }`}
-                name="displayName"
-                value={formData.displayName}
-                onChange={handleChange}
-              />
-              {errors.displayName && (
-                <div className="invalid-feedback">{errors.displayName}</div>
+              {isSignup && (
+                <div className="mb-3">
+                  <label className={`form-label ${styles.titleText}`}>
+                    Display Name
+                  </label>
+                  <input
+                    type="text"
+                    className={`${styles.inputText} ${
+                      errors.displayName ? "is-invalid" : ""
+                    }`}
+                    name="displayName"
+                    value={formData.displayName}
+                    onChange={handleChange}
+                  />
+                  {errors.displayName && (
+                    <div className="invalid-feedback">{errors.displayName}</div>
+                  )}
+                </div>
               )}
-            </div>
-          )}
-          <div className="mb-3">
-            <label className="form-label">Email</label>
-            <input
-              type="email"
-              className={`form-control ${errors.email ? "is-invalid" : ""}`}
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            {errors.email && (
-              <div className="invalid-feedback">{errors.email}</div>
-            )}
-          </div>
-          <div className="mb-3">
-            <label className="form-label">Password</label>
-            <input
-              type="password"
-              className={`form-control ${errors.password ? "is-invalid" : ""}`}
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-            />
-            {errors.password && (
-              <div className="invalid-feedback">{errors.password}</div>
-            )}
-          </div>
-          <button type="submit" className="btn btn-primary w-100">
-            {isSignup ? "Sign Up" : "Log In"}
-          </button>
-              </form>
-            <div className="text-center mt-3">
-              <small>
-                {isSignup ? "Already have an account?" : "Don’t have an account?"}{" "}
-                <button
-                  type="button"
-                  className={`btn btn-link p-0 ${styles.toggleButton}`}
-                  onClick={toggleMode}
-                >
-                  {isSignup ? "Log In" : "Sign Up"}
-                </button>
+              <div className="mb-3">
+                <label className={`form-label ${styles.titleText}`}>
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className={`${styles.inputText} ${
+                    errors.email ? "is-invalid" : ""
+                  }`}
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+                {errors.email && (
+                  <div className="invalid-feedback">{errors.email}</div>
+                )}
+              </div>
+              <div className="mb-3">
+                <label className={`form-label ${styles.titleText}`}>
+                  Password
+                </label>
+                <input
+                  type="password"
+                  className={`${styles.inputText} ${
+                    errors.password ? "is-invalid" : ""
+                  }`}
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                />
+                {errors.password && (
+                  <div className="invalid-feedback">{errors.password}</div>
+                )}
+              </div>
+              {signupSuccess && (
+                <p className={styles.successMessage}>
+                  You're signed up! Please check your email to confirm your
+                  account before logging in.
+                </p>
+              )}
+
+              <button type="submit" className={`btn w-100 ${styles.formBtn}`}>
+                {isSignup ? "Sign Up" : "Log In"}
+              </button>
+            </form>
+            <div className="text-center mt-3 d-flex align-items-center justify-content-center">
+              <small className="p-1">
+                {isSignup
+                  ? "Already have an account?"
+                  : "Don’t have an account?"}{" "}
               </small>
+              <button
+                type="button"
+                className={`btn btn-link p-0 ${styles.toggleButton}`}
+                onClick={toggleMode}
+              >
+                {isSignup ? "Log In" : "Sign Up"}
+              </button>
             </div>
           </div>
         </div>

@@ -23,13 +23,13 @@ const GroceryList = () => {
       setUser(data?.user || null);
     };
     const fetchIngredients = async () => {
-    const { data } = await supabase.from("ingredient").select("*");
-    setAllIngredients(data || []);
-  };
+      const { data } = await supabase.from("ingredient").select("*");
+      setAllIngredients(data || []);
+    };
     fetchIngredients();
     getUser();
   }, []);
-  
+
   useEffect(() => {
     if (!user) return;
     const fetchLists = async () => {
@@ -45,7 +45,7 @@ const GroceryList = () => {
 
       // Fetch items for each list
       if (listsData && listsData.length > 0) {
-        const listIds = listsData.map(l => l.list_id);
+        const listIds = listsData.map((l) => l.list_id);
         const { data: itemsData } = await supabase
           .from("grocery_list_items")
           .select("*")
@@ -54,7 +54,7 @@ const GroceryList = () => {
         // Group items by list_id
         const grouped = {};
         const checked = {};
-        (itemsData || []).forEach(item => {
+        (itemsData || []).forEach((item) => {
           if (!grouped[item.list_id]) grouped[item.list_id] = [];
           grouped[item.list_id].push(item);
           checked[`${item.list_id}-${item.ingredient_id}`] = item.checked;
@@ -78,12 +78,11 @@ const GroceryList = () => {
       .select()
       .single();
     if (!error && data) {
-      setLists(prev => [...prev, data]);
+      setLists((prev) => [...prev, data]);
       setNewListTitle("");
       setShowAddList(false);
     }
   };
-
 
   const handleAddItem = async (listId, ingredient) => {
     if (!ingredient) return;
@@ -94,13 +93,13 @@ const GroceryList = () => {
       .select()
       .single();
     if (!error && data) {
-      setItems(prev => ({
+      setItems((prev) => ({
         ...prev,
         [listId]: [...(prev[listId] || []), data],
       }));
     }
-    setSearchValue(prev => ({ ...prev, [listId]: "" }));
-    setShowDropdown(prev => ({ ...prev, [listId]: false }));
+    setSearchValue((prev) => ({ ...prev, [listId]: "" }));
+    setShowDropdown((prev) => ({ ...prev, [listId]: false }));
   };
 
   const handleDeleteItem = async (listId, ingredient_id) => {
@@ -109,16 +108,18 @@ const GroceryList = () => {
       .delete()
       .eq("list_id", listId)
       .eq("ingredient_id", ingredient_id);
-    setItems(prev => ({
+    setItems((prev) => ({
       ...prev,
-      [listId]: (prev[listId] || []).filter(item => item.ingredient_id !== ingredient_id),
+      [listId]: (prev[listId] || []).filter(
+        (item) => item.ingredient_id !== ingredient_id
+      ),
     }));
   };
 
   const handleDeleteList = async (listId) => {
     await supabase.from("grocery_list").delete().eq("list_id", listId);
-    setLists(prev => prev.filter(l => l.list_id !== listId));
-    setItems(prev => {
+    setLists((prev) => prev.filter((l) => l.list_id !== listId));
+    setItems((prev) => {
       const copy = { ...prev };
       delete copy[listId];
       return copy;
@@ -131,25 +132,25 @@ const GroceryList = () => {
       .update({ checked: !checked })
       .eq("list_id", listId)
       .eq("ingredient_id", ingredient_id);
-    setCheckedItems(prev => ({
+    setCheckedItems((prev) => ({
       ...prev,
       [`${listId}-${ingredient_id}`]: !checked,
     }));
   };
 
-    // Handle ingredient search input
+  // Handle ingredient search input
   const handleSearchChange = (listId, value) => {
-    setSearchValue(prev => ({ ...prev, [listId]: value }));
+    setSearchValue((prev) => ({ ...prev, [listId]: value }));
     if (value.trim().length === 0) {
-      setSearchResults(prev => ({ ...prev, [listId]: [] }));
-      setShowDropdown(prev => ({ ...prev, [listId]: false }));
+      setSearchResults((prev) => ({ ...prev, [listId]: [] }));
+      setShowDropdown((prev) => ({ ...prev, [listId]: false }));
       return;
     }
-    const results = allIngredients.filter(ing =>
+    const results = allIngredients.filter((ing) =>
       ing.name.toLowerCase().includes(value.toLowerCase())
     );
-    setSearchResults(prev => ({ ...prev, [listId]: results }));
-    setShowDropdown(prev => ({ ...prev, [listId]: true }));
+    setSearchResults((prev) => ({ ...prev, [listId]: results }));
+    setShowDropdown((prev) => ({ ...prev, [listId]: true }));
   };
 
   // Handle dropdown selection
@@ -160,7 +161,7 @@ const GroceryList = () => {
   // Close dropdown on blur
   const handleBlur = (listId) => {
     setTimeout(() => {
-      setShowDropdown(prev => ({ ...prev, [listId]: false }));
+      setShowDropdown((prev) => ({ ...prev, [listId]: false }));
     }, 120);
   };
 
@@ -226,10 +227,15 @@ const GroceryList = () => {
                   <li key={key} className={styles.itemRow}>
                     <label className={styles.label}>
                       <input
+                        className={styles.checkmark}
                         type="checkbox"
                         checked={!!checkedItems[key]}
                         onChange={() =>
-                          handleCheck(section.list_id, item.ingredient_id, !!checkedItems[key])
+                          handleCheck(
+                            section.list_id,
+                            item.ingredient_id,
+                            !!checkedItems[key]
+                          )
                         }
                       />
                       <p className={styles.itemText}>
@@ -238,7 +244,9 @@ const GroceryList = () => {
                     </label>
                     <button
                       className={styles.deleteBtn}
-                      onClick={() => handleDeleteItem(section.list_id, item.ingredient_id)}
+                      onClick={() =>
+                        handleDeleteItem(section.list_id, item.ingredient_id)
+                      }
                     >
                       <i className="material-symbols-outlined">close</i>
                     </button>
@@ -256,26 +264,36 @@ const GroceryList = () => {
                 type="text"
                 placeholder="Add item..."
                 value={searchValue[section.list_id] || ""}
-                onChange={e => handleSearchChange(section.list_id, e.target.value)}
-                onFocus={() => setShowDropdown(prev => ({ ...prev, [section.list_id]: true }))}
+                onChange={(e) =>
+                  handleSearchChange(section.list_id, e.target.value)
+                }
+                onFocus={() =>
+                  setShowDropdown((prev) => ({
+                    ...prev,
+                    [section.list_id]: true,
+                  }))
+                }
                 onBlur={() => handleBlur(section.list_id)}
-                ref={el => (inputRefs.current[section.list_id] = el)}
+                ref={(el) => (inputRefs.current[section.list_id] = el)}
                 className={styles.addInput}
                 autoComplete="off"
               />
-              {showDropdown[section.list_id] && searchResults[section.list_id]?.length > 0 && (
-                <ul className={styles.dropdown}>
-                  {searchResults[section.list_id].map(ingredient => (
-                    <li
-                      key={ingredient.ingredient_id}
-                      className={styles.dropdownItem}
-                      onMouseDown={() => handleSelectIngredient(section.list_id, ingredient)}
-                    >
-                      {ingredient.name}
-                    </li>
-                  ))}
-                </ul>
-              )}
+              {showDropdown[section.list_id] &&
+                searchResults[section.list_id]?.length > 0 && (
+                  <ul className={styles.dropdown}>
+                    {searchResults[section.list_id].map((ingredient) => (
+                      <li
+                        key={ingredient.ingredient_id}
+                        className={styles.dropdownItem}
+                        onMouseDown={() =>
+                          handleSelectIngredient(section.list_id, ingredient)
+                        }
+                      >
+                        {ingredient.name}
+                      </li>
+                    ))}
+                  </ul>
+                )}
             </div>
           </div>
         </div>

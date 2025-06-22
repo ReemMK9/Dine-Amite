@@ -10,7 +10,6 @@
   margin-inline: 0 !important;
 }
 
-
 .userImgContainer {
   width: auto;
 }
@@ -60,7 +59,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-} 
+}
 
 .tabButton {
   display: flex;
@@ -91,8 +90,8 @@
 }
 
 i.material-symbols-outlined {
-  font-size: 20px; 
-  margin: 0 -10px 0 0; 
+  font-size: 20px;
+  margin: 0 -10px 0 0;
 }
 
 .tabsHr {
@@ -154,7 +153,6 @@ i.material-symbols-outlined {
   font-weight: 600;
 }
 
-
 .deleteTabBtn {
   display: flex;
   height: 1rem;
@@ -172,10 +170,18 @@ i.material-symbols-outlined {
   text-decoration: none;
 }
 
+.addTabButton {
+  justify-content: center;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: white;
+  transition: border 0.2 ease, background 0.2 ease;
+}
+
 .addTabButton:hover {
-  border-color: var(--color-secondary);
-  background-color: var(--color-secondary);
-  color: var(--color-bg);
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
 }
 
 span {
@@ -234,15 +240,17 @@ span {
 .editBtn {
   background: var(--color-primary);
   color: #fff;
-  border: none;
-  border-radius: 8px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
   padding: 0.4em 1.2em;
   font-size: 0.95em;
   font-weight: 500;
   cursor: pointer;
   margin-top: 0.7em;
-  transition: background 0.18s;
+  transition: background 0.2s ease, outline 0.2s ease;
 }
 .editBtn:hover {
-  background: #d95d27;
+  outline: 1px solid var(--color-primary);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
 }

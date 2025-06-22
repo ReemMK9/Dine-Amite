@@ -5,7 +5,7 @@
   display: flex;
   padding-left: max(2rem, calc(50% - 30rem));
   padding-right: max(2rem, calc(50% - 30rem));
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
 }
 .mainContainer{
@@ -40,6 +40,6 @@
 }
 
 .sectionSpacing{
-align-self: start;
+align-self: center;
 margin-bottom: 18px;
 }

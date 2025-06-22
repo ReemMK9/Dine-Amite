@@ -55,7 +55,7 @@ const RecipeDetails = () => {
         <SimilarRecipes />        
       </div>
       {/* <div className={`container ${styles.mainContainer}`}> */}
-        <div className={`row col-12 ${styles.recipeInfo}`}>
+        <div className={`row col-13 ${styles.recipeInfo}`}>
           <div className={`col-md-4 order-md-2 ${styles.nutritionFacts}`}>
             <NutritionFacts recipeId={id} />
           </div>

@@ -169,7 +169,7 @@ const PopularCategories = () => {
         <h1 className={`ml-0 ${styles.sectionTitle}`}>Popular Categories</h1>
         <div className="row justify-content-center gx-2 gy-2">
           {categories.map((category) => (
-            <div key={category.category_id} className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+            <div key={category.category_id} className="col-12 col-md-6 col-xl-3 d-flex justify-content-center">
               <CircularCard 
                 category={category}
                 imageUrl={category.imageUrl}

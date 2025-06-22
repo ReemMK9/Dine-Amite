@@ -16,6 +16,7 @@
 .navContainer {
   min-width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .title {
@@ -23,7 +24,9 @@
   font-size: 2.5rem;
   color: var(--color-primary);
   text-decoration: none;
-  margin: 0 0 0 auto;
+  /* margin: 0 0 0 auto; */
+  /* margin-inline: auto; */
+  /* margin-left: -1.5rem; */
 }
 
 .title:hover {
@@ -144,6 +147,13 @@
 }
 
 /* Mobile Menu Items */
+
+.logoWrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .collapsibleMenu .nav-item {
   width: 100%;
   margin: 0;
