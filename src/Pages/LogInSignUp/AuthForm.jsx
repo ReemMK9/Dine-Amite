@@ -8,6 +8,7 @@ const AuthForm = () => {
   const [errors, setErrors] = useState({});
   const [user, setUser] = useState(null);
   const [isSignup, setIsSignup] = useState(false);
+  const [signupSuccess, setSignupSuccess] = useState(false);
   const [formData, setFormData] = useState({
     displayName: "",
     email: "",
@@ -69,6 +70,7 @@ const AuthForm = () => {
       setErrors((prev) => ({ ...prev, general: error.message }));
     } else {
       console.log("User signed up:", user);
+      setSignupSuccess(true);
     }
   };
 
@@ -175,6 +177,13 @@ const AuthForm = () => {
                   <div className="invalid-feedback">{errors.password}</div>
                 )}
               </div>
+              {signupSuccess && (
+                <p className={styles.successMessage}>
+                  You're signed up! Please check your email to confirm your
+                  account before logging in.
+                </p>
+              )}
+
               <button type="submit" className={`btn w-100 ${styles.formBtn}`}>
                 {isSignup ? "Sign Up" : "Log In"}
               </button>

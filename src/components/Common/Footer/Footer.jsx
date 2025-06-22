@@ -6,14 +6,14 @@ const Footer = ({ noFooterMargin }) => {
     <footer className={noFooterMargin ? styles.noFooterMargin : ""}>
       <div className={`container-fluid ${styles.footerOuter}`}>
         <div className={`row ${styles.footerRow}`}>
-          <div className="col-md-4 col-12 mb-4 mb-md-0">
+          <div className="col-md-4 col-12 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
             <a className={styles.title} href="">
               Dine'Amite
             </a>
             {/* <p>Description</p> */}
           </div>
           <div className="col-md-4 col-12 mb-4 mb-md-0">
-            <h2>Follow Us</h2>
+            <h2 className={styles.footerText}>Follow Us</h2>
             <ul className={styles.socialinksList}>
               <li>
                 <a
@@ -45,7 +45,7 @@ const Footer = ({ noFooterMargin }) => {
             </ul>
           </div>
           <div className="col-md-4 col-12 mb-4 mb-md-0">
-            <h2>Contact Us</h2>
+            <h2 className={styles.footerText}>Contact Us</h2>
             <ul>
               <li>
                 <a href="mailto:info@dineamite.com?subject=Hello&body=I%20have%20a%20question">
