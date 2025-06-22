@@ -10,6 +10,11 @@
   height: 100vh;
 }
 
+.loginTitle {
+  font-family: var(--font-title);
+  text-decoration: underline 1px var(--color-primary);
+}
+
 .loginImg {
   object-fit: cover;
   width: 100%;
@@ -18,12 +23,70 @@
 }
 
 .card {
-  background-color: #ffffff;
-  border-radius: 12px;
+  background-color: var(--color-bg);
+  border-radius: 5px;
+  border: 1px solid var(--color-accent2);
+  box-shadow: 2px 2px 2px #ebd2c5;
+}
+
+.addCardForm input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #fafafa;
+  color: #222;
+}
+
+.addCardForm input:focus {
+  border-color: var(--color-primary);
+  outline-color: var(--color-primary);
+  background: #fff;
+}
+
+.inputText {
+  /* display: flex; */
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #fafafa;
+  color: #222;
+}
+
+.inputText:focus {
+  border-color: var(--color-primary);
+  outline-color: var(--color-primary);
+  background: #fff;
+}
+
+.titleText {
+  font-family: var(--font-text);
+  font-size: 1.25rem;
+}
+
+.form-control:focus {
+  border: 0;
+  box-shadow: none;
+}
+
+.formBtn {
+  font-family: var(--font-text);
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.formBtn:hover {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  outline: 1px solid var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .toggleButton {
-  color: #0d6efd;
+  font-family: var(--font-text);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -31,7 +94,6 @@
   text-decoration: underline;
 }
 
-/* Footer override */
 .noFooterMargin {
   margin-top: 0 !important;
 }

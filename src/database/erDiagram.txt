@@ -1,0 +1,143 @@
+erDiagram
+    app_user {
+        UUID user_id PK
+        VARCHAR username
+        VARCHAR display_name
+        TEXT bio
+        VARCHAR img
+    }
+    
+    dietary_preference {
+        UUID user_id PK,FK
+        VARCHAR dietary_preference PK
+    }
+    
+    recipe {
+        SERIAL recipe_id PK
+        VARCHAR title
+        VARCHAR image
+        TEXT summary
+        TEXT instructions
+        JSONB steps
+        INT preparation_time
+        INT cooking_time
+        INT ready_in
+        INT servings
+        TIMESTAMP synced_at
+    }
+    
+    ingredient {
+        SERIAL ingredient_id PK
+        VARCHAR name
+        VARCHAR name_alt
+        TIMESTAMP synced_at
+    }
+    
+    recipe_ingredient {
+        INT recipe_id PK,FK
+        INT ingredient_id PK,FK
+        FLOAT amount
+        VARCHAR unit
+    }
+    
+    category {
+        SERIAL category_id PK
+        VARCHAR name
+    }
+    
+    recipe_category {
+        INT recipe_id PK,FK
+        INT category_id PK,FK
+    }
+    
+    recipe_dietary_tags {
+        INT recipe_id PK,FK
+        VARCHAR dietary_tag PK
+    }
+    
+    recipe_nutrition {
+        INT recipe_id PK,FK
+        FLOAT calories
+        FLOAT fat
+        FLOAT saturated_fat
+        FLOAT carbohydrates
+        FLOAT net_carbohydrates
+        FLOAT fiber
+        FLOAT sugar
+        FLOAT cholesterol
+        FLOAT sodium
+        FLOAT protein
+        FLOAT glycemic_index
+        FLOAT glycemic_load
+        FLOAT nutrition_score
+        FLOAT percent_protein
+        FLOAT percent_fat
+        FLOAT percent_carbs
+        FLOAT weight_per_serving
+        TIMESTAMP synced_at
+    }
+    
+    recipe_saved {
+        SERIAL recipe_saved_id PK
+        VARCHAR name
+        UUID user_id FK
+        TIMESTAMP created_at
+        TIMESTAMP updated_at
+    }
+    
+    recipe_saved_items {
+        INT recipe_saved_id PK,FK
+        INT recipe_id PK,FK
+    }
+    
+    review {
+        SERIAL review_id PK
+        INT recipe_id FK
+        UUID user_id FK
+        INT rating
+        TEXT comment
+        TIMESTAMP created_at
+        TIMESTAMP updated_at
+    }
+    
+    grocery_list {
+        SERIAL list_id PK
+        UUID user_id FK
+        VARCHAR list_name
+        TIMESTAMP created_at
+        TIMESTAMP updated_at
+    }
+    
+    grocery_list_items {
+        INT list_id PK,FK
+        INT ingredient_id PK,FK
+        FLOAT amount
+        BOOLEAN checked
+    }
+
+    %% User Management Relationships
+    app_user ||--o{ dietary_preference : "has"
+    app_user ||--o{ recipe_saved : "creates"
+    app_user ||--o{ grocery_list : "owns"
+    app_user ||--o{ review : "writes"
+    
+    %% Recipe Core Relationships
+    recipe ||--o{ recipe_ingredient : "contains"
+    recipe ||--o{ recipe_category : "belongs_to"
+    recipe ||--|| recipe_nutrition : "has"
+    recipe ||--o{ recipe_dietary_tags : "tagged_with"
+    recipe ||--o{ recipe_saved_items : "saved_in"
+    recipe ||--o{ review : "receives"
+    
+    %% Ingredient Relationships
+    ingredient ||--o{ recipe_ingredient : "used_in"
+    ingredient ||--o{ grocery_list_items : "listed_in"
+    
+    %% Category Relationships
+    category ||--o{ recipe_category : "categorizes"
+    
+    %% Recipe Collections Relationships
+    recipe_saved ||--o{ recipe_saved_items : "contains"
+    
+    %% Grocery List Relationships
+    grocery_list ||--o{ grocery_list_items : "includes"
