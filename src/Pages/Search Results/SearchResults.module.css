@@ -65,14 +65,12 @@ hr {
   text-align: center;
   color: var(--color-primary);
   font-size: 1.2em;
-  /* margin: 0 0.6rem; */
 }
 
 .loading {
   font-family: var(--font-text);
   font-size: 1rem;
   font-weight: 600;
-  /* text-align: center; */
   color: var(--color-primary);
   font-size: 1.2em;
 }

@@ -118,7 +118,7 @@
   justify-content: center;
 }
 
-/* On large screens, remove background from form column */
+
 @media (min-width: 992px) {
   .formBg {
     background-image: none !important;

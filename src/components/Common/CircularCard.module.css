@@ -6,19 +6,14 @@
   justify-content: center;
   text-align: center; 
   margin: 0 1rem 2rem 1rem;
-  /* padding: 0; */
-  /* background: #fff; */
-  /* border-radius: 1.5rem; */
   transition: transform 0.18s, box-shadow 0.18s;
   cursor: pointer;
-  /* box-shadow: 0 1px 6px rgba(0,0,0,0.04); */
 }
 
 
 .cardContainer:hover {
   border-color: var(--color-primary, #f86329);
   text-decoration: underline 1px var(--color-primary);
-  /* transform: translateY(-4px) scale(1.03); */
 }
 
 .categoryImgCont {

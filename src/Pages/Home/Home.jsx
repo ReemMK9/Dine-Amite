@@ -63,7 +63,7 @@ const Home = () => {
         return;
       }
 
-      // 5. Randomly select 2 categories
+      // Randomly select 2 categories
       const shuffledCategories = categoriesWithEnoughRecipes.sort(() => 0.5 - Math.random());
       const selectedCategories = shuffledCategories.slice(0, 2);
 

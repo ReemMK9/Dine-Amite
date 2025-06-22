@@ -107,11 +107,11 @@ const AuthForm = () => {
   return (
     <div className={`container-fluid vh-100 d-flex align-items-stretch p-0`}>
       <div className="row flex-grow-1 w-100 m-0">
-        {/* Image: only visible on large screens and up */}
+
         <div className={`col-lg-6 d-none d-lg-flex ${styles.imgContainer} p-0`}>
           <img src={img} alt="" className={`${styles.loginImg} w-100 h-100`} />
         </div>
-        {/* Form: always visible, and has background image on md and below */}
+
         <div
           className={`col-12 col-lg-6 d-flex align-items-center justify-content-center p-0 ${styles.formBg}`}
           style={{

@@ -17,7 +17,6 @@ const CategoryResults = () => {
         setLoading(true);
         setError(null);
 
-        // Get recipe IDs for this category
         const { data: recipeCategories, error: recipeCatError } = await supabase
           .from("recipe_category")
           .select("recipe_id")
@@ -36,7 +35,6 @@ const CategoryResults = () => {
 
         setTotalRecipes(recipeCategories.length);
 
-        // Get full recipe details
         const recipeIds = recipeCategories.map((rc) => rc.recipe_id);
         const { data: categoryRecipes, error: recipeError } = await supabase
           .from("recipe")
@@ -64,7 +62,6 @@ const CategoryResults = () => {
     }
   }, [categoryId]);
 
-  // Format category name for display
   const displayName = categoryName
     ? decodeURIComponent(categoryName).charAt(0).toUpperCase() +
       decodeURIComponent(categoryName).slice(1)

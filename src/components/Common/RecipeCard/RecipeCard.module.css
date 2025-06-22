@@ -14,7 +14,6 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 2px 2px 2px #ebd2c5;
-  /* border: #ababab 0.08rem solid; */
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
@@ -73,12 +72,10 @@
 
 .infoContainer{
   width: 100%;
-  /* height: 4rem; */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  /* border: #ababab 0.08rem solid; */
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border-top: none;

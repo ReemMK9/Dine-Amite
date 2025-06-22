@@ -104,8 +104,7 @@ const SearchResults = () => {
               <hr />
             </div>
         </div>
-      {/* <SearchResultsHeader /> */}
-      {/* <SearchFilters/> */}
+
       <div className={styles.results}>
         {loading ? (
           <div className={styles.loading}>Loading...</div>
