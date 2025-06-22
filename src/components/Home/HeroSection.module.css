@@ -1,18 +1,20 @@
 .container {
   /* width: 80%; */
   background-color: #f1ece4;
-  border-radius: 30px;
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  margin-bottom: 10vh;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  box-shadow: 2px 2px 8px #ebd2c5;
 }
 
 .heroImgContainer{
   /* width: 70vw; */
   /* height: auto; */
   max-height: 100%;
-  border-radius: 30px;
+  border-radius: 5px;
   overflow: hidden;
   padding: 0%;
 }
@@ -31,7 +33,7 @@
   margin-left: 0%;
   width: 100%;
   display: inline;
-  height: 90vh;
+  height: 80vh;
   object-fit: cover;
   /* position: relative; */
 }
