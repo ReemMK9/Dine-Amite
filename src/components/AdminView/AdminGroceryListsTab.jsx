@@ -44,8 +44,6 @@ const AdminGroceryListsTab = ({
   };
 
   const handleViewListItems = async (listId) => {
-    // In a real implementation, you would fetch the list items
-    // For now, we'll show a placeholder
     alert(`Viewing items for grocery list #${listId}\n\nThis would show all items in the grocery list with their quantities and checked status.`);
   };
 

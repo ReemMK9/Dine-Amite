@@ -1,14 +1,14 @@
 // src/components/AdminView/AdminUsersTab.jsx
 
-import React from 'react';
-import { FaPlus, FaEye, FaEdit, FaBan, FaTrash, FaUsers } from 'react-icons/fa';
-import styles from './AdminDataTable.module.css';
+import React from "react";
+import { FaPlus, FaEye, FaEdit, FaBan, FaTrash, FaUsers } from "react-icons/fa";
+import styles from "./AdminDataTable.module.css";
 
-const AdminUsersTab = ({ 
-  users, 
-  searchTerm, 
-  setSearchTerm, 
-  currentPage, 
+const AdminUsersTab = ({
+  users,
+  searchTerm,
+  setSearchTerm,
+  currentPage,
   setCurrentPage,
   actionMenuOpenId,
   setActionMenuOpenId,
@@ -18,29 +18,39 @@ const AdminUsersTab = ({
   getPaginatedData,
   getTotalPages,
   itemsPerPage,
-  loading
+  loading,
 }) => {
-  const filteredUsers = getFilteredData(users, ['username', 'display_name', 'email']);
+  const filteredUsers = getFilteredData(users, [
+    "username",
+    "display_name",
+    "email",
+  ]);
   const paginatedUsers = getPaginatedData(filteredUsers);
   const totalPages = getTotalPages(filteredUsers);
 
   const handleBanUser = async (userId) => {
-    if (window.confirm('Are you sure you want to ban this user?')) {
-      // Implement ban logic here
-      console.log('Banning user:', userId);
-      // You would typically call your API to ban the user
+    if (window.confirm("Are you sure you want to ban this user?")) {
+      console.log("Banning user:", userId);
     }
   };
 
   const getStatusBadge = (user) => {
     // Determine user status based on available data
     if (user.banned_until && new Date(user.banned_until) > new Date()) {
-      return <span className={`${styles.badge} ${styles.badgeBanned}`}>Banned</span>;
+      return (
+        <span className={`${styles.badge} ${styles.badgeBanned}`}>Banned</span>
+      );
     }
     if (user.last_sign_in_at) {
-      return <span className={`${styles.badge} ${styles.badgeActive}`}>Active</span>;
+      return (
+        <span className={`${styles.badge} ${styles.badgeActive}`}>Active</span>
+      );
     }
-    return <span className={`${styles.badge} ${styles.badgeInactive}`}>Inactive</span>;
+    return (
+      <span className={`${styles.badge} ${styles.badgeInactive}`}>
+        Inactive
+      </span>
+    );
   };
 
   if (loading) {
@@ -59,9 +69,9 @@ const AdminUsersTab = ({
       <div className={styles.contentCard}>
         <div className={styles.contentHeader}>
           <h3 className={styles.contentTitle}>Users Management</h3>
-          <button 
+          <button
             className={styles.primaryButton}
-            onClick={() => openModal('user')}
+            onClick={() => openModal("user")}
           >
             <FaPlus /> Add User
           </button>
@@ -70,7 +80,8 @@ const AdminUsersTab = ({
           <FaUsers className={styles.emptyStateIcon} />
           <h4 className={styles.emptyStateTitle}>No Users Found</h4>
           <p className={styles.emptyStateText}>
-            There are no users in the system yet. Add your first user to get started.
+            There are no users in the system yet. Add your first user to get
+            started.
           </p>
         </div>
       </div>
@@ -89,21 +100,22 @@ const AdminUsersTab = ({
             onChange={(e) => setSearchTerm(e.target.value)}
             className={styles.searchInput}
           />
-          <button 
+          <button
             className={styles.primaryButton}
-            onClick={() => openModal('user')}
+            onClick={() => openModal("user")}
           >
             <FaPlus /> Add User
           </button>
         </div>
       </div>
-      
+
       {filteredUsers.length === 0 ? (
         <div className={styles.emptyState}>
           <FaUsers className={styles.emptyStateIcon} />
           <h4 className={styles.emptyStateTitle}>No Users Match Your Search</h4>
           <p className={styles.emptyStateText}>
-            Try adjusting your search terms or clear the search to see all users.
+            Try adjusting your search terms or clear the search to see all
+            users.
           </p>
         </div>
       ) : (
@@ -125,32 +137,38 @@ const AdminUsersTab = ({
                 {paginatedUsers.map((user) => (
                   <tr key={user.user_id || user.id}>
                     <td className={styles.tableCell}>
-                      <strong>{user.username || 'N/A'}</strong>
+                      <strong>{user.username || "N/A"}</strong>
                     </td>
                     <td className={styles.tableCell}>
-                      {user.display_name || 'N/A'}
+                      {user.display_name || "N/A"}
                     </td>
                     <td className={styles.tableCell}>
                       <code className={styles.userId}>
                         {(user.user_id || user.id)?.substring(0, 8)}...
                       </code>
                     </td>
+                    <td className={styles.tableCell}>{getStatusBadge(user)}</td>
                     <td className={styles.tableCell}>
-                      {getStatusBadge(user)}
+                      {user.created_at
+                        ? new Date(user.created_at).toLocaleDateString()
+                        : "N/A"}
                     </td>
                     <td className={styles.tableCell}>
-                      {user.created_at ? new Date(user.created_at).toLocaleDateString() : 'N/A'}
-                    </td>
-                    <td className={styles.tableCell}>
-                      {user.last_sign_in_at ? new Date(user.last_sign_in_at).toLocaleDateString() : 'Never'}
+                      {user.last_sign_in_at
+                        ? new Date(user.last_sign_in_at).toLocaleDateString()
+                        : "Never"}
                     </td>
                     <td className={styles.tableCell}>
                       <div className={styles.actionContainer}>
                         <button
                           className={styles.actionButton}
-                          onClick={() => setActionMenuOpenId(
-                            actionMenuOpenId === (user.user_id || user.id) ? null : (user.user_id || user.id)
-                          )}
+                          onClick={() =>
+                            setActionMenuOpenId(
+                              actionMenuOpenId === (user.user_id || user.id)
+                                ? null
+                                : user.user_id || user.id
+                            )
+                          }
                           title="More actions"
                         >
                           &#x22EE;
@@ -160,28 +178,33 @@ const AdminUsersTab = ({
                             <button className={styles.actionMenuItem}>
                               <FaEye /> View Details
                             </button>
-                            <button 
+                            <button
                               className={styles.actionMenuItem}
                               onClick={() => {
-                                openModal('user', user);
+                                openModal("user", user);
                                 setActionMenuOpenId(null);
                               }}
                             >
                               <FaEdit /> Edit User
                             </button>
-                            <button 
+                            <button
                               className={styles.actionMenuItem}
                               onClick={() => {
                                 handleBanUser(user.user_id || user.id);
                                 setActionMenuOpenId(null);
                               }}
                             >
-                              <FaBan /> {user.banned_until ? 'Unban' : 'Ban'} User
+                              <FaBan /> {user.banned_until ? "Unban" : "Ban"}{" "}
+                              User
                             </button>
-                            <button 
+                            <button
                               className={`${styles.actionMenuItem} ${styles.actionMenuItemDanger}`}
                               onClick={() => {
-                                handleDelete('app_user', user.user_id || user.id, 'user_id');
+                                handleDelete(
+                                  "app_user",
+                                  user.user_id || user.id,
+                                  "user_id"
+                                );
                                 setActionMenuOpenId(null);
                               }}
                             >
@@ -199,7 +222,9 @@ const AdminUsersTab = ({
 
           <div className={styles.pagination}>
             <span className={styles.paginationInfo}>
-              Showing {((currentPage - 1) * itemsPerPage) + 1} to {Math.min(currentPage * itemsPerPage, filteredUsers.length)} of {filteredUsers.length} users
+              Showing {(currentPage - 1) * itemsPerPage + 1} to{" "}
+              {Math.min(currentPage * itemsPerPage, filteredUsers.length)} of{" "}
+              {filteredUsers.length} users
             </span>
             <div className={styles.paginationButtons}>
               <button
@@ -214,7 +239,7 @@ const AdminUsersTab = ({
                 <button
                   key={i}
                   className={`${styles.paginationButton} ${
-                    currentPage === i + 1 ? styles.paginationButtonActive : ''
+                    currentPage === i + 1 ? styles.paginationButtonActive : ""
                   }`}
                   onClick={() => setCurrentPage(i + 1)}
                 >
