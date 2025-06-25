@@ -52,8 +52,12 @@ const AuthForm = () => {
     }
     if (!formData.password) {
       newErrors.password = "Password is required";
-    } else if (formData.password.length < 8) {
-      newErrors.password = "Password must be at least 8 characters";
+    } else if (
+      formData.password.length < 8 ||
+      !/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(formData.password)
+    ) {
+      newErrors.password =
+        "Password must be at least 8 characters and must include numbers";
     }
     return newErrors;
   };
@@ -107,7 +111,6 @@ const AuthForm = () => {
   return (
     <div className={`container-fluid vh-100 d-flex align-items-stretch p-0`}>
       <div className="row flex-grow-1 w-100 m-0">
-
         <div className={`col-lg-6 d-none d-lg-flex ${styles.imgContainer} p-0`}>
           <img src={img} alt="" className={`${styles.loginImg} w-100 h-100`} />
         </div>

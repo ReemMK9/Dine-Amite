@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./HeroSection.module.css";
 import supabase from "../../config/supabaseClient";
+import SaveRecipeOverlay from "../Common/SaveRecipeOverlay";
 
 const HeroSection = () => {
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showOverlay, setShowOverlay] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -87,7 +89,10 @@ const HeroSection = () => {
 
           <button
             className={styles.saveButton}
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowOverlay(true);
+            }}
           >
             <i className="material-symbols-outlined">favorite</i>
           </button>
@@ -110,6 +115,11 @@ const HeroSection = () => {
           View Full Recipe
         </button>
       </div>
+      <SaveRecipeOverlay
+        recipeId={recipe.recipe_id}
+        open={showOverlay}
+        onClose={() => setShowOverlay(false)}
+      />
     </div>
   );
 };

@@ -64,7 +64,7 @@
 .tabButton {
   display: flex;
   justify-content: space-between;
-  min-width: 4rem;
+  /* min-width: 4rem; */
   font-family: var(--font-text);
   font-size: 15px;
   color: var(--color-text);
